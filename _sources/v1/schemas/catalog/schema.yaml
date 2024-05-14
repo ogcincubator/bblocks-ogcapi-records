@@ -1,4 +1,4 @@
-$comment: Adapted from  https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/catalog.yaml
+$comment: Adapted from https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/catalog.yaml
 allOf:
   - $ref: bblocks://ogc.api.features.v1.schemas.collection
   - type: object
@@ -30,12 +30,12 @@ allOf:
                 - record
                 - catalog
       type:
-        descripton:
+        description:
           Fixed to catalog for collections of records
           and/or subordinate catalogs.
         type: string
         enum:
-          - catalog
+          - Catalog
       keywords:
         type: array
         description:
