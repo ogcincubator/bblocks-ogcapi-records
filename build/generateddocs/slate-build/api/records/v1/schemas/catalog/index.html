@@ -344,7 +344,7 @@
 <aside class="success">
 This building block is <strong>valid</strong>
 </aside>
-<h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$comment</span><span class="pi">:</span> <span class="s">Adapted from  https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/catalog.yaml</span>
+<h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$comment</span><span class="pi">:</span> <span class="s">Adapted from https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/catalog.yaml</span>
 <span class="na">allOf</span><span class="pi">:</span>
 <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s">https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml</span>
 <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
@@ -371,10 +371,11 @@ This building block is <strong>valid</strong>
           <span class="pi">-</span> <span class="s">record</span>
           <span class="pi">-</span> <span class="s">catalog</span>
     <span class="na">type</span><span class="pi">:</span>
-      <span class="na">descripton</span><span class="pi">:</span> <span class="s">Fixed to catalog for collections of records and/or subordinate catalogs.</span>
+      <span class="na">description</span><span class="pi">:</span> <span class="s">Fixed to catalog for collections of records and/or subordinate</span>
+        <span class="s">catalogs.</span>
       <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
       <span class="na">enum</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">catalog</span>
+      <span class="pi">-</span> <span class="s">Catalog</span>
     <span class="na">keywords</span><span class="pi">:</span>
       <span class="na">type</span><span class="pi">:</span> <span class="s">array</span>
       <span class="na">description</span><span class="pi">:</span> <span class="s">The topic or topics of the resource. Typically represented using</span>

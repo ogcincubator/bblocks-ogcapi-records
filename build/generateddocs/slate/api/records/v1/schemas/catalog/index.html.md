@@ -32,7 +32,7 @@ This building block is <strong>valid</strong>
 # JSON Schema
 
 ```yaml--schema
-$comment: Adapted from  https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/catalog.yaml
+$comment: Adapted from https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/catalog.yaml
 allOf:
 - $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml
 - type: object
@@ -59,10 +59,11 @@ allOf:
           - record
           - catalog
     type:
-      descripton: Fixed to catalog for collections of records and/or subordinate catalogs.
+      description: Fixed to catalog for collections of records and/or subordinate
+        catalogs.
       type: string
       enum:
-      - catalog
+      - Catalog
     keywords:
       type: array
       description: The topic or topics of the resource. Typically represented using

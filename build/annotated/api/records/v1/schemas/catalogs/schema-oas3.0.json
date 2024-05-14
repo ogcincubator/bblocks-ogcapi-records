@@ -46,7 +46,7 @@
       "x-schema-source": "https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/schema.json"
     },
     "ogcincubator.github.io_bblocks-ogcapi-records_build_annotated_api_records_v1_schemas_catalog_schema.json": {
-      "$comment": "Adapted from  https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/catalog.yaml",
+      "$comment": "Adapted from https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/catalog.yaml",
       "allOf": [
         {
           "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/catalogs/schema-oas3.0.json#/x-defs/ogc.api.features.v1.schemas.collection_"
@@ -83,10 +83,10 @@
               ]
             },
             "type": {
-              "descripton": "Fixed to catalog for collections of records and/or subordinate catalogs.",
+              "description": "Fixed to catalog for collections of records and/or subordinate catalogs.",
               "type": "string",
               "enum": [
-                "catalog"
+                "Catalog"
               ]
             },
             "keywords": {
