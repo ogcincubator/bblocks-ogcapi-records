@@ -135,9 +135,9 @@ properties:
           association to the record or the resource described
           by the record.
         items:
-          $ref: 'bblocks://ogc.api.records.v1.schemas.contact'
+          $ref: bblocks://ogc.api.records.v1.schemas.contact
       license:
-        $ref: 'bblocks://ogc.api.records.v1.schemas.license'
+        $ref: bblocks://ogc.api.records.v1.schemas.license
       rights:
         type: string
         description:
@@ -146,10 +146,10 @@ properties:
   links:
     type: array
     items:
-      $ref: 'bblocks://ogc.ogc-utils.json-link'
+      $ref: bblocks://ogc.api.records.v1.schemas.linkBase
   linkTemplates:
     type: array
     items:
-      $ref: 'bblocks://ogc.api.records.v1.schemas.linkTemplate'
+      $ref: bblocks://ogc.api.records.v1.schemas.linkTemplate
 
 

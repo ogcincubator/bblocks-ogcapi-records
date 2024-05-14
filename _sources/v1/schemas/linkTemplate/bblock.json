@@ -16,6 +16,5 @@
     "ogcapi-records",
     "records"
   ],
-  "schema": "https://github.com/opengeospatial/ogcapi-records/raw/master/core/openapi/schemas/linkTemplate.yaml",
   "abstract": "This building block corresponds to the schema for an OGC API Records linkTemplate"
 }

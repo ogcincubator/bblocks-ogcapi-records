@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "oa": "http://www.w3.org/ns/oa#",
+    "uriTemplate": {
+      "@type": "xsd:string",
+      "@id": "oa:hasTarget"
+    }
+  }
+}
