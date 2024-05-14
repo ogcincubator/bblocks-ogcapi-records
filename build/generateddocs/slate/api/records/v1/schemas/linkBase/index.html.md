@@ -76,13 +76,13 @@ properties:
     x-jsonld-id: http://purl.org/dc/terms/modified
 x-jsonld-extra-terms:
   href:
-    x-jsonld-type: http://www.w3.org/2001/XMLSchema#string
+    x-jsonld-type: '@id'
     x-jsonld-id: http://www.w3.org/ns/oa#hasTarget
 x-jsonld-prefixes:
   oa: http://www.w3.org/ns/oa#
-  xsd: http://www.w3.org/2001/XMLSchema#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
   dct: http://purl.org/dc/terms/
+  xsd: http://www.w3.org/2001/XMLSchema#
 
 ```
 
@@ -113,13 +113,13 @@ Links to the schema:
     "created": "dct:created",
     "updated": "dct:modified",
     "href": {
-      "@type": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "@id",
       "@id": "oa:hasTarget"
     },
     "oa": "http://www.w3.org/ns/oa#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "@version": 1.1
   }
 }
