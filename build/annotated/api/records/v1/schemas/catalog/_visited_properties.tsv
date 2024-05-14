@@ -86,13 +86,13 @@ path	@id
 /rights	
 /conformsTo	
 /linkTemplates	
-/linkTemplates/rel	
-/linkTemplates/type	
-/linkTemplates/hreflang	
-/linkTemplates/title	
-/linkTemplates/length	
-/linkTemplates/created	
-/linkTemplates/updated	
-/linkTemplates/uriTemplate	
+/linkTemplates/rel	http://www.iana.org/assignments/relation
+/linkTemplates/type	http://purl.org/dc/terms/format
+/linkTemplates/hreflang	http://purl.org/dc/terms/language
+/linkTemplates/title	http://www.w3.org/2000/01/rdf-schema#label
+/linkTemplates/length	http://purl.org/dc/terms/extent
+/linkTemplates/created	http://purl.org/dc/terms/created
+/linkTemplates/updated	http://purl.org/dc/terms/modified
+/linkTemplates/uriTemplate	http://www.w3.org/ns/oa#hasTarget
 /linkTemplates/varBase	
 /linkTemplates/variables	

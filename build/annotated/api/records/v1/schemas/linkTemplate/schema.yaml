@@ -1,3 +1,4 @@
+$comment: Adapted from https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/linkTemplate.yaml
 allOf:
 - $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml
 - type: object
@@ -8,6 +9,8 @@ allOf:
       type: string
       description: Supplies a resolvable URI to a remote resource (or resource fragment).
       example: http://data.example.com/buildings/(building-id}
+      x-jsonld-type: xsd:string
+      x-jsonld-id: http://www.w3.org/ns/oa#hasTarget
     varBase:
       type: string
       description: The base URI to which the variable name can be appended to retrieve
@@ -19,3 +22,5 @@ allOf:
         URL.  Each key defines the schema of one substitution variable using a JSON
         Schema fragment and can thus include things like the data type of the variable,
         enumerations, minimum values, maximum values, etc.
+x-jsonld-prefixes:
+  oa: http://www.w3.org/ns/oa#

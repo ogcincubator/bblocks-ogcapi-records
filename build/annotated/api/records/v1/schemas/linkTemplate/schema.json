@@ -1,4 +1,5 @@
 {
+  "$comment": "Adapted from https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/linkTemplate.yaml",
   "allOf": [
     {
       "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.json"
@@ -12,7 +13,9 @@
         "uriTemplate": {
           "type": "string",
           "description": "Supplies a resolvable URI to a remote resource (or resource fragment).",
-          "example": "http://data.example.com/buildings/(building-id}"
+          "example": "http://data.example.com/buildings/(building-id}",
+          "x-jsonld-type": "xsd:string",
+          "x-jsonld-id": "http://www.w3.org/ns/oa#hasTarget"
         },
         "varBase": {
           "type": "string",
@@ -25,5 +28,8 @@
         }
       }
     }
-  ]
+  ],
+  "x-jsonld-prefixes": {
+    "oa": "http://www.w3.org/ns/oa#"
+  }
 }

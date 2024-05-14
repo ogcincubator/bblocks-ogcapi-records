@@ -118,33 +118,35 @@ path	@id
 /features/properties/license	
 /features/properties/rights	
 /features/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
-/features/links/href	http://www.w3.org/ns/oa#hasTarget
 /features/links/rel	http://www.iana.org/assignments/relation
-/features/links/anchor	
 /features/links/type	http://purl.org/dc/terms/type
 /features/links/hreflang	http://purl.org/dc/terms/language
 /features/links/title	http://www.w3.org/2000/01/rdf-schema#label
 /features/links/length	http://purl.org/dc/terms/extent
+/features/links/created	http://purl.org/dc/terms/created
+/features/links/updated	http://purl.org/dc/terms/modified
 /features/linkTemplates	
-/features/linkTemplates/rel	
-/features/linkTemplates/type	
-/features/linkTemplates/hreflang	
-/features/linkTemplates/title	
-/features/linkTemplates/length	
-/features/linkTemplates/created	
-/features/linkTemplates/updated	
-/features/linkTemplates/uriTemplate	
+/features/linkTemplates/rel	http://www.iana.org/assignments/relation
+/features/linkTemplates/type	http://purl.org/dc/terms/format
+/features/linkTemplates/hreflang	http://purl.org/dc/terms/language
+/features/linkTemplates/title	http://www.w3.org/2000/01/rdf-schema#label
+/features/linkTemplates/length	http://purl.org/dc/terms/extent
+/features/linkTemplates/created	http://purl.org/dc/terms/created
+/features/linkTemplates/updated	http://purl.org/dc/terms/modified
+/features/linkTemplates/uriTemplate	http://www.w3.org/ns/oa#hasTarget
 /features/linkTemplates/varBase	
 /features/linkTemplates/variables	
 /features/bbox	https://purl.org/geojson/vocab#bbox
+/features/links/href	http://www.w3.org/ns/oa#hasTarget
+/features/links/anchor	
 /linkTemplates	
-/linkTemplates/rel	
-/linkTemplates/type	
-/linkTemplates/hreflang	
-/linkTemplates/title	
-/linkTemplates/length	
-/linkTemplates/created	
-/linkTemplates/updated	
-/linkTemplates/uriTemplate	
+/linkTemplates/rel	http://www.iana.org/assignments/relation
+/linkTemplates/type	http://purl.org/dc/terms/format
+/linkTemplates/hreflang	http://purl.org/dc/terms/language
+/linkTemplates/title	http://www.w3.org/2000/01/rdf-schema#label
+/linkTemplates/length	http://purl.org/dc/terms/extent
+/linkTemplates/created	http://purl.org/dc/terms/created
+/linkTemplates/updated	http://purl.org/dc/terms/modified
+/linkTemplates/uriTemplate	http://www.w3.org/ns/oa#hasTarget
 /linkTemplates/varBase	
 /linkTemplates/variables	
