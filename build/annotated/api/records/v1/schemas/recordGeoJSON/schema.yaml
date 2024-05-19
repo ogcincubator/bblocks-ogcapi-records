@@ -13,7 +13,6 @@ properties:
   id:
     type: string
     description: A unique identifier of the catalog record.
-    format: uri
   conformsTo:
     type: array
     items:
