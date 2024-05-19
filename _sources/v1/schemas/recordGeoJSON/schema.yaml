@@ -34,9 +34,6 @@ properties:
       - $ref: bblocks://ogc.geo.common.data_types.geojson#/properties/geometry
   properties:
     type: object
-    required:
-      - type
-      - title
     properties:
       created:
         type: string
