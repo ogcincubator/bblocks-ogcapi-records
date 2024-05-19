@@ -63,9 +63,6 @@ x-defs:
         - $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordsGeoJSON/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson/properties/geometry
       properties:
         type: object
-        required:
-        - type
-        - title
         properties:
           created:
             type: string

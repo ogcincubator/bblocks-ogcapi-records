@@ -57,10 +57,6 @@
     },
     "properties": {
       "type": "object",
-      "required": [
-        "type",
-        "title"
-      ],
       "properties": {
         "created": {
           "type": "string",
