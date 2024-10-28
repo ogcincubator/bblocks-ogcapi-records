@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.api.records.v1.schemas.recordsGeoJSON - Schema for recordsGeoJSON",
+  "bblockName": "Schema for recordsGeoJSON",
+  "bblockId": "ogc.api.records.v1.schemas.recordsGeoJSON",
+  "generated": "2024-10-28T01:55:25.505188+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

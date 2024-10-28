@@ -8,7 +8,7 @@
   "itemClass": "schema",
   "register": "ogcapi-records",
   "version": "0.1",
-  "dateOfLastChange": "2024-05-19",
+  "dateOfLastChange": "2024-10-28",
   "sources": [
     {
       "title": "OGC API Records - Draft",
@@ -25,6 +25,7 @@
   },
   "abstract": "This building block corresponds to the schema for an OGC API Records roles",
   "shaclRules": {},
+  "remoteCacheDir": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/roles/remote_cache/",
   "sourceSchema": "https://github.com/opengeospatial/ogcapi-records/raw/master/core/openapi/schemas/roles.yaml",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/roles/",
   "validationPassed": true,

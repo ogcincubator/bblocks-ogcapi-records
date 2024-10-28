@@ -1,5 +1,5 @@
 Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON
-Generated 2024-05-19T23:53:55.882454+00:00
+Generated 2024-10-28T01:55:25.479284+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

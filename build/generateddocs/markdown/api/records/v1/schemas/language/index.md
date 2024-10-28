@@ -22,7 +22,7 @@ properties:
   name:
     type: string
     minLength: 1
-    description: The untranslated name of of the language.
+    description: The untranslated name of the language.
     example: "\u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC"
   alternate:
     type: string
@@ -40,8 +40,7 @@ properties:
     - rtl
     - ttb
     - btt
-    default:
-    - ltr
+    default: ltr
 
 ```
 
