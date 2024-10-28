@@ -3,13 +3,13 @@ name: OGC API Records
 
 # Short abstract for this collection (optional)
 abstract: |
-  Building Blocks for OGC API Records, components and extensions
+  [Building Blocks](https://ogcincubator.github.io/bblocks-docs/) for OGC API Records, components and extensions
 
 # Description for this collection (optional)
 description: |
-  A set of Building Blocks to allow reuse, testing and documentation of elements and extensions of OGC API Records.
+  A set of Building Blocks to allow reuse, testing and documentation of elements and extensions of OGC API Records. Declares and validates conformance with the OGC API Features (and inherits OGC API Common) baseline.
   
-  These are re-used by the [GeoDCAT implementation](../geodcat-ogc-api-records), binding Records schemas to DCAT and GeoDCAT ontologies.
+  These elements are re-used by the [STAC](](https://ogcincubator.github.io/bblocks-stac/) and [GeoDCAT implementation](../geodcat-ogc-api-records), binding Records schemas to DCAT and GeoDCAT ontologies.
 
 identifier-prefix: ogc.api.records.
 
