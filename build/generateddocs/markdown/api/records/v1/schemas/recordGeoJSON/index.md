@@ -22,16 +22,41 @@ This example is to test records examples.
   "id": "urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone",
   "type": "Feature",
   "time": {
-    "interval": [ "1924-08-17T00:00:00Z", ".."],
+    "interval": [
+      "1924-08-17T00:00:00Z",
+      ".."
+    ],
     "resolution": "P1D"
   },
   "geometry": {
     "type": "Polygon",
-    "coordinates": [ [ [ -180, -90 ], [ -180, 90 ],
-          [ 180, 90 ], [ 180, -90 ], [ -180, -90 ] ] ]
+    "coordinates": [
+      [
+        [
+          -180,
+          -90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          180,
+          -90
+        ],
+        [
+          -180,
+          -90
+        ]
+      ]
+    ]
   },
   "conformsTo": [
-     "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core"
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core"
   ],
   "properties": {
     "created": "2021-02-08T00:00:00Z",
@@ -39,8 +64,15 @@ This example is to test records examples.
     "type": "dataset",
     "title": "Total Ozone - daily observations",
     "description": "A measurement of the total amount of atmospheric ozone in a given column from the surface to the edge of the atmosphere. Ground based instruments such as spectrophotometers and ozonemeters are used to measure results daily",
-    "keywords": [ "total", "ozone", "level 1.0", "column",
-                  "dobson", "brewer", "saoz" ],
+    "keywords": [
+      "total",
+      "ozone",
+      "level 1.0",
+      "column",
+      "dobson",
+      "brewer",
+      "saoz"
+    ],
     "language": {
       "code": "en-CA",
       "name": "English (Canada)"
@@ -65,36 +97,86 @@ This example is to test records examples.
       {
         "name": "World Ozone and Ultraviolet Radiation Data Centre",
         "links": [
-           {
-             "href": "https://woudc.org",
-             "rel": "about",
-             "type": "text/html"
-           }
+          {
+            "href": "https://woudc.org",
+            "rel": "about",
+            "type": "text/html"
+          }
         ],
         "contactInstructions": "SEE PAGE: https://woudc.org/contact.php",
-        "roles": [ "publisher" ]
+        "roles": [
+          "publisher"
+        ]
       }
     ],
     "themes": [
       {
         "concepts": [
-          { "id": "dobson" }, { "id": "brewer" },
-          { "id": "vassey" }, { "id": "pion" },
-          { "id": "microtops" }, { "id": "spectral" },
-          { "id": "hoelper" }, { "id": "saoz" },
-          { "id": "filter" }
+          {
+            "id": "dobson",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson"
+          },
+          {
+            "id": "brewer",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_brewer"
+          },
+          {
+            "id": "vassey",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_vassey"
+          },
+          {
+            "id": "pion",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_pion"
+          },
+          {
+            "id": "microtops",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_microtops"
+          },
+          {
+            "id": "spectral",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_spectral"
+          },
+          {
+            "id": "hoelper",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_hoelper"
+          },
+          {
+            "id": "saoz",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_saoz"
+          },
+          {
+            "id": "filter",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter"
+          }
         ],
         "scheme": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode"
       },
       {
         "concepts": [
-          { "id": "atmosphericComposition" }, { "id": "pollution" },
-          { "id": "observationPlatform" }, { "id": "rocketSounding" }
+          {
+            "id": "atmosphericComposition",
+            "url": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_atmosphericComposition"
+          },
+          {
+            "id": "pollution",
+            "url": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_pollution"
+          },
+          {
+            "id": "observationPlatform",
+            "url": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_observationPlatform"
+          },
+          {
+            "id": "rocketSounding",
+            "url": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_rocketSounding"
+          }
         ],
         "scheme": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode"
       }
     ],
-    "formats": [ "CSV", "GeoJSON" ],
+    "formats": [
+      "CSV",
+      "GeoJSON"
+    ],
     "license": "other"
   },
   "linkTemplates": [
@@ -287,31 +369,40 @@ This example is to test records examples.
       {
         "concepts": [
           {
-            "id": "dobson"
+            "id": "dobson",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson"
           },
           {
-            "id": "brewer"
+            "id": "brewer",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_brewer"
           },
           {
-            "id": "vassey"
+            "id": "vassey",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_vassey"
           },
           {
-            "id": "pion"
+            "id": "pion",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_pion"
           },
           {
-            "id": "microtops"
+            "id": "microtops",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_microtops"
           },
           {
-            "id": "spectral"
+            "id": "spectral",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_spectral"
           },
           {
-            "id": "hoelper"
+            "id": "hoelper",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_hoelper"
           },
           {
-            "id": "saoz"
+            "id": "saoz",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_saoz"
           },
           {
-            "id": "filter"
+            "id": "filter",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter"
           }
         ],
         "scheme": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode"
@@ -319,16 +410,20 @@ This example is to test records examples.
       {
         "concepts": [
           {
-            "id": "atmosphericComposition"
+            "id": "atmosphericComposition",
+            "url": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_atmosphericComposition"
           },
           {
-            "id": "pollution"
+            "id": "pollution",
+            "url": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_pollution"
           },
           {
-            "id": "observationPlatform"
+            "id": "observationPlatform",
+            "url": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_observationPlatform"
           },
           {
-            "id": "rocketSounding"
+            "id": "rocketSounding",
+            "url": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_rocketSounding"
           }
         ],
         "scheme": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode"
@@ -446,36 +541,36 @@ This example is to test records examples.
     rdfs:label "Total Ozone - daily observations" ;
     dct:created "2021-02-08T00:00:00Z" ;
     dct:modified "2021-02-08T00:00:00Z" ;
-    rdfs:seeAlso [ rdfs:label "Static dataset archive file" ;
+    rdfs:seeAlso [ rdfs:label "OGC Web Feature Service (WFS)" ;
+            dct:type "application/xml" ;
+            ns1:relation <http://www.iana.org/assignments/relation/service> ;
+            oa:hasTarget <https://geo.woudc.org/ows> ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
+            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
+        [ rdfs:label "Static dataset archive file" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             dct:type "application/zip" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
             oa:hasTarget <https://woudc.org/archive/Summaries/dataset-snapshots/totalozone.zip> ],
-        [ rdfs:label "This document as HTML" ;
-            dct:type "text/html" ;
-            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;
-            oa:hasTarget <https://woudc.org/data/dataset_info.php?id=totalozone> ],
         [ rdfs:label "Data Search / Download User Interface" ;
             dct:type "text/html" ;
             ns1:relation <http://www.iana.org/assignments/relation/search> ;
             oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ],
+        [ rdfs:label "This document as HTML" ;
+            dct:type "text/html" ;
+            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;
+            oa:hasTarget <https://woudc.org/data/dataset_info.php?id=totalozone> ],
+        [ rdfs:label "Total Ozone Preview Image" ;
+            dct:type "image/png" ;
+            ns1:relation <http://www.iana.org/assignments/relation/preview> ;
+            oa:hasTarget <https://woudc.org/data/preview.png> ],
         [ rdfs:label "Web Accessible Folder (WAF)" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             dct:type "text/html" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
-            oa:hasTarget <https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1> ],
-        [ rdfs:label "OGC Web Feature Service (WFS)" ;
-            dct:type "application/xml" ;
-            ns1:relation <http://www.iana.org/assignments/relation/service> ;
-            oa:hasTarget <https://geo.woudc.org/ows> ],
-        [ rdfs:label "Total Ozone Preview Image" ;
-            dct:type "image/png" ;
-            ns1:relation <http://www.iana.org/assignments/relation/preview> ;
-            oa:hasTarget <https://woudc.org/data/preview.png> ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
-            oa:hasTarget <https://woudc.org/about/data-policy.php> ] ;
+            oa:hasTarget <https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1> ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( -180 -90 ) ( -180 90 ) ( 180 90 ) ( 180 -90 ) ( -180 -90 ) ) ) ] .
 

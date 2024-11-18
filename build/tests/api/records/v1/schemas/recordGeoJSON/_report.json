@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON",
   "bblockName": "Schema for recordGeoJSON",
   "bblockId": "ogc.api.records.v1.schemas.recordGeoJSON",
-  "generated": "2024-10-28T01:55:25.479356+00:00",
+  "generated": "2024-11-18T18:51:57.659333+00:00",
   "result": true,
   "items": [
     {
@@ -13,7 +13,7 @@
         "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/recordGeoJSON/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
-        "language": "json",
+        "language": "application/json",
         "sourceUrl": "https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/examples/json/record.json"
       },
       "result": true,

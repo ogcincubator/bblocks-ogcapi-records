@@ -94,31 +94,40 @@
       {
         "concepts": [
           {
-            "id": "dobson"
+            "id": "dobson",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson"
           },
           {
-            "id": "brewer"
+            "id": "brewer",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_brewer"
           },
           {
-            "id": "vassey"
+            "id": "vassey",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_vassey"
           },
           {
-            "id": "pion"
+            "id": "pion",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_pion"
           },
           {
-            "id": "microtops"
+            "id": "microtops",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_microtops"
           },
           {
-            "id": "spectral"
+            "id": "spectral",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_spectral"
           },
           {
-            "id": "hoelper"
+            "id": "hoelper",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_hoelper"
           },
           {
-            "id": "saoz"
+            "id": "saoz",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_saoz"
           },
           {
-            "id": "filter"
+            "id": "filter",
+            "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter"
           }
         ],
         "scheme": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode"
@@ -126,16 +135,20 @@
       {
         "concepts": [
           {
-            "id": "atmosphericComposition"
+            "id": "atmosphericComposition",
+            "url": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_atmosphericComposition"
           },
           {
-            "id": "pollution"
+            "id": "pollution",
+            "url": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_pollution"
           },
           {
-            "id": "observationPlatform"
+            "id": "observationPlatform",
+            "url": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_observationPlatform"
           },
           {
-            "id": "rocketSounding"
+            "id": "rocketSounding",
+            "url": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_rocketSounding"
           }
         ],
         "scheme": "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode"
