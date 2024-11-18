@@ -1,0 +1,13 @@
+$comment: Adapted from https://github.com/opengeospatial/ogcapi-records/raw/master/core/openapi/schemas/link.yaml
+type: object
+allOf:
+  - $ref: bblocks://ogc.api.records.v1.schemas.linkBase
+  - type: object
+    required:
+      - href
+    properties:
+      href:
+        allOf:
+          - type: string
+            format: uri
+          - $ref: bblocks://ogc.ogc-utils.iri-or-curie#/$defs/IRI

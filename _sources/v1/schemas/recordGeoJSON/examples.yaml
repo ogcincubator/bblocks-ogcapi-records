@@ -5,6 +5,3 @@
   snippets:
     - language: json
       ref: https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/examples/json/record.json
-      # examples/records-example.json
-
-

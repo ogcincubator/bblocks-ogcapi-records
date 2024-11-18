@@ -1,0 +1,20 @@
+{
+  "name": "Schema for link",
+  "status": "under-development",
+  "dateTimeAddition": "2024-11-18T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogcapi-records",
+  "version": "0.1",
+  "dateOfLastChange": "2024-01-23",
+  "sources": [
+    {
+      "title": "OGC API Records - Draft",
+      "link": "https://docs.ogc.org/DRAFTS/20-004.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-records",
+    "records"
+  ],
+  "abstract": "This building block corresponds to the schema for an OGC API Records link"
+}

@@ -142,7 +142,7 @@ properties:
   links:
     type: array
     items:
-      $ref: bblocks://ogc.api.records.v1.schemas.linkBase
+      $ref: bblocks://ogc.api.records.v1.schemas.link
   linkTemplates:
     type: array
     items:
