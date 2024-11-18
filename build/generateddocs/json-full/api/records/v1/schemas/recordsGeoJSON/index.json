@@ -22,9 +22,9 @@
   "abstract": "This building block corresponds to the schema for an OGC API Records recordsGeoJSON",
   "shaclRules": {},
   "dependsOn": [
+    "ogc.api.features.v1.schemas.collections",
     "ogc.api.records.v1.schemas.recordGeoJSON",
-    "ogc.api.records.v1.schemas.linkTemplate",
-    "ogc.api.features.v1.schemas.collections"
+    "ogc.api.records.v1.schemas.linkTemplate"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordsGeoJSON/schema.yaml",

@@ -1,0 +1,9 @@
+path	@id
+/rel	http://www.iana.org/assignments/relation
+/type	http://purl.org/dc/terms/format
+/hreflang	http://purl.org/dc/terms/language
+/title	http://www.w3.org/2000/01/rdf-schema#label
+/length	http://purl.org/dc/terms/extent
+/created	http://purl.org/dc/terms/created
+/updated	http://purl.org/dc/terms/modified
+/href	

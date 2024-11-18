@@ -125,6 +125,7 @@ path	@id
 /features/links/length	http://purl.org/dc/terms/extent
 /features/links/created	http://purl.org/dc/terms/created
 /features/links/updated	http://purl.org/dc/terms/modified
+/features/links/href	http://www.w3.org/ns/oa#hasTarget
 /features/linkTemplates	
 /features/linkTemplates/rel	http://www.iana.org/assignments/relation
 /features/linkTemplates/type	http://purl.org/dc/terms/format
@@ -137,7 +138,6 @@ path	@id
 /features/linkTemplates/varBase	
 /features/linkTemplates/variables	
 /features/bbox	https://purl.org/geojson/vocab#bbox
-/features/links/href	http://www.w3.org/ns/oa#hasTarget
 /features/links/anchor	
 /linkTemplates	
 /linkTemplates/rel	http://www.iana.org/assignments/relation

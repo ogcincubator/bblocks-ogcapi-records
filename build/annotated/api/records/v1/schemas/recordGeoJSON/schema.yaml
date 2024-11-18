@@ -117,7 +117,7 @@ properties:
   links:
     type: array
     items:
-      $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/link/schema.yaml
   linkTemplates:
     type: array
     items:

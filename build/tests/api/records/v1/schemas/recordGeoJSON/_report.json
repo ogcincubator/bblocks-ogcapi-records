@@ -2,9 +2,72 @@
   "title": "Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON",
   "bblockName": "Schema for recordGeoJSON",
   "bblockId": "ogc.api.records.v1.schemas.recordGeoJSON",
-  "generated": "2024-11-18T18:51:57.659333+00:00",
+  "generated": "2024-11-18T19:20:01.511695+00:00",
   "result": true,
   "items": [
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/v1/schemas/recordGeoJSON/tests/record-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/recordGeoJSON/tests/record-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using record-fail.json from test resources"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format=image/png' does not match '^\\\\w+:/*([^:<>{}|\\\\\\\\^`\"\\\\s/]+[^<>{}|\\\\\\\\^`\"\\\\s]*(:[^:<>{}|\\\\\\\\^`\"\\\\s]+)?)?$'",
+              "isError": true,
+              "message": "ValidationError: 'https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format=image/png' does not match '^\\\\w+:/*([^:<>{}|\\\\\\\\^`\"\\\\s/]+[^<>{}|\\\\\\\\^`\"\\\\s]*(:[^:<>{}|\\\\\\\\^`\"\\\\s]+)?)?$'\n\nFailed validating 'pattern' in schema['properties']['links']['items']['allOf'][1]['properties']['href']['allOf'][1]:\n    {'pattern': '^\\\\w+:/*([^:<>{}|\\\\\\\\^`\"\\\\s/]+[^<>{}|\\\\\\\\^`\"\\\\s]*(:[^:<>{}|\\\\\\\\^`\"\\\\s]+)?)?$',\n     'type': 'string'}\n\nOn instance['links'][0]['href']:\n    'https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format=image/png'"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": [
+            {
+              "op": "jsonld-uplift-error",
+              "isError": true,
+              "message": "Error found when uplifting JSON-LD: https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format=image/png does not look like a valid URI, trying to serialize this will break.\n"
+            }
+          ]
+        }
+      ]
+    },
     {
       "source": {
         "type": "EXAMPLE",
@@ -64,8 +127,8 @@
   ],
   "globalErrors": {},
   "counts": {
-    "total": 1,
-    "passed": 1,
+    "total": 2,
+    "passed": 2,
     "failed": 0
   }
 }
