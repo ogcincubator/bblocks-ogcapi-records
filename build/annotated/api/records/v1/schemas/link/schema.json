@@ -16,9 +16,6 @@
             {
               "type": "string",
               "format": "uri"
-            },
-            {
-              "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json#/$defs/IRI"
             }
           ]
         }
