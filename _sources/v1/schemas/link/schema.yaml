@@ -10,4 +10,5 @@ allOf:
         allOf:
           - type: string
             format: uri
-          - $ref: bblocks://ogc.ogc-utils.iri-or-curie#/$defs/IRI
+          # TODO: Re-enable requirement, but also support relative paths (`./collection.yaml`)
+          # - $ref: bblocks://ogc.ogc-utils.iri-or-curie#/$defs/IRI
