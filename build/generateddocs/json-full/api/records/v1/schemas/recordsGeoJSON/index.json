@@ -8,7 +8,7 @@
   "itemClass": "schema",
   "register": "ogcapi-records",
   "version": "0.1",
-  "dateOfLastChange": "2024-11-18",
+  "dateOfLastChange": "2024-01-23",
   "sources": [
     {
       "title": "OGC API Records - Draft",
@@ -23,8 +23,8 @@
   "shaclRules": {},
   "dependsOn": [
     "ogc.api.features.v1.schemas.collections",
-    "ogc.api.records.v1.schemas.recordGeoJSON",
-    "ogc.api.records.v1.schemas.linkTemplate"
+    "ogc.api.records.v1.schemas.linkTemplate",
+    "ogc.api.records.v1.schemas.recordGeoJSON"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordsGeoJSON/schema.yaml",
