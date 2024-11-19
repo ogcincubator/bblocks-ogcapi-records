@@ -27,10 +27,7 @@ properties:
       - null
     - $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/time/schema.yaml
   geometry:
-    oneOf:
-    - enum:
-      - null
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml#/properties/geometry
+    $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml#/properties/geometry
   properties:
     type: object
     properties:

@@ -44,16 +44,7 @@
       ]
     },
     "geometry": {
-      "oneOf": [
-        {
-          "enum": [
-            null
-          ]
-        },
-        {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.json#/properties/geometry"
-        }
-      ]
+      "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.json#/properties/geometry"
     },
     "properties": {
       "type": "object",

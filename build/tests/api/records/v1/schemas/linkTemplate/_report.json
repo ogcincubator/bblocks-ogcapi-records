@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.linkTemplate - Schema for linkTemplate",
   "bblockName": "Schema for linkTemplate",
   "bblockId": "ogc.api.records.v1.schemas.linkTemplate",
-  "generated": "2024-11-19T03:12:48.442145+00:00",
+  "generated": "2024-11-19T10:46:46.564317+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},

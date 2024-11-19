@@ -541,7 +541,17 @@ This example is to test records examples.
     rdfs:label "Total Ozone - daily observations" ;
     dct:created "2021-02-08T00:00:00Z" ;
     dct:modified "2021-02-08T00:00:00Z" ;
-    rdfs:seeAlso [ rdfs:label "Web Accessible Folder (WAF)" ;
+    rdfs:seeAlso [ rdfs:label "Data Search / Download User Interface" ;
+            dct:type "text/html" ;
+            ns1:relation <http://www.iana.org/assignments/relation/search> ;
+            oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
+            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
+        [ rdfs:label "Total Ozone Preview Image" ;
+            dct:type "image/png" ;
+            ns1:relation <http://www.iana.org/assignments/relation/preview> ;
+            oa:hasTarget <https://woudc.org/data/preview.png> ],
+        [ rdfs:label "Web Accessible Folder (WAF)" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             dct:type "text/html" ;
@@ -551,26 +561,16 @@ This example is to test records examples.
             dct:type "text/html" ;
             ns1:relation <http://www.iana.org/assignments/relation/alternate> ;
             oa:hasTarget <https://woudc.org/data/dataset_info.php?id=totalozone> ],
-        [ rdfs:label "Total Ozone Preview Image" ;
-            dct:type "image/png" ;
-            ns1:relation <http://www.iana.org/assignments/relation/preview> ;
-            oa:hasTarget <https://woudc.org/data/preview.png> ],
+        [ rdfs:label "OGC Web Feature Service (WFS)" ;
+            dct:type "application/xml" ;
+            ns1:relation <http://www.iana.org/assignments/relation/service> ;
+            oa:hasTarget <https://geo.woudc.org/ows> ],
         [ rdfs:label "Static dataset archive file" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             dct:type "application/zip" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
-            oa:hasTarget <https://woudc.org/archive/Summaries/dataset-snapshots/totalozone.zip> ],
-        [ rdfs:label "Data Search / Download User Interface" ;
-            dct:type "text/html" ;
-            ns1:relation <http://www.iana.org/assignments/relation/search> ;
-            oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ],
-        [ rdfs:label "OGC Web Feature Service (WFS)" ;
-            dct:type "application/xml" ;
-            ns1:relation <http://www.iana.org/assignments/relation/service> ;
-            oa:hasTarget <https://geo.woudc.org/ows> ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
-            oa:hasTarget <https://woudc.org/about/data-policy.php> ] ;
+            oa:hasTarget <https://woudc.org/archive/Summaries/dataset-snapshots/totalozone.zip> ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( -180 -90 ) ( -180 90 ) ( 180 90 ) ( 180 -90 ) ( -180 -90 ) ) ) ] .
 
@@ -609,10 +609,7 @@ properties:
       - null
     - $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/time/schema.yaml
   geometry:
-    oneOf:
-    - enum:
-      - null
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml#/properties/geometry
+    $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml#/properties/geometry
   properties:
     type: object
     properties:
