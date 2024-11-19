@@ -28,10 +28,8 @@ properties:
         - null
       - $ref: 'bblocks://ogc.api.records.v1.schemas.time'
   geometry:
-    oneOf:
-      - enum:
-        - null
-      - $ref: bblocks://ogc.geo.common.data_types.geojson#/properties/geometry
+    # Original oneOf is removed because geojson geometry accepts null
+    $ref: bblocks://ogc.geo.common.data_types.geojson#/properties/geometry
   properties:
     type: object
     properties:
