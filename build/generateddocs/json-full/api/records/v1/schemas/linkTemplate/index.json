@@ -32,6 +32,9 @@
   "sourceSchema": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/",
+  "rdfData": [
+    "https://ogcincubator.github.io/bblocks-ogcapi-records/data.ttl"
+  ],
   "validationPassed": true,
   "annotatedSchema": "$comment: Adapted from https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/linkTemplate.yaml\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml\n- type: object\n  required:\n  - uriTemplate\n  properties:\n    uriTemplate:\n      type: string\n      description: Supplies a resolvable URI to a remote resource (or resource fragment).\n      example: http://data.example.com/buildings/(building-id}\n      x-jsonld-type: xsd:string\n      x-jsonld-id: http://www.w3.org/ns/oa#hasTarget\n    varBase:\n      type: string\n      description: The base URI to which the variable name can be appended to retrieve\n        the definition of the variable as a JSON Schema fragment.\n      format: url\n    variables:\n      type: object\n      description: This object contains one key per substitution variable in the templated\n        URL.  Each key defines the schema of one substitution variable using a JSON\n        Schema fragment and can thus include things like the data type of the variable,\n        enumerations, minimum values, maximum values, etc.\nx-jsonld-prefixes:\n  oa: http://www.w3.org/ns/oa#\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-records",

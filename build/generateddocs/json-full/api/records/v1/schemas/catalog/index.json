@@ -23,11 +23,11 @@
   "shaclRules": {},
   "dependsOn": [
     "ogc.api.records.v1.schemas.language",
-    "ogc.api.features.v1.schemas.collection",
-    "ogc.api.records.v1.schemas.license",
-    "ogc.api.records.v1.schemas.contact",
     "ogc.api.records.v1.schemas.linkTemplate",
-    "ogc.api.records.v1.schemas.theme"
+    "ogc.api.records.v1.schemas.license",
+    "ogc.api.records.v1.schemas.theme",
+    "ogc.api.features.v1.schemas.collection",
+    "ogc.api.records.v1.schemas.contact"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/catalog/schema.yaml",
@@ -36,6 +36,9 @@
   "sourceSchema": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/catalog/schema.yaml",
   "ldContext": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/catalog/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/catalog/",
+  "rdfData": [
+    "https://ogcincubator.github.io/bblocks-ogcapi-records/data.ttl"
+  ],
   "validationPassed": true,
   "annotatedSchema": "$comment: Adapted from https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/catalog.yaml\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml\n- type: object\n- required:\n  - type\n  - title\n  properties:\n    itemType:\n      description: If this collection is a homogenous collection of records then itemType\n        is a string of fixed value of record. If this collection is a homogenous collection\n        of other catalogs then itemType is a string of fixed value of catalog. If\n        this collection is a heterogenous collection of records and catalogs then\n        itemType is a array indicated that item types of the members of this collections\n        (i.e. record and/or catalog).\n      oneOf:\n      - type: string\n        enum:\n        - record\n        - catalog\n      - type: array\n        items:\n          type: string\n          enum:\n          - record\n          - catalog\n    type:\n      description: Fixed to catalog for collections of records and/or subordinate\n        catalogs.\n      type: string\n      enum:\n      - Catalog\n    keywords:\n      type: array\n      description: The topic or topics of the resource. Typically represented using\n        free-form keywords, tags, key phrases, or classification codes.\n      items:\n        type: string\n    language:\n      description: The language used for textual values in this catalog representation.\n      $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml\n    languages:\n      type: array\n      description: The list of languages in which this catalog object is available.\n      items:\n        $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml\n    recordLanguages:\n      type: array\n      description: The list of languages in which the records of this catalog available.\n      items:\n        $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml\n    created:\n      type: string\n      description: Date of creation of this catalog.\n      format: date-time\n    updated:\n      type: string\n      description: The most recent date on which the catalog was changed.\n      format: date-time\n    contacts:\n      type: array\n      description: A list of contacts qualified by their role(s) in association to\n        the catalog.\n      items:\n        $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml\n    themes:\n      type: array\n      description: A knowledge organization system used to classify this catalog.\n      minItems: 1\n      items:\n        $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/schema.yaml\n    license:\n      $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/license/schema.yaml\n    rights:\n      type: string\n      description: A statement that concerns all rights not addressed by the license\n        such as a copyright statement.\n    conformsTo:\n      type: array\n      description: The extensions/conformance classes this catalog object implements.\n      items:\n        type: string\n    linkTemplates:\n      type: array\n      items:\n        $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkTemplate/schema.yaml\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-records",
