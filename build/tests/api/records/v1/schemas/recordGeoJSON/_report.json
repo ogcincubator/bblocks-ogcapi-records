@@ -2,8 +2,8 @@
   "title": "Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON",
   "bblockName": "Schema for recordGeoJSON",
   "bblockId": "ogc.api.records.v1.schemas.recordGeoJSON",
-  "generated": "2024-12-04T03:16:47.291563+00:00",
-  "result": true,
+  "generated": "2024-12-07T03:15:37.221792+00:00",
+  "result": false,
   "items": [
     {
       "source": {
@@ -77,7 +77,7 @@
         "language": "application/json",
         "sourceUrl": "https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/examples/json/record.json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "FILES",
@@ -114,9 +114,11 @@
           "entries": [
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "{'name': 'CSV', 'mediaType': 'text/csv'} is not of type 'string'",
+              "isError": true,
+              "message": "ValidationError: {'name': 'CSV', 'mediaType': 'text/csv'} is not of type 'string'\n\nFailed validating 'type' in schema['properties']['properties']['properties']['formats']['items']:\n    {'type': 'string'}\n\nOn instance['properties']['formats'][0]:\n    {'mediaType': 'text/csv', 'name': 'CSV'}"
             }
           ]
         }
@@ -126,7 +128,7 @@
   "globalErrors": {},
   "counts": {
     "total": 2,
-    "passed": 2,
-    "failed": 0
+    "passed": 1,
+    "failed": 1
   }
 }

@@ -51,9 +51,9 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2024-12-04T03:16:47.340111+00:00</small>
-                <p class="summary fw-semibold text-success">
-                    Number of passing building blocks: 14 / 14 (100%)
+            <small class="datetime">Generated at 2024-12-07T03:15:37.271071+00:00</small>
+                <p class="summary fw-semibold text-danger">
+                    Number of passing building blocks: 13 / 14 (92.86%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
@@ -282,7 +282,7 @@
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.api.records.v1.schemas.recordGeoJSON" id="bblock-ogc.api.records.v1.schemas.recordGeoJSON">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button"
+                                <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.api\.records\.v1\.schemas\.recordGeoJSON">
                                     <div class="flex-fill">
@@ -290,16 +290,16 @@
                                         <small class="ms-2 bblock-id">ogc.api.records.v1.schemas.recordGeoJSON</small>
                                     </div>
 
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (100% passed)
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (50% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.api.records.v1.schemas.recordGeoJSON">
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.api.records.v1.schemas.recordGeoJSON">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-success">
-                                            Test passed: 2 / 2
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 1 / 2
                                         </p>
                                         <div class="card mb-2 validation-item require-fail">
                                             <div class="card-body">
@@ -347,7 +347,7 @@
                                                     <a href="https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/examples/json/record.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-2">
@@ -358,7 +358,13 @@
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: {&#x27;name&#x27;: &#x27;CSV&#x27;, &#x27;mediaType&#x27;: &#x27;text/csv&#x27;} is not of type &#x27;string&#x27;
+
+Failed validating &#x27;type&#x27; in schema[&#x27;properties&#x27;][&#x27;properties&#x27;][&#x27;properties&#x27;][&#x27;formats&#x27;][&#x27;items&#x27;]:
+    {&#x27;type&#x27;: &#x27;string&#x27;}
+
+On instance[&#x27;properties&#x27;][&#x27;formats&#x27;][0]:
+    {&#x27;mediaType&#x27;: &#x27;text/csv&#x27;, &#x27;name&#x27;: &#x27;CSV&#x27;}</div>
                                                     </div>
                                                 </div>
                                             </div>
