@@ -35,8 +35,6 @@ properties:
   resolution:
     type: string
     description: Minimum time period resolvable in the dataset, as an ISO 8601 duration
-    example:
-    - P1D
 
 ```
 

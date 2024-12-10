@@ -7,25 +7,16 @@
   "properties": {
     "code": {
       "type": "string",
-      "description": "The language tag as per RFC-5646.",
-      "example": [
-        "el"
-      ]
+      "description": "The language tag as per RFC-5646."
     },
     "name": {
       "type": "string",
       "minLength": 1,
-      "description": "The untranslated name of the language.",
-      "example": [
-        "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac"
-      ]
+      "description": "The untranslated name of the language."
     },
     "alternate": {
       "type": "string",
-      "description": "The name of the language in another well-understood language, usually English.",
-      "example": [
-        "Greek"
-      ]
+      "description": "The name of the language in another well-understood language, usually English."
     },
     "dir": {
       "type": "string",

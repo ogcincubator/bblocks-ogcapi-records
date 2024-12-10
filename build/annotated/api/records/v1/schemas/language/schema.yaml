@@ -6,20 +6,14 @@ properties:
   code:
     type: string
     description: The language tag as per RFC-5646.
-    example:
-    - el
   name:
     type: string
     minLength: 1
     description: The untranslated name of the language.
-    example:
-    - "\u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC"
   alternate:
     type: string
     description: The name of the language in another well-understood language, usually
       English.
-    example:
-    - Greek
   dir:
     type: string
     description: The direction for text in this language. The default, `ltr` (left-to-right),
