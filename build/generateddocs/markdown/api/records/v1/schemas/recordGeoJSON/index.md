@@ -56,7 +56,7 @@ This example is to test records examples.
     ]
   },
   "conformsTo": [
-    "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core"
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/conf/record-core"
   ],
   "properties": {
     "created": "2021-02-08T00:00:00Z",
@@ -175,12 +175,60 @@ This example is to test records examples.
     ],
     "formats": [
       {
+        "name": "TEXT",
+        "mediaType": "text/plain"
+      },
+      {
         "name": "CSV",
         "mediaType": "text/csv"
       },
       {
+        "name": "GML2",
+        "mediaType": "text/xml; subtype=gml/2.1.2"
+      },
+      {
+        "name": "GML3",
+        "mediaType": "text/xml; subtype=gml/3.1.1"
+      },
+      {
+        "name": "SHAPEFILE",
+        "mediaType": "application/shapefile"
+      },
+      {
+        "name": "KML",
+        "mediaType": "application/vnd.google-earth.kml+xml"
+      },
+      {
+        "name": "KMZ",
+        "mediaType": "application/vnd.google-earth.kmz"
+      },
+      {
         "name": "GeoJSON",
         "mediaType": "application/geo+json"
+      },
+      {
+        "name": "PNG",
+        "mediaType": "image/png"
+      },
+      {
+        "name": "JPEG",
+        "mediaType": "image/jpeg"
+      },
+      {
+        "name": "GIF",
+        "mediaType": "image/gif"
+      },
+      {
+        "name": "PDF",
+        "mediaType": "application/x-pdf"
+      },
+      {
+        "name": "SVG",
+        "mediaType": "images/svg+xml"
+      },
+      {
+        "name": "TIFF",
+        "mediaType": "images/tiff"
       }
     ],
     "license": "other"
@@ -188,9 +236,8 @@ This example is to test records examples.
   "linkTemplates": [
     {
       "rel": "describes",
-      "type": "image/png",
       "title": "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations",
-      "uriTemplate": "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format=image/png",
+      "uriTemplate": "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}",
       "variables": {
         "bbox": {
           "description": "...",
@@ -223,16 +270,62 @@ This example is to test records examples.
           "format": "integer",
           "minimum": 600,
           "maximum": 5000
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "application/vnd.google-earth.kml+xml",
+            "application/vnd.google-earth.kmz",
+            "image/png",
+            "image/jpeg",
+            "image/gif",
+            "image/png; mode=8bit",
+            "application/x-pdf",
+            "image/svg+xml",
+            "image/tiff"
+          ]
+        }
+      }
+    },
+    {
+      "rel": "describes",
+      "title": "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations",
+      "uriTemplate": "https://geo.woudc.org/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=woudc:totalozone&maxFeatures={maxFeatures}&outputFormat={outputFormat}",
+      "variables": {
+        "maxFeatures": {
+          "type": "number",
+          "default": 10
+        },
+        "outputFormat": {
+          "type": "string",
+          "enum": [
+            "text/xml; subtype=gml/3.1.1",
+            "text/xml; subtype=gml/2.1.2; driver=ogr",
+            "application/json; subtype=geojson",
+            "application/vnd.google-earth.kml+xml",
+            "application/shapefile",
+            "text/plain",
+            "text/csv"
+          ],
+          "default": "text/xml; subtype=gml/2.1.2; driver=ogr"
         }
       }
     }
   ],
   "links": [
     {
-      "rel": "alternate",
-      "type": "text/html",
-      "title": "This document as HTML",
-      "href": "https://woudc.org/data/dataset_info.php?id=totalozone"
+      "rel": "collection",
+      "href": "https://woudc.org/data/dataset_info.php"
+    },
+    {
+      "rel": "describes",
+      "title": "OGC Web Map Service (WMS)",
+      "href": "https://geo.woudc.org/ows?service=WMS&request=GetCapabilities"
+    },
+    {
+      "rel": "describes",
+      "title": "OGC Web Feature Service (WFS)",
+      "href": "https://geo.woudc.org/ows?service=WFS&request=GetCapabilities"
     },
     {
       "rel": "preview",
@@ -249,12 +342,6 @@ This example is to test records examples.
       "updated": "2015-01-23T00:00:00Z"
     },
     {
-      "rel": "search",
-      "type": "text/html",
-      "title": "Data Search / Download User Interface",
-      "href": "https://woudc.org/data/explore.php?dataset=totalozone"
-    },
-    {
       "rel": "enclosure",
       "type": "application/zip",
       "title": "Static dataset archive file",
@@ -263,10 +350,10 @@ This example is to test records examples.
       "updated": "2015-01-23T00:00:00Z"
     },
     {
-      "rel": "service",
-      "type": "application/xml",
-      "title": "OGC Web Feature Service (WFS)",
-      "href": "https://geo.woudc.org/ows"
+      "rel": "search",
+      "type": "text/html",
+      "title": "Data Search / Download User Interface",
+      "href": "https://woudc.org/data/explore.php?dataset=totalozone"
     },
     {
       "rel": "license",
@@ -318,7 +405,7 @@ This example is to test records examples.
     ]
   },
   "conformsTo": [
-    "http://www.opengis.net/spec/ogcapi-records-1/1.0/req/record-core"
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/conf/record-core"
   ],
   "properties": {
     "created": "2021-02-08T00:00:00Z",
@@ -437,12 +524,60 @@ This example is to test records examples.
     ],
     "formats": [
       {
+        "name": "TEXT",
+        "mediaType": "text/plain"
+      },
+      {
         "name": "CSV",
         "mediaType": "text/csv"
       },
       {
+        "name": "GML2",
+        "mediaType": "text/xml; subtype=gml/2.1.2"
+      },
+      {
+        "name": "GML3",
+        "mediaType": "text/xml; subtype=gml/3.1.1"
+      },
+      {
+        "name": "SHAPEFILE",
+        "mediaType": "application/shapefile"
+      },
+      {
+        "name": "KML",
+        "mediaType": "application/vnd.google-earth.kml+xml"
+      },
+      {
+        "name": "KMZ",
+        "mediaType": "application/vnd.google-earth.kmz"
+      },
+      {
         "name": "GeoJSON",
         "mediaType": "application/geo+json"
+      },
+      {
+        "name": "PNG",
+        "mediaType": "image/png"
+      },
+      {
+        "name": "JPEG",
+        "mediaType": "image/jpeg"
+      },
+      {
+        "name": "GIF",
+        "mediaType": "image/gif"
+      },
+      {
+        "name": "PDF",
+        "mediaType": "application/x-pdf"
+      },
+      {
+        "name": "SVG",
+        "mediaType": "images/svg+xml"
+      },
+      {
+        "name": "TIFF",
+        "mediaType": "images/tiff"
       }
     ],
     "license": "other"
@@ -450,9 +585,8 @@ This example is to test records examples.
   "linkTemplates": [
     {
       "rel": "describes",
-      "type": "image/png",
       "title": "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations",
-      "uriTemplate": "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format=image/png",
+      "uriTemplate": "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}",
       "variables": {
         "bbox": {
           "description": "...",
@@ -485,16 +619,62 @@ This example is to test records examples.
           "format": "integer",
           "minimum": 600,
           "maximum": 5000
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "application/vnd.google-earth.kml+xml",
+            "application/vnd.google-earth.kmz",
+            "image/png",
+            "image/jpeg",
+            "image/gif",
+            "image/png; mode=8bit",
+            "application/x-pdf",
+            "image/svg+xml",
+            "image/tiff"
+          ]
+        }
+      }
+    },
+    {
+      "rel": "describes",
+      "title": "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations",
+      "uriTemplate": "https://geo.woudc.org/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=woudc:totalozone&maxFeatures={maxFeatures}&outputFormat={outputFormat}",
+      "variables": {
+        "maxFeatures": {
+          "type": "number",
+          "default": 10
+        },
+        "outputFormat": {
+          "type": "string",
+          "enum": [
+            "text/xml; subtype=gml/3.1.1",
+            "text/xml; subtype=gml/2.1.2; driver=ogr",
+            "application/json; subtype=geojson",
+            "application/vnd.google-earth.kml+xml",
+            "application/shapefile",
+            "text/plain",
+            "text/csv"
+          ],
+          "default": "text/xml; subtype=gml/2.1.2; driver=ogr"
         }
       }
     }
   ],
   "links": [
     {
-      "rel": "alternate",
-      "type": "text/html",
-      "title": "This document as HTML",
-      "href": "https://woudc.org/data/dataset_info.php?id=totalozone"
+      "rel": "collection",
+      "href": "https://woudc.org/data/dataset_info.php"
+    },
+    {
+      "rel": "describes",
+      "title": "OGC Web Map Service (WMS)",
+      "href": "https://geo.woudc.org/ows?service=WMS&request=GetCapabilities"
+    },
+    {
+      "rel": "describes",
+      "title": "OGC Web Feature Service (WFS)",
+      "href": "https://geo.woudc.org/ows?service=WFS&request=GetCapabilities"
     },
     {
       "rel": "preview",
@@ -511,12 +691,6 @@ This example is to test records examples.
       "updated": "2015-01-23T00:00:00Z"
     },
     {
-      "rel": "search",
-      "type": "text/html",
-      "title": "Data Search / Download User Interface",
-      "href": "https://woudc.org/data/explore.php?dataset=totalozone"
-    },
-    {
       "rel": "enclosure",
       "type": "application/zip",
       "title": "Static dataset archive file",
@@ -525,10 +699,10 @@ This example is to test records examples.
       "updated": "2015-01-23T00:00:00Z"
     },
     {
-      "rel": "service",
-      "type": "application/xml",
-      "title": "OGC Web Feature Service (WFS)",
-      "href": "https://geo.woudc.org/ows"
+      "rel": "search",
+      "type": "text/html",
+      "title": "Data Search / Download User Interface",
+      "href": "https://woudc.org/data/explore.php?dataset=totalozone"
     },
     {
       "rel": "license",
@@ -553,36 +727,36 @@ This example is to test records examples.
     rdfs:label "Total Ozone - daily observations" ;
     dct:created "2021-02-08T00:00:00Z" ;
     dct:modified "2021-02-08T00:00:00Z" ;
-    rdfs:seeAlso [ rdfs:label "OGC Web Feature Service (WFS)" ;
-            dct:type "application/xml" ;
-            ns1:relation <http://www.iana.org/assignments/relation/service> ;
-            oa:hasTarget <https://geo.woudc.org/ows> ],
-        [ rdfs:label "Static dataset archive file" ;
+    rdfs:seeAlso [ rdfs:label "Static dataset archive file" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             dct:type "application/zip" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
             oa:hasTarget <https://woudc.org/archive/Summaries/dataset-snapshots/totalozone.zip> ],
-        [ rdfs:label "Total Ozone Preview Image" ;
-            dct:type "image/png" ;
-            ns1:relation <http://www.iana.org/assignments/relation/preview> ;
-            oa:hasTarget <https://woudc.org/data/preview.png> ],
-        [ rdfs:label "This document as HTML" ;
-            dct:type "text/html" ;
-            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;
-            oa:hasTarget <https://woudc.org/data/dataset_info.php?id=totalozone> ],
-        [ rdfs:label "Data Search / Download User Interface" ;
-            dct:type "text/html" ;
-            ns1:relation <http://www.iana.org/assignments/relation/search> ;
-            oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ],
         [ rdfs:label "Web Accessible Folder (WAF)" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             dct:type "text/html" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
             oa:hasTarget <https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1> ],
+        [ rdfs:label "Data Search / Download User Interface" ;
+            dct:type "text/html" ;
+            ns1:relation <http://www.iana.org/assignments/relation/search> ;
+            oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ],
         [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
-            oa:hasTarget <https://woudc.org/about/data-policy.php> ] ;
+            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
+        [ rdfs:label "Total Ozone Preview Image" ;
+            dct:type "image/png" ;
+            ns1:relation <http://www.iana.org/assignments/relation/preview> ;
+            oa:hasTarget <https://woudc.org/data/preview.png> ],
+        [ rdfs:label "OGC Web Map Service (WMS)" ;
+            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
+            oa:hasTarget <https://geo.woudc.org/ows?service=WMS&request=GetCapabilities> ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/collection> ;
+            oa:hasTarget <https://woudc.org/data/dataset_info.php> ],
+        [ rdfs:label "OGC Web Feature Service (WFS)" ;
+            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
+            oa:hasTarget <https://geo.woudc.org/ows?service=WFS&request=GetCapabilities> ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( -180 -90 ) ( -180 90 ) ( 180 90 ) ( 180 -90 ) ( -180 -90 ) ) ) ] .
 

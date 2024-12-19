@@ -1,5 +1,5 @@
 Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON
-Generated 2024-12-16T03:18:22.913530+00:00
+Generated 2024-12-19T03:12:42.434800+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -10,12 +10,12 @@ Output Turtle example_1_1.ttl created
 === JSON Schema ===
 
 ** Validation error **
-ValidationError: {'name': 'CSV', 'mediaType': 'text/csv'} is not of type 'string'
+ValidationError: {'name': 'TEXT', 'mediaType': 'text/plain'} is not of type 'string'
 
 Failed validating 'type' in schema['properties']['properties']['properties']['formats']['items']:
     {'type': 'string'}
 
 On instance['properties']['formats'][0]:
-    {'mediaType': 'text/csv', 'name': 'CSV'}
+    {'mediaType': 'text/plain', 'name': 'TEXT'}
 === End JSON Schema ===
 
