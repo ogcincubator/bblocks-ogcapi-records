@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.roles - Schema for roles",
   "bblockName": "Schema for roles",
   "bblockId": "ogc.api.records.v1.schemas.roles",
-  "generated": "2025-01-16T03:03:39.350067+00:00",
+  "generated": "2025-01-19T03:06:43.045316+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},
