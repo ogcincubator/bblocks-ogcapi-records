@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.license - Schema for license",
   "bblockName": "Schema for license",
   "bblockId": "ogc.api.records.v1.schemas.license",
-  "generated": "2025-01-19T03:06:43.030874+00:00",
+  "generated": "2025-01-22T03:05:27.303225+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},
