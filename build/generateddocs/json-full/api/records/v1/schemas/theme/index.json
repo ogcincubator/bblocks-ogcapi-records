@@ -8,7 +8,7 @@
   "itemClass": "schema",
   "register": "ogcapi-records",
   "version": "0.1",
-  "dateOfLastChange": "2024-01-23",
+  "dateOfLastChange": "2025-02-10",
   "sources": [
     {
       "title": "OGC API Records - Draft",
@@ -28,9 +28,7 @@
   "remoteCacheDir": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/remote_cache/",
   "sourceSchema": "https://github.com/opengeospatial/ogcapi-records/raw/master/core/openapi/schemas/theme.yaml",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/theme/",
-  "rdfData": [
-    "https://ogcincubator.github.io/bblocks-ogcapi-records/data.ttl"
-  ],
+  "rdfData": [],
   "validationPassed": true,
   "annotatedSchema": "type: object\nrequired:\n- concepts\n- scheme\nproperties:\n  concepts:\n    type: array\n    description: One or more entity/concept identifiers from this knowledge system.\n      it is recommended that a resolvable URI be used for each entity/concept identifier.\n    minItems: 1\n    items:\n      type: object\n      required:\n      - id\n      properties:\n        id:\n          type: string\n          description: An identifier for the concept.\n        title:\n          type: string\n          description: A human readable title for the concept.\n        description:\n          type: string\n          description: A human readable description for the concept.\n        url:\n          type: string\n          format: uri\n          description: A URI providing further description of the concept.\n  scheme:\n    type: string\n    description: An identifier for the knowledge organization system used to classify\n      the resource.  It is recommended that the identifier be a resolvable URI.  The\n      list of schemes used in a searchable catalog can be determined by inspecting\n      the server's OpenAPI document or, if the server implements CQL2, by exposing\n      a queryable (e.g. named `scheme`) and enumerating the list of schemes in the\n      queryable's schema definition.\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-records",

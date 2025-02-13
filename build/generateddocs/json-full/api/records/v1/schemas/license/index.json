@@ -8,7 +8,7 @@
   "itemClass": "schema",
   "register": "ogcapi-records",
   "version": "0.1",
-  "dateOfLastChange": "2024-01-23",
+  "dateOfLastChange": "2025-02-10",
   "sources": [
     {
       "title": "OGC API Records - Draft",
@@ -28,9 +28,7 @@
   "remoteCacheDir": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/license/remote_cache/",
   "sourceSchema": "https://github.com/opengeospatial/ogcapi-records/raw/master/core/openapi/schemas/license.yaml",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/license/",
-  "rdfData": [
-    "https://ogcincubator.github.io/bblocks-ogcapi-records/data.ttl"
-  ],
+  "rdfData": [],
   "validationPassed": true,
   "annotatedSchema": "type: string\ndescription: A legal document under which the resource is made available. If the resource\n  is being made available under a common license then use an SPDX license id (https://spdx.org/licenses/).\n  If the resource is being made available under multiple common licenses then use\n  an SPDX license expression v2.3 string (https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/)\n  If the resource is being made available under one or more licenses that haven't\n  been assigned an SPDX identifier or one or more custom licenses then use a string\n  value of 'other' and include one or more links (rel=\"license\") in the `link` section\n  of the record to the file(s) that contains the text of the license(s). There is\n  also the case of a resource that is private or unpublished and is thus unlicensed;\n  in this case do not register such a resource in the catalog in the first place since\n  there is no point in making such a resource discoverable.\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-records",
