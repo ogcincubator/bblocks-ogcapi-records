@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.contact - Schema for contact",
   "bblockName": "Schema for contact",
   "bblockId": "ogc.api.records.v1.schemas.contact",
-  "generated": "2025-02-22T03:04:49.964704+00:00",
+  "generated": "2025-02-25T03:09:21.398520+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},
