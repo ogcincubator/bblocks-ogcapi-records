@@ -1,5 +1,5 @@
 Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON
-Generated 2025-02-28T03:09:59.458805+00:00
+Generated 2025-03-01T03:13:07.283613+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
