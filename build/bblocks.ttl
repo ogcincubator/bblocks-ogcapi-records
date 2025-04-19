@@ -20,7 +20,7 @@
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/catalogs/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-13"^^xsd:date ;
+    dct:modified "2025-04-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/DRAFTS/20-004.html> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-records/> ;
     dcat:keyword "ogcapi-records",
@@ -39,14 +39,14 @@
     rdfs:label "Schema for landingPage" ;
     dct:abstract "This building block corresponds to the schema for an OGC API Records landingPage" ;
     dct:created "2024-01-23T12:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/landingPage/index.json" ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.landingPage" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/landingPage/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.landingPage" ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/landingPage/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-13"^^xsd:date ;
+    dct:modified "2025-04-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/DRAFTS/20-004.html> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-records/> ;
     dcat:keyword "ogcapi-records",
@@ -63,14 +63,14 @@
     rdfs:label "Schema for recordsGeoJSON" ;
     dct:abstract "This building block corresponds to the schema for an OGC API Records recordsGeoJSON" ;
     dct:created "2024-01-23T12:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.recordsGeoJSON" ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/recordsGeoJSON/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/recordsGeoJSON/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.recordsGeoJSON" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/recordsGeoJSON/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-13"^^xsd:date ;
+    dct:modified "2025-04-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/DRAFTS/20-004.html> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-records/> ;
     dcat:keyword "ogcapi-records",
@@ -89,14 +89,14 @@
     rdfs:label "Schema for catalog" ;
     dct:abstract "This building block corresponds to the schema for an OGC API Records catalog" ;
     dct:created "2024-01-23T12:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.catalog" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/catalog/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/catalog/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/catalog/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.catalog" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-13"^^xsd:date ;
+    dct:modified "2025-04-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/DRAFTS/20-004.html> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-records/> ;
     dcat:keyword "ogcapi-records",
@@ -120,12 +120,12 @@
     dct:created "2024-11-18T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/link/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/link/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.link" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.link" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/link/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-13"^^xsd:date ;
+    dct:modified "2025-04-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/DRAFTS/20-004.html> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-records/> ;
     dcat:keyword "ogcapi-records",
@@ -149,7 +149,7 @@
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.recordGeoJSON" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-13"^^xsd:date ;
+    dct:modified "2025-04-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/DRAFTS/20-004.html> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-records/> ;
     dcat:keyword "ogcapi-records",
@@ -174,14 +174,14 @@
     rdfs:label "Schema for roles" ;
     dct:abstract "This building block corresponds to the schema for an OGC API Records roles" ;
     dct:created "2024-01-23T12:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/roles/index.json" ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.roles" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/roles/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.roles" ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/roles/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-13"^^xsd:date ;
+    dct:modified "2025-04-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/DRAFTS/20-004.html> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-records/> ;
     dcat:keyword "ogcapi-records",
@@ -196,14 +196,14 @@
     rdfs:label "Schema for time" ;
     dct:abstract "This building block corresponds to the schema for an OGC API Records time" ;
     dct:created "2024-01-23T12:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/time/index.json" ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/time/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.time" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/time/index.json" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.time" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-13"^^xsd:date ;
+    dct:modified "2025-04-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/DRAFTS/20-004.html> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-records/> ;
     dcat:keyword "ogcapi-records",
@@ -225,7 +225,7 @@
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.contact" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-13"^^xsd:date ;
+    dct:modified "2025-04-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/DRAFTS/20-004.html> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-records/> ;
     dcat:keyword "ogcapi-records",
@@ -243,14 +243,14 @@
     rdfs:label "Schema for language" ;
     dct:abstract "This building block corresponds to the schema for an OGC API Records language" ;
     dct:created "2024-01-23T12:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.language" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/language/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.language" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/language/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-13"^^xsd:date ;
+    dct:modified "2025-04-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/DRAFTS/20-004.html> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-records/> ;
     dcat:keyword "ogcapi-records",
@@ -272,7 +272,7 @@
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/license/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-13"^^xsd:date ;
+    dct:modified "2025-04-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/DRAFTS/20-004.html> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-records/> ;
     dcat:keyword "ogcapi-records",
@@ -287,14 +287,14 @@
     rdfs:label "Schema for linkBase" ;
     dct:abstract "This building block corresponds to the schema for an OGC API Records linkBase" ;
     dct:created "2024-01-23T12:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.linkBase" ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/linkBase/index.json" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/linkBase/index.md" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/linkBase/index.json" ] ;
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.linkBase" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-13"^^xsd:date ;
+    dct:modified "2025-04-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/DRAFTS/20-004.html> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-records/> ;
     dcat:keyword "ogcapi-records",
@@ -311,14 +311,14 @@
     rdfs:label "Schema for theme" ;
     dct:abstract "This building block corresponds to the schema for an OGC API Records theme" ;
     dct:created "2024-01-23T12:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.theme" ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/theme/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/theme/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.theme" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/theme/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-13"^^xsd:date ;
+    dct:modified "2025-04-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/DRAFTS/20-004.html> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-records/> ;
     dcat:keyword "ogcapi-records",
@@ -333,14 +333,14 @@
     rdfs:label "Schema for linkTemplate" ;
     dct:abstract "This building block corresponds to the schema for an OGC API Records linkTemplate" ;
     dct:created "2024-01-23T12:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.linkTemplate" ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/linkTemplate/index.md" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/linkTemplate/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.linkTemplate" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/linkTemplate/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-04-13"^^xsd:date ;
+    dct:modified "2025-04-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/DRAFTS/20-004.html> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-records/> ;
     dcat:keyword "ogcapi-records",
@@ -369,14 +369,14 @@ These elements are re-used by the [STAC](](https://ogcincubator.github.io/bblock
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-04-16T03:17:59.189751"^^xsd:dateTime ;
-    prov:startedAtTime "2025-04-16T03:17:59.105131"^^xsd:dateTime ;
+    prov:endedAtTime "2025-04-19T03:12:58.548609"^^xsd:dateTime ;
+    prov:startedAtTime "2025-04-19T03:12:58.462213"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
         [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:1bba50c11108aab0a88d7d961b1f4f55ed2e8140" ;
+            dct:hasVersion "git:b519527e9cd41869502811cec40c4e607c76b984" ;
             rdfs:seeAlso <https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
