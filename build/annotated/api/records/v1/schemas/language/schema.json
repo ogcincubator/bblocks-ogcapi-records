@@ -16,11 +16,11 @@
     },
     "alternate": {
       "type": "string",
-      "description": "The name of the language in another well-understood language, usually English."
+      "description": "The name of the language in another well-understood language,\nusually English."
     },
     "dir": {
       "type": "string",
-      "description": "The direction for text in this language. The default, `ltr` (left-to-right), represents the most common situation. However, care should be taken to set the value of `dir` appropriately if the language direction is not `ltr`. Other values supported are `rtl` (right-to-left), `ttb` (top-to-bottom), and `btt` (bottom-to-top).",
+      "description": "The direction for text in this language. The default, `ltr`\n(left-to-right), represents the most common situation.\nHowever, care should be taken to set the value of `dir`\nappropriately if the language direction is not `ltr`.\nOther values supported are `rtl` (right-to-left), `ttb`\n(top-to-bottom), and `btt` (bottom-to-top).",
       "enum": [
         "ltr",
         "rtl",

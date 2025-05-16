@@ -1,6 +1,6 @@
 {
-  "type": "object",
   "nullable": true,
+  "type": "object",
   "properties": {
     "date": {
       "type": "string",

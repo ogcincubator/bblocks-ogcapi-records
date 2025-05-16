@@ -10,8 +10,8 @@ This building block corresponds to the schema for an OGC API Records time
 ## Schema
 
 ```yaml
-type: object
 nullable: true
+type: object
 properties:
   date:
     type: string

@@ -10,8 +10,9 @@ This building block corresponds to the schema for an OGC API Records roles
 ## Schema
 
 ```yaml
-description: The list of duties, job functions or permissions assigned by the system
-  and associated with the context of this member.
+description: 'The list of duties, job functions or permissions assigned by the system
+
+  and associated with the context of this member.'
 type: array
 minItems: 1
 items:
