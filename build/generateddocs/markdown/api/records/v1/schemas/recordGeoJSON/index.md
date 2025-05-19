@@ -727,27 +727,27 @@ This example is to test records examples.
     rdfs:label "Total Ozone - daily observations" ;
     dct:created "2021-02-08T00:00:00Z" ;
     dct:modified "2021-02-08T00:00:00Z" ;
-    rdfs:seeAlso [ rdfs:label "Static dataset archive file" ;
+    rdfs:seeAlso [ rdfs:label "Total Ozone Preview Image" ;
+            dct:type "image/png" ;
+            ns1:relation <http://www.iana.org/assignments/relation/preview> ;
+            oa:hasTarget <https://woudc.org/data/preview.png> ],
+        [ rdfs:label "Data Search / Download User Interface" ;
+            dct:type "text/html" ;
+            ns1:relation <http://www.iana.org/assignments/relation/search> ;
+            oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/collection> ;
+            oa:hasTarget <https://woudc.org/data/dataset_info.php> ],
+        [ rdfs:label "OGC Web Feature Service (WFS)" ;
+            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
+            oa:hasTarget <https://geo.woudc.org/ows?service=WFS&request=GetCapabilities> ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
+            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
+        [ rdfs:label "Static dataset archive file" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             dct:type "application/zip" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
             oa:hasTarget <https://woudc.org/archive/Summaries/dataset-snapshots/totalozone.zip> ],
-        [ rdfs:label "Data Search / Download User Interface" ;
-            dct:type "text/html" ;
-            ns1:relation <http://www.iana.org/assignments/relation/search> ;
-            oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ],
-        [ rdfs:label "OGC Web Feature Service (WFS)" ;
-            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            oa:hasTarget <https://geo.woudc.org/ows?service=WFS&request=GetCapabilities> ],
-        [ rdfs:label "Total Ozone Preview Image" ;
-            dct:type "image/png" ;
-            ns1:relation <http://www.iana.org/assignments/relation/preview> ;
-            oa:hasTarget <https://woudc.org/data/preview.png> ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
-            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/collection> ;
-            oa:hasTarget <https://woudc.org/data/dataset_info.php> ],
         [ rdfs:label "Web Accessible Folder (WAF)" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:modified "2015-01-23T00:00:00Z" ;
