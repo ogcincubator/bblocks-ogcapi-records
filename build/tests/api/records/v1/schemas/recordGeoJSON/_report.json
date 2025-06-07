@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON",
   "bblockName": "Schema for recordGeoJSON",
   "bblockId": "ogc.api.records.v1.schemas.recordGeoJSON",
-  "generated": "2025-06-04T03:24:12.523798+00:00",
+  "generated": "2025-06-07T03:22:13.953609+00:00",
   "result": false,
   "items": [
     {
