@@ -8,7 +8,7 @@
   "itemClass": "schema",
   "register": "ogcapi-records",
   "version": "0.1",
-  "dateOfLastChange": "2025-06-25",
+  "dateOfLastChange": "2025-06-28",
   "sources": [
     {
       "title": "OGC API Records - Draft",
@@ -23,8 +23,8 @@
   "shaclRules": {},
   "dependsOn": [
     "ogc.api.features.v1.schemas.collections",
-    "ogc.api.records.v1.schemas.linkTemplate",
-    "ogc.api.records.v1.schemas.catalog"
+    "ogc.api.records.v1.schemas.catalog",
+    "ogc.api.records.v1.schemas.linkTemplate"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/catalogs/schema.yaml",
