@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.language - Schema for language",
   "bblockName": "Schema for language",
   "bblockId": "ogc.api.records.v1.schemas.language",
-  "generated": "2025-07-07T03:30:03.039126+00:00",
+  "generated": "2025-07-10T03:28:15.048667+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},
