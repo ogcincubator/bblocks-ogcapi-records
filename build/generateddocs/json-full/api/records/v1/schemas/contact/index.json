@@ -8,7 +8,7 @@
   "itemClass": "schema",
   "register": "ogcapi-records",
   "version": "0.1",
-  "dateOfLastChange": "2025-08-22",
+  "dateOfLastChange": "2025-08-25",
   "sources": [
     {
       "title": "OGC API Records - Draft",
@@ -20,10 +20,10 @@
     "records"
   ],
   "abstract": "This building block corresponds to the schema for an OGC API Records contact",
-  "shaclRules": {},
+  "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.records.v1.schemas.roles",
-    "ogc.ogc-utils.json-link"
+    "ogc.ogc-utils.json-link",
+    "ogc.api.records.v1.schemas.roles"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml",
