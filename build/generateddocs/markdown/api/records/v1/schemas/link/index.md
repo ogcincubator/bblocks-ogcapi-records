@@ -36,6 +36,10 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "href": {
+      "@type": "@id",
+      "@id": "oa:hasTarget"
+    },
     "rel": {
       "@context": {
         "@base": "http://www.iana.org/assignments/relation/"
@@ -49,10 +53,6 @@ Links to the schema:
     "length": "dct:extent",
     "created": "dct:created",
     "updated": "dct:modified",
-    "href": {
-      "@type": "@id",
-      "@id": "oa:hasTarget"
-    },
     "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dct": "http://purl.org/dc/terms/",

@@ -53,28 +53,6 @@ Links to the schema:
     "hreflang": "dct:language",
     "title": "rdfs:label",
     "length": "dct:extent",
-    "coordinates": {
-      "@container": "@list",
-      "@id": "geojson:coordinates"
-    },
-    "bbox": {
-      "@container": "@list",
-      "@id": "geojson:bbox"
-    },
-    "created": "dct:created",
-    "updated": "dct:modified",
-    "uriTemplate": {
-      "@type": "xsd:string",
-      "@id": "oa:hasTarget"
-    },
-    "id": "@id",
-    "properties": "@nest",
-    "geometry": {
-      "@context": {
-        "type": "@type"
-      },
-      "@id": "geojson:geometry"
-    },
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
@@ -88,11 +66,33 @@ Links to the schema:
       "@container": "@set",
       "@id": "geojson:features"
     },
+    "id": "@id",
+    "properties": "@nest",
+    "geometry": {
+      "@context": {
+        "type": "@type"
+      },
+      "@id": "geojson:geometry"
+    },
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
     "links": {
       "@context": {
         "type": "dct:type"
       },
       "@id": "rdfs:seeAlso"
+    },
+    "coordinates": {
+      "@container": "@list",
+      "@id": "geojson:coordinates"
+    },
+    "created": "dct:created",
+    "updated": "dct:modified",
+    "uriTemplate": {
+      "@type": "xsd:string",
+      "@id": "oa:hasTarget"
     },
     "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

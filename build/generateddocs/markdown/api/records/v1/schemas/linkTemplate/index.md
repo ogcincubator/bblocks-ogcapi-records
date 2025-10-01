@@ -50,6 +50,10 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "href": {
+      "@type": "@id",
+      "@id": "oa:hasTarget"
+    },
     "rel": {
       "@context": {
         "@base": "http://www.iana.org/assignments/relation/"
@@ -63,10 +67,6 @@ Links to the schema:
     "length": "dct:extent",
     "created": "dct:created",
     "updated": "dct:modified",
-    "href": {
-      "@type": "@id",
-      "@id": "oa:hasTarget"
-    },
     "uriTemplate": {
       "@type": "xsd:string",
       "@id": "oa:hasTarget"
