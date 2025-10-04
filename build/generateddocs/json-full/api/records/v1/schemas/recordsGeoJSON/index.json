@@ -8,7 +8,7 @@
   "itemClass": "schema",
   "register": "ogcapi-records",
   "version": "0.1",
-  "dateOfLastChange": "2025-09-28",
+  "dateOfLastChange": "2025-10-01",
   "sources": [
     {
       "title": "OGC API Records - Draft",
@@ -22,8 +22,8 @@
   "abstract": "This building block corresponds to the schema for an OGC API Records recordsGeoJSON",
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.features.v1.schemas.collections",
     "ogc.api.records.v1.schemas.recordGeoJSON",
+    "ogc.api.features.v1.schemas.collections",
     "ogc.api.records.v1.schemas.linkTemplate"
   ],
   "schema": {
