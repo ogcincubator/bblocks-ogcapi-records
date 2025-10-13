@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.catalog - Schema for catalog",
   "bblockName": "Schema for catalog",
   "bblockId": "ogc.api.records.v1.schemas.catalog",
-  "generated": "2025-10-10T03:15:55.741892+00:00",
+  "generated": "2025-10-13T03:21:14.067149+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},
