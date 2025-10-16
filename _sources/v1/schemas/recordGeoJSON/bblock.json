@@ -1,5 +1,6 @@
 {
   "name": "Schema for recordGeoJSON",
+  "highlighted": true,
   "status": "under-development",
   "dateTimeAddition": "2024-01-23T12:40:00+01:00",
   "itemClass": "schema",
