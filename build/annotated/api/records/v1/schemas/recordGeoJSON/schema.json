@@ -129,7 +129,27 @@
           "type": "array",
           "description": "A list of available distributions of the resource.",
           "items": {
-            "type": "string"
+            "type": "object",
+            "anyOf": [
+              {
+                "required": [
+                  "name"
+                ]
+              },
+              {
+                "required": [
+                  "mediaType"
+                ]
+              }
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "mediaType": {
+                "type": "string"
+              }
+            }
           }
         },
         "contacts": {

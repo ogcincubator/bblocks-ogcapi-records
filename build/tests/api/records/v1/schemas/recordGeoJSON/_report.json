@@ -2,8 +2,8 @@
   "title": "Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON",
   "bblockName": "Schema for recordGeoJSON",
   "bblockId": "ogc.api.records.v1.schemas.recordGeoJSON",
-  "generated": "2025-10-13T03:21:14.053201+00:00",
-  "result": false,
+  "generated": "2025-10-16T01:49:37.911024+00:00",
+  "result": true,
   "items": [
     {
       "source": {
@@ -47,9 +47,11 @@
           "entries": [
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'CSV' is not of type 'object'",
+              "isError": true,
+              "message": "ValidationError: 'CSV' is not of type 'object'\n\nFailed validating 'type' in schema['properties']['properties']['properties']['formats']['items']:\n    {'anyOf': [{'required': ['name']}, {'required': ['mediaType']}],\n     'properties': {'mediaType': {'type': 'string'},\n                    'name': {'type': 'string'}},\n     'type': 'object'}\n\nOn instance['properties']['formats'][0]:\n    'CSV'"
             }
           ]
         },
@@ -77,7 +79,7 @@
         "language": "application/json",
         "sourceUrl": "https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/examples/json/record.json"
       },
-      "result": false,
+      "result": true,
       "sections": [
         {
           "name": "FILES",
@@ -114,11 +116,9 @@
           "entries": [
             {
               "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "{'name': 'TEXT', 'mediaType': 'text/plain'} is not of type 'string'",
-              "isError": true,
-              "message": "ValidationError: {'name': 'TEXT', 'mediaType': 'text/plain'} is not of type 'string'\n\nFailed validating 'type' in schema['properties']['properties']['properties']['formats']['items']:\n    {'type': 'string'}\n\nOn instance['properties']['formats'][0]:\n    {'mediaType': 'text/plain', 'name': 'TEXT'}"
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
             }
           ]
         }
@@ -128,7 +128,7 @@
   "globalErrors": {},
   "counts": {
     "total": 2,
-    "passed": 1,
-    "failed": 1
+    "passed": 2,
+    "failed": 0
   }
 }

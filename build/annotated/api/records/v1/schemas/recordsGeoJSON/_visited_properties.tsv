@@ -87,6 +87,8 @@ path	@id
 /features/properties/themes/concepts/url	
 /features/properties/themes/scheme	
 /features/properties/formats	
+/features/properties/formats/name	
+/features/properties/formats/mediaType	
 /features/properties/contacts	
 /features/properties/contacts/identifier	
 /features/properties/contacts/name	
