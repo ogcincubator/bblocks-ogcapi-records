@@ -727,15 +727,19 @@ This example is to test records examples.
     dct:format "Feature",
         "dataset" ;
     dct:modified "2021-02-08T00:00:00Z" ;
-    rdfs:seeAlso [ rdfs:label "OGC Web Map Service (WMS)" ;
-            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            oa:hasTarget <https://geo.woudc.org/ows?service=WMS&request=GetCapabilities> ],
-        [ rdfs:label "Static dataset archive file" ;
+    rdfs:seeAlso [ rdfs:label "Web Accessible Folder (WAF)" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:modified "2015-01-23T00:00:00Z" ;
-            dct:type "application/zip" ;
+            dct:type "text/html" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
-            oa:hasTarget <https://woudc.org/archive/Summaries/dataset-snapshots/totalozone.zip> ],
+            oa:hasTarget <https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1> ],
+        [ rdfs:label "OGC Web Feature Service (WFS)" ;
+            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
+            oa:hasTarget <https://geo.woudc.org/ows?service=WFS&request=GetCapabilities> ],
+        [ rdfs:label "Total Ozone Preview Image" ;
+            dct:type "image/png" ;
+            ns1:relation <http://www.iana.org/assignments/relation/preview> ;
+            oa:hasTarget <https://woudc.org/data/preview.png> ],
         [ rdfs:label "Data Search / Download User Interface" ;
             dct:type "text/html" ;
             ns1:relation <http://www.iana.org/assignments/relation/search> ;
@@ -744,19 +748,15 @@ This example is to test records examples.
             oa:hasTarget <https://woudc.org/about/data-policy.php> ],
         [ ns1:relation <http://www.iana.org/assignments/relation/collection> ;
             oa:hasTarget <https://woudc.org/data/dataset_info.php> ],
-        [ rdfs:label "OGC Web Feature Service (WFS)" ;
-            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            oa:hasTarget <https://geo.woudc.org/ows?service=WFS&request=GetCapabilities> ],
-        [ rdfs:label "Web Accessible Folder (WAF)" ;
+        [ rdfs:label "Static dataset archive file" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:modified "2015-01-23T00:00:00Z" ;
-            dct:type "text/html" ;
+            dct:type "application/zip" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
-            oa:hasTarget <https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1> ],
-        [ rdfs:label "Total Ozone Preview Image" ;
-            dct:type "image/png" ;
-            ns1:relation <http://www.iana.org/assignments/relation/preview> ;
-            oa:hasTarget <https://woudc.org/data/preview.png> ] ;
+            oa:hasTarget <https://woudc.org/archive/Summaries/dataset-snapshots/totalozone.zip> ],
+        [ rdfs:label "OGC Web Map Service (WMS)" ;
+            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
+            oa:hasTarget <https://geo.woudc.org/ows?service=WMS&request=GetCapabilities> ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( -180 -90 ) ( -180 90 ) ( 180 90 ) ( 180 -90 ) ( -180 -90 ) ) ) ] .
 
