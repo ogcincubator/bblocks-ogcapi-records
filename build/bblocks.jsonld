@@ -112,7 +112,7 @@
   "name": "Building Blocks - OGC API Records",
   "abstract": "[Building Blocks](https://ogcincubator.github.io/bblocks-docs/) for OGC API Records, components and extensions\n",
   "description": "A set of Building Blocks to allow reuse, testing and documentation of elements and extensions of OGC API Records. Declares and validates conformance with the OGC API Features (and inherits OGC API Common) baseline.\n\nThese elements are re-used by the [STAC](](https://ogcincubator.github.io/bblocks-stac/) and [GeoDCAT implementation](../geodcat-ogc-api-records), binding Records schemas to DCAT and GeoDCAT ontologies.\n",
-  "modified": "2025-11-01T03:21:56.445403",
+  "modified": "2025-11-04T03:21:01.819896",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"00a37834466db222c53ad4307570ca00cfef3c26",
@@ -137,56 +137,6 @@
   "skos:prefLabel": "Building Blocks - OGC API Records",
   "hasConcepts": [
     {
-      "itemIdentifier": "ogc.api.records.v1.schemas.license",
-      "name": "Schema for license",
-      "status": "under-development",
-      "dateTimeAddition": "2024-01-23T12:40:00+01:00",
-      "itemClass": "schema",
-      "register": "ogcapi-records",
-      "version": "0.1",
-      "dateOfLastChange": "2025-10-31",
-      "sources": [
-        {
-          "title": "OGC API Records - Draft",
-          "link": "https://docs.ogc.org/DRAFTS/20-004.html"
-        }
-      ],
-      "tags": [
-        "ogcapi-records",
-        "records"
-      ],
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/license/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/license/schema.json"
-      },
-      "abstract": "This building block corresponds to the schema for an OGC API Records license",
-      "shaclShapes": {},
-      "remoteCacheDir": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/license/remote_cache/",
-      "sourceSchema": "https://github.com/opengeospatial/ogcapi-records/raw/master/core/openapi/schemas/license.yaml",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/license/",
-      "rdfData": [],
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/license/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/license/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.license"
-        }
-      },
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ]
-    },
-    {
       "itemIdentifier": "ogc.api.records.v1.schemas.theme",
       "name": "Schema for theme",
       "status": "under-development",
@@ -194,7 +144,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-31",
+      "dateOfLastChange": "2025-11-01",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -244,7 +194,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-31",
+      "dateOfLastChange": "2025-11-01",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -287,6 +237,56 @@
       ]
     },
     {
+      "itemIdentifier": "ogc.api.records.v1.schemas.license",
+      "name": "Schema for license",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-23T12:40:00+01:00",
+      "itemClass": "schema",
+      "register": "ogcapi-records",
+      "version": "0.1",
+      "dateOfLastChange": "2025-11-01",
+      "sources": [
+        {
+          "title": "OGC API Records - Draft",
+          "link": "https://docs.ogc.org/DRAFTS/20-004.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-records",
+        "records"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/license/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/license/schema.json"
+      },
+      "abstract": "This building block corresponds to the schema for an OGC API Records license",
+      "shaclShapes": {},
+      "remoteCacheDir": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/license/remote_cache/",
+      "sourceSchema": "https://github.com/opengeospatial/ogcapi-records/raw/master/core/openapi/schemas/license.yaml",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/license/",
+      "rdfData": [],
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/markdown/api/records/v1/schemas/license/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/generateddocs/json-full/api/records/v1/schemas/license/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/bblock/ogc.api.records.v1.schemas.license"
+        }
+      },
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ]
+    },
+    {
       "itemIdentifier": "ogc.api.records.v1.schemas.roles",
       "name": "Schema for roles",
       "status": "under-development",
@@ -294,7 +294,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-31",
+      "dateOfLastChange": "2025-11-01",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -344,7 +344,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-31",
+      "dateOfLastChange": "2025-11-01",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -395,7 +395,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-31",
+      "dateOfLastChange": "2025-11-01",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -445,7 +445,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-31",
+      "dateOfLastChange": "2025-11-01",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -499,7 +499,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-31",
+      "dateOfLastChange": "2025-11-01",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -552,7 +552,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-31",
+      "dateOfLastChange": "2025-11-01",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -606,7 +606,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-31",
+      "dateOfLastChange": "2025-11-01",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -660,7 +660,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-31",
+      "dateOfLastChange": "2025-11-01",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -674,15 +674,15 @@
       "abstract": "This building block corresponds to the schema for an OGC API Records recordGeoJSON",
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.api.records.v1.schemas.contact",
-        "ogc.api.records.v1.schemas.link",
-        "ogc.api.records.v1.schemas.license",
         "ogc.geo.features.feature",
+        "ogc.api.records.v1.schemas.linkTemplate",
+        "ogc.api.records.v1.schemas.link",
+        "ogc.api.records.v1.schemas.theme",
+        "ogc.api.records.v1.schemas.contact",
         "ogc.api.records.v1.schemas.time",
         "ogc.geo.common.data_types.geojson",
-        "ogc.api.records.v1.schemas.theme",
         "ogc.api.records.v1.schemas.language",
-        "ogc.api.records.v1.schemas.linkTemplate"
+        "ogc.api.records.v1.schemas.license"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml",
@@ -722,7 +722,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-31",
+      "dateOfLastChange": "2025-11-01",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -736,12 +736,12 @@
       "abstract": "This building block corresponds to the schema for an OGC API Records catalog",
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.api.records.v1.schemas.contact",
-        "ogc.api.features.v1.schemas.collection",
-        "ogc.api.records.v1.schemas.license",
+        "ogc.api.records.v1.schemas.linkTemplate",
         "ogc.api.records.v1.schemas.theme",
+        "ogc.api.records.v1.schemas.contact",
         "ogc.api.records.v1.schemas.language",
-        "ogc.api.records.v1.schemas.linkTemplate"
+        "ogc.api.features.v1.schemas.collection",
+        "ogc.api.records.v1.schemas.license"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/catalog/schema.yaml",
@@ -780,7 +780,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-31",
+      "dateOfLastChange": "2025-11-01",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -794,9 +794,9 @@
       "abstract": "This building block corresponds to the schema for an OGC API Records recordsGeoJSON",
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.api.features.v1.schemas.collections",
         "ogc.api.records.v1.schemas.linkTemplate",
-        "ogc.api.records.v1.schemas.recordGeoJSON"
+        "ogc.api.records.v1.schemas.recordGeoJSON",
+        "ogc.api.features.v1.schemas.collections"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordsGeoJSON/schema.yaml",
@@ -835,7 +835,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2025-10-31",
+      "dateOfLastChange": "2025-11-01",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -849,8 +849,8 @@
       "abstract": "This building block corresponds to the schema for an OGC API Records catalogs",
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.api.records.v1.schemas.catalog",
         "ogc.api.records.v1.schemas.linkTemplate",
+        "ogc.api.records.v1.schemas.catalog",
         "ogc.api.features.v1.schemas.collections"
       ],
       "schema": {
