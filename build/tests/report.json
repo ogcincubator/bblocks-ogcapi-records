@@ -1,0 +1,326 @@
+{
+  "summary": {
+    "total": 14,
+    "passed": 14,
+    "failed": 0,
+    "result": true
+  },
+  "bblocks": {
+    "ogc.api.records.v1.schemas.license": {
+      "title": "Validation report for ogc.api.records.v1.schemas.license - Schema for license",
+      "bblockName": "Schema for license",
+      "bblockId": "ogc.api.records.v1.schemas.license",
+      "generated": "2025-11-13T03:24:03.153440+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.theme": {
+      "title": "Validation report for ogc.api.records.v1.schemas.theme - Schema for theme",
+      "bblockName": "Schema for theme",
+      "bblockId": "ogc.api.records.v1.schemas.theme",
+      "generated": "2025-11-13T03:24:03.160851+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.language": {
+      "title": "Validation report for ogc.api.records.v1.schemas.language - Schema for language",
+      "bblockName": "Schema for language",
+      "bblockId": "ogc.api.records.v1.schemas.language",
+      "generated": "2025-11-13T03:24:03.167102+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.roles": {
+      "title": "Validation report for ogc.api.records.v1.schemas.roles - Schema for roles",
+      "bblockName": "Schema for roles",
+      "bblockId": "ogc.api.records.v1.schemas.roles",
+      "generated": "2025-11-13T03:24:03.172282+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.linkBase": {
+      "title": "Validation report for ogc.api.records.v1.schemas.linkBase - Schema for linkBase",
+      "bblockName": "Schema for linkBase",
+      "bblockId": "ogc.api.records.v1.schemas.linkBase",
+      "generated": "2025-11-13T03:24:03.179505+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.time": {
+      "title": "Validation report for ogc.api.records.v1.schemas.time - Schema for time",
+      "bblockName": "Schema for time",
+      "bblockId": "ogc.api.records.v1.schemas.time",
+      "generated": "2025-11-13T03:24:03.186707+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.contact": {
+      "title": "Validation report for ogc.api.records.v1.schemas.contact - Schema for contact",
+      "bblockName": "Schema for contact",
+      "bblockId": "ogc.api.records.v1.schemas.contact",
+      "generated": "2025-11-13T03:24:03.200786+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.link": {
+      "title": "Validation report for ogc.api.records.v1.schemas.link - Schema for link",
+      "bblockName": "Schema for link",
+      "bblockId": "ogc.api.records.v1.schemas.link",
+      "generated": "2025-11-13T03:24:03.207382+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.linkTemplate": {
+      "title": "Validation report for ogc.api.records.v1.schemas.linkTemplate - Schema for linkTemplate",
+      "bblockName": "Schema for linkTemplate",
+      "bblockId": "ogc.api.records.v1.schemas.linkTemplate",
+      "generated": "2025-11-13T03:24:03.214498+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.landingPage": {
+      "title": "Validation report for ogc.api.records.v1.schemas.landingPage - Schema for landingPage",
+      "bblockName": "Schema for landingPage",
+      "bblockId": "ogc.api.records.v1.schemas.landingPage",
+      "generated": "2025-11-13T03:24:03.220986+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.recordGeoJSON": {
+      "title": "Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON",
+      "bblockName": "Schema for recordGeoJSON",
+      "bblockId": "ogc.api.records.v1.schemas.recordGeoJSON",
+      "generated": "2025-11-13T03:24:03.549851+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "TEST_RESOURCE",
+            "requireFail": true,
+            "filename": "_sources/v1/schemas/recordGeoJSON/tests/record-fail.json",
+            "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/recordGeoJSON/tests/record-fail.json",
+            "language": "json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "GENERAL",
+              "title": "General",
+              "entries": [
+                {
+                  "op": "require-fail",
+                  "isError": false,
+                  "message": "Test was expected to fail and it did."
+                }
+              ]
+            },
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using record-fail.json from test resources"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "'CSV' is not of type 'object'",
+                  "isError": true,
+                  "message": "ValidationError: 'CSV' is not of type 'object'\n\nFailed validating 'type' in schema['properties']['properties']['properties']['formats']['items']:\n    {'anyOf': [{'required': ['name']}, {'required': ['mediaType']}],\n     'properties': {'mediaType': {'type': 'string'},\n                    'name': {'type': 'string'}},\n     'type': 'object'}\n\nOn instance['properties']['formats'][0]:\n    'CSV'"
+                }
+              ]
+            },
+            {
+              "name": "JSON_LD",
+              "title": "JSON-LD",
+              "entries": [
+                {
+                  "op": "jsonld-uplift-error",
+                  "isError": true,
+                  "message": "Error found when uplifting JSON-LD: https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format=image/png does not look like a valid URI, trying to serialize this will break.\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/api/records/v1/schemas/recordGeoJSON/example_1_1.json",
+            "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/recordGeoJSON/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json",
+            "sourceUrl": "https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/examples/json/record.json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 78,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.catalog": {
+      "title": "Validation report for ogc.api.records.v1.schemas.catalog - Schema for catalog",
+      "bblockName": "Schema for catalog",
+      "bblockId": "ogc.api.records.v1.schemas.catalog",
+      "generated": "2025-11-13T03:24:03.563158+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.recordsGeoJSON": {
+      "title": "Validation report for ogc.api.records.v1.schemas.recordsGeoJSON - Schema for recordsGeoJSON",
+      "bblockName": "Schema for recordsGeoJSON",
+      "bblockId": "ogc.api.records.v1.schemas.recordsGeoJSON",
+      "generated": "2025-11-13T03:24:03.570437+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.catalogs": {
+      "title": "Validation report for ogc.api.records.v1.schemas.catalogs - Schema for catalogs",
+      "bblockName": "Schema for catalogs",
+      "bblockId": "ogc.api.records.v1.schemas.catalogs",
+      "generated": "2025-11-13T03:24:03.577345+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    }
+  }
+}
