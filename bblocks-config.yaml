@@ -22,8 +22,8 @@ imports:
 #   Authentication can be set through the sparql_username and sparql_password GitHub Workflow inputs
 #   (see .github/workflow/process-bblocks.yml)
 #
-# sparql:
-#   push: https://example.com/gsp           # SPARQL Graph Store Protocol endpoint for uploading data
-#   graph: https://my.bblocks.example.com/  # SPARQL Graph where data will be uploaded
-#                                           #  if left empty, the base URL for the publication will be used
-#   query: https://example.com/sparql       # SPARQL query endpoint where data will be available
+sparql:
+  push: https://defs-dev.opengis.net/fuseki/data
+  # graph: https://my.bblocks.example.com/  # SPARQL Graph where data will be uploaded
+                                            #  if left empty, the base URL for the publication will be used
+  query: https://defs-dev.opengis.net/fuseki/sparql
