@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.linkBase - Schema for linkBase",
   "bblockName": "Schema for linkBase",
   "bblockId": "ogc.api.records.v1.schemas.linkBase",
-  "generated": "2025-11-17T18:57:48.929545+00:00",
+  "generated": "2025-11-17T19:07:14.801461+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},
