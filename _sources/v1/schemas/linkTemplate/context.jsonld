@@ -1,9 +1,17 @@
 {
   "@context": {
-    "oa": "http://www.w3.org/ns/oa#",
+    "dct": "http://purl.org/dc/terms/",
+    "rec": "https://www.opengis.net/def/ogc-api/records/",
     "uriTemplate": {
       "@type": "xsd:string",
-      "@id": "oa:hasTarget"
+      "@id": "rec:uriTemplate"
+    },
+    "varBase": "rec:varBase",
+    "variables": {
+      "@id": "rec:hasVariable",
+      "@container": "@index",
+      "@index": "dct:identifier",
+      "@type": "@json"
     }
   }
 }
