@@ -23,7 +23,10 @@
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "x-jsonld-container": "@set",
+      "x-jsonld-id": "http://purl.org/dc/terms/conformsTo",
+      "x-jsonld-type": "@id"
     },
     "type": {
       "type": "string",
@@ -41,7 +44,8 @@
         {
           "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/time/schema.json"
         }
-      ]
+      ],
+      "x-jsonld-id": "http://purl.org/dc/terms/temporal"
     },
     "geometry": {
       "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.json#/properties/geometry"
@@ -52,12 +56,14 @@
         "created": {
           "type": "string",
           "description": "Date of creation of this record.",
-          "format": "date-time"
+          "format": "date-time",
+          "x-jsonld-id": "http://purl.org/dc/terms/created"
         },
         "updated": {
           "type": "string",
           "description": "The most recent date on which the record was changed.",
-          "format": "date-time"
+          "format": "date-time",
+          "x-jsonld-id": "http://purl.org/dc/terms/modified"
         },
         "type": {
           "type": "string",
@@ -66,36 +72,47 @@
         },
         "title": {
           "type": "string",
-          "description": "A human-readable name given to the resource."
+          "description": "A human-readable name given to the resource.",
+          "x-jsonld-container": "@set",
+          "x-jsonld-id": "http://purl.org/dc/terms/title"
         },
         "description": {
           "type": "string",
-          "description": "A free-text account of the resource."
+          "description": "A free-text account of the resource.",
+          "x-jsonld-container": "@set",
+          "x-jsonld-id": "http://purl.org/dc/terms/description"
         },
         "keywords": {
           "type": "array",
           "description": "The topic or topics of the resource. Typically represented using free-form keywords, tags, key phrases, or classification codes.",
           "items": {
             "type": "string"
-          }
+          },
+          "x-jsonld-container": "@set",
+          "x-jsonld-id": "http://www.w3.org/ns/dcat#keyword"
         },
         "language": {
           "description": "The language used for textual values in this record representation.",
-          "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.json"
+          "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.json",
+          "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/language"
         },
         "languages": {
           "type": "array",
           "description": "This list of languages in which this record is available.",
           "items": {
             "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.json"
-          }
+          },
+          "x-jsonld-container": "@set",
+          "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/languages"
         },
         "resourceLanguages": {
           "type": "array",
           "description": "The list of languages in which the resource described by this record is available.",
           "items": {
             "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.json"
-          }
+          },
+          "x-jsonld-container": "@set",
+          "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/resourceLanguages"
         },
         "externalIds": {
           "type": "array",
@@ -105,17 +122,21 @@
             "properties": {
               "scheme": {
                 "type": "string",
-                "description": "A reference to an authority or identifier for a knowledge organization system from which the external identifier was obtained. It is recommended that the identifier be a resolvable URI."
+                "description": "A reference to an authority or identifier for a knowledge organization system from which the external identifier was obtained. It is recommended that the identifier be a resolvable URI.",
+                "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/scheme"
               },
               "value": {
                 "type": "string",
-                "description": "The value of the identifier."
+                "description": "The value of the identifier.",
+                "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/id"
               }
             },
             "required": [
               "value"
             ]
-          }
+          },
+          "x-jsonld-container": "@set",
+          "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/scopedIdentifier"
         },
         "themes": {
           "type": "array",
@@ -123,7 +144,9 @@
           "minItems": 1,
           "items": {
             "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/schema.json"
-          }
+          },
+          "x-jsonld-container": "@set",
+          "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/themes"
         },
         "formats": {
           "type": "array",
@@ -150,21 +173,29 @@
                 "type": "string"
               }
             }
-          }
+          },
+          "x-jsonld-container": "@set",
+          "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/format",
+          "x-jsonld-type": "@id"
         },
         "contacts": {
           "type": "array",
           "description": "A list of contacts qualified by their role(s) in association to the record or the resource described by the record.",
           "items": {
             "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.json"
-          }
+          },
+          "x-jsonld-container": "@set",
+          "x-jsonld-id": "http://www.w3.org/ns/dcat#contactPoint",
+          "x-jsonld-type": "@id"
         },
         "license": {
-          "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/license/schema.json"
+          "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/license/schema.json",
+          "x-jsonld-id": "http://www.w3.org/ns/dcat#license"
         },
         "rights": {
           "type": "string",
-          "description": "A statement that concerns all rights not addressed by the license such as a copyright statement."
+          "description": "A statement that concerns all rights not addressed by the license such as a copyright statement.",
+          "x-jsonld-id": "http://www.w3.org/ns/dcat#rights"
         }
       }
     },
@@ -172,13 +203,30 @@
       "type": "array",
       "items": {
         "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/link/schema.json"
-      }
+      },
+      "x-jsonld-id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
     },
     "linkTemplates": {
       "type": "array",
       "items": {
         "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkTemplate/schema.json"
-      }
+      },
+      "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/hasLinkTemplate"
     }
+  },
+  "x-jsonld-prefixes": {
+    "dct": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "rec": "https://www.opengis.net/def/ogc-api/records/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "w3ctime": "http://www.w3.org/2006/time#",
+    "dctype": "http://purl.org/dc/dcmitype/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
   }
 }

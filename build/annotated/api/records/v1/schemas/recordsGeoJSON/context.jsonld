@@ -13,7 +13,10 @@
     },
     "type": "dct:format",
     "hreflang": "dct:language",
-    "title": "rdfs:label",
+    "title": {
+      "@id": "rdfs:label",
+      "@container": "@set"
+    },
     "length": "dct:extent",
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
@@ -40,27 +43,90 @@
       "@container": "@list",
       "@id": "geojson:bbox"
     },
-    "links": {
-      "@context": {
-        "type": "dct:type"
-      },
-      "@id": "rdfs:seeAlso"
+    "links": "rdfs:seeAlso",
+    "conformsTo": {
+      "@container": "@set",
+      "@id": "dct:conformsTo",
+      "@type": "@id"
     },
+    "time": "dct:temporal",
     "coordinates": {
       "@container": "@list",
       "@id": "geojson:coordinates"
     },
     "created": "dct:created",
     "updated": "dct:modified",
+    "description": {
+      "@container": "@set",
+      "@id": "dct:description"
+    },
+    "keywords": {
+      "@container": "@set",
+      "@id": "dcat:keyword"
+    },
+    "language": "rec:language",
+    "languages": {
+      "@container": "@set",
+      "@id": "rec:languages"
+    },
+    "resourceLanguages": {
+      "@container": "@set",
+      "@id": "rec:resourceLanguages"
+    },
+    "externalIds": {
+      "@context": {
+        "scheme": "rec:scheme",
+        "value": "rec:id"
+      },
+      "@container": "@set",
+      "@id": "rec:scopedIdentifier"
+    },
+    "themes": {
+      "@container": "@set",
+      "@id": "rec:themes"
+    },
+    "formats": {
+      "@container": "@set",
+      "@id": "rec:format",
+      "@type": "@id"
+    },
+    "contacts": {
+      "@context": {
+        "type": "dct:type"
+      },
+      "@container": "@set",
+      "@id": "dcat:contactPoint",
+      "@type": "@id"
+    },
+    "license": "dcat:license",
+    "rights": "dcat:rights",
+    "linkTemplates": "rec:hasLinkTemplate",
     "uriTemplate": {
       "@type": "xsd:string",
-      "@id": "oa:hasTarget"
+      "@id": "rec:uriTemplate"
+    },
+    "varBase": "rec:varBase",
+    "variables": {
+      "@id": "rec:hasVariable",
+      "@container": "@index",
+      "@index": "dct:identifier",
+      "@type": "@json"
     },
     "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dct": "http://purl.org/dc/terms/",
     "geojson": "https://purl.org/geojson/vocab#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "rec": "https://www.opengis.net/def/ogc-api/records/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "w3ctime": "http://www.w3.org/2006/time#",
+    "dctype": "http://purl.org/dc/dcmitype/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
     "@version": 1.1
   }
 }

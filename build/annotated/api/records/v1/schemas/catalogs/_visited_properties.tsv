@@ -102,9 +102,9 @@ path	@id
 /collections/linkTemplates/length	http://purl.org/dc/terms/extent
 /collections/linkTemplates/created	http://purl.org/dc/terms/created
 /collections/linkTemplates/updated	http://purl.org/dc/terms/modified
-/collections/linkTemplates/uriTemplate	http://www.w3.org/ns/oa#hasTarget
-/collections/linkTemplates/varBase	
-/collections/linkTemplates/variables	
+/collections/linkTemplates/uriTemplate	https://www.opengis.net/def/ogc-api/records/uriTemplate
+/collections/linkTemplates/varBase	https://www.opengis.net/def/ogc-api/records/varBase
+/collections/linkTemplates/variables	https://www.opengis.net/def/ogc-api/records/hasVariable
 /linkTemplates	
 /linkTemplates/rel	http://www.iana.org/assignments/relation
 /linkTemplates/type	http://purl.org/dc/terms/format
@@ -113,6 +113,6 @@ path	@id
 /linkTemplates/length	http://purl.org/dc/terms/extent
 /linkTemplates/created	http://purl.org/dc/terms/created
 /linkTemplates/updated	http://purl.org/dc/terms/modified
-/linkTemplates/uriTemplate	http://www.w3.org/ns/oa#hasTarget
-/linkTemplates/varBase	
-/linkTemplates/variables	
+/linkTemplates/uriTemplate	https://www.opengis.net/def/ogc-api/records/uriTemplate
+/linkTemplates/varBase	https://www.opengis.net/def/ogc-api/records/varBase
+/linkTemplates/variables	https://www.opengis.net/def/ogc-api/records/hasVariable

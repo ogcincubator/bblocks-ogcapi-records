@@ -93,6 +93,6 @@ path	@id
 /linkTemplates/length	http://purl.org/dc/terms/extent
 /linkTemplates/created	http://purl.org/dc/terms/created
 /linkTemplates/updated	http://purl.org/dc/terms/modified
-/linkTemplates/uriTemplate	http://www.w3.org/ns/oa#hasTarget
-/linkTemplates/varBase	
-/linkTemplates/variables	
+/linkTemplates/uriTemplate	https://www.opengis.net/def/ogc-api/records/uriTemplate
+/linkTemplates/varBase	https://www.opengis.net/def/ogc-api/records/varBase
+/linkTemplates/variables	https://www.opengis.net/def/ogc-api/records/hasVariable

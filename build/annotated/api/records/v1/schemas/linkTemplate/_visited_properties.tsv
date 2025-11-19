@@ -6,6 +6,6 @@ path	@id
 /length	http://purl.org/dc/terms/extent
 /created	http://purl.org/dc/terms/created
 /updated	http://purl.org/dc/terms/modified
-/uriTemplate	http://www.w3.org/ns/oa#hasTarget
-/varBase	
-/variables	
+/uriTemplate	https://www.opengis.net/def/ogc-api/records/uriTemplate
+/varBase	https://www.opengis.net/def/ogc-api/records/varBase
+/variables	https://www.opengis.net/def/ogc-api/records/hasVariable

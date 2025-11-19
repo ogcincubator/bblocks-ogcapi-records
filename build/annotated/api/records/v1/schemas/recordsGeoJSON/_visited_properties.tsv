@@ -49,47 +49,47 @@ path	@id
 /features/links/hreflang	http://purl.org/dc/terms/language
 /features/links/title	http://www.w3.org/2000/01/rdf-schema#label
 /features/links/length	http://purl.org/dc/terms/extent
-/features/conformsTo	
-/features/time	
+/features/conformsTo	http://purl.org/dc/terms/conformsTo
+/features/time	http://purl.org/dc/terms/temporal
 /features/time/date	
 /features/time/timestamp	
 /features/time/interval	
 /features/time/resolution	
-/features/properties/created	
-/features/properties/updated	
+/features/properties/created	http://purl.org/dc/terms/created
+/features/properties/updated	http://purl.org/dc/terms/modified
 /features/properties/type	
-/features/properties/title	
-/features/properties/description	
-/features/properties/keywords	
-/features/properties/language	
+/features/properties/title	http://purl.org/dc/terms/title
+/features/properties/description	http://purl.org/dc/terms/description
+/features/properties/keywords	http://www.w3.org/ns/dcat#keyword
+/features/properties/language	https://www.opengis.net/def/ogc-api/records/language
 /features/properties/language/code	
 /features/properties/language/name	
 /features/properties/language/alternate	
 /features/properties/language/dir	
-/features/properties/languages	
+/features/properties/languages	https://www.opengis.net/def/ogc-api/records/languages
 /features/properties/languages/code	
 /features/properties/languages/name	
 /features/properties/languages/alternate	
 /features/properties/languages/dir	
-/features/properties/resourceLanguages	
+/features/properties/resourceLanguages	https://www.opengis.net/def/ogc-api/records/resourceLanguages
 /features/properties/resourceLanguages/code	
 /features/properties/resourceLanguages/name	
 /features/properties/resourceLanguages/alternate	
 /features/properties/resourceLanguages/dir	
-/features/properties/externalIds	
-/features/properties/externalIds/scheme	
-/features/properties/externalIds/value	
-/features/properties/themes	
+/features/properties/externalIds	https://www.opengis.net/def/ogc-api/records/scopedIdentifier
+/features/properties/externalIds/scheme	https://www.opengis.net/def/ogc-api/records/scheme
+/features/properties/externalIds/value	https://www.opengis.net/def/ogc-api/records/id
+/features/properties/themes	https://www.opengis.net/def/ogc-api/records/themes
 /features/properties/themes/concepts	
 /features/properties/themes/concepts/id	
 /features/properties/themes/concepts/title	
 /features/properties/themes/concepts/description	
 /features/properties/themes/concepts/url	
 /features/properties/themes/scheme	
-/features/properties/formats	
+/features/properties/formats	https://www.opengis.net/def/ogc-api/records/format
 /features/properties/formats/name	
 /features/properties/formats/mediaType	
-/features/properties/contacts	
+/features/properties/contacts	http://www.w3.org/ns/dcat#contactPoint
 /features/properties/contacts/identifier	
 /features/properties/contacts/name	
 /features/properties/contacts/position	
@@ -126,11 +126,11 @@ path	@id
 /features/properties/contacts/hoursOfService	
 /features/properties/contacts/contactInstructions	
 /features/properties/contacts/roles	
-/features/properties/license	
-/features/properties/rights	
+/features/properties/license	http://www.w3.org/ns/dcat#license
+/features/properties/rights	http://www.w3.org/ns/dcat#rights
 /features/links/created	http://purl.org/dc/terms/created
 /features/links/updated	http://purl.org/dc/terms/modified
-/features/linkTemplates	
+/features/linkTemplates	https://www.opengis.net/def/ogc-api/records/hasLinkTemplate
 /features/linkTemplates/rel	http://www.iana.org/assignments/relation
 /features/linkTemplates/type	http://purl.org/dc/terms/format
 /features/linkTemplates/hreflang	http://purl.org/dc/terms/language
@@ -138,9 +138,9 @@ path	@id
 /features/linkTemplates/length	http://purl.org/dc/terms/extent
 /features/linkTemplates/created	http://purl.org/dc/terms/created
 /features/linkTemplates/updated	http://purl.org/dc/terms/modified
-/features/linkTemplates/uriTemplate	http://www.w3.org/ns/oa#hasTarget
-/features/linkTemplates/varBase	
-/features/linkTemplates/variables	
+/features/linkTemplates/uriTemplate	https://www.opengis.net/def/ogc-api/records/uriTemplate
+/features/linkTemplates/varBase	https://www.opengis.net/def/ogc-api/records/varBase
+/features/linkTemplates/variables	https://www.opengis.net/def/ogc-api/records/hasVariable
 /linkTemplates	
 /linkTemplates/rel	http://www.iana.org/assignments/relation
 /linkTemplates/type	http://purl.org/dc/terms/format
@@ -149,6 +149,6 @@ path	@id
 /linkTemplates/length	http://purl.org/dc/terms/extent
 /linkTemplates/created	http://purl.org/dc/terms/created
 /linkTemplates/updated	http://purl.org/dc/terms/modified
-/linkTemplates/uriTemplate	http://www.w3.org/ns/oa#hasTarget
-/linkTemplates/varBase	
-/linkTemplates/variables	
+/linkTemplates/uriTemplate	https://www.opengis.net/def/ogc-api/records/uriTemplate
+/linkTemplates/varBase	https://www.opengis.net/def/ogc-api/records/varBase
+/linkTemplates/variables	https://www.opengis.net/def/ogc-api/records/hasVariable

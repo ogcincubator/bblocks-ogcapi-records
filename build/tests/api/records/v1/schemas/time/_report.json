@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.time - Schema for time",
   "bblockName": "Schema for time",
   "bblockId": "ogc.api.records.v1.schemas.time",
-  "generated": "2025-11-19T03:22:46.927731+00:00",
+  "generated": "2025-11-19T11:15:13.982395+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},
