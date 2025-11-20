@@ -11,21 +11,11 @@ path	@id
 /links/title	http://www.w3.org/2000/01/rdf-schema#label
 /links/length	http://purl.org/dc/terms/extent
 /extent	
-/extent/spatial	
-/extent/spatial/bbox	
-/extent/spatial/crs	
-/extent/temporal	
-/extent/temporal/interval	
-/extent/temporal/trs	
 /itemType	
 /crs	
 /type	
 /keywords	
 /language	
-/language/code	
-/language/name	
-/language/alternate	
-/language/dir	
 /languages	
 /languages/code	
 /languages/name	

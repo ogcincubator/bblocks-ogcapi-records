@@ -73,7 +73,11 @@ Links to the schema:
     "properties": "@nest",
     "geometry": {
       "@context": {
-        "type": "@type"
+        "type": "@type",
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        }
       },
       "@id": "geojson:geometry"
     },
@@ -88,10 +92,6 @@ Links to the schema:
       "@type": "@id"
     },
     "time": "dct:temporal",
-    "coordinates": {
-      "@container": "@list",
-      "@id": "geojson:coordinates"
-    },
     "created": "dct:created",
     "updated": "dct:modified",
     "description": {
