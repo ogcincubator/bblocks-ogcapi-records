@@ -91,7 +91,11 @@
     "formats": {
       "@container": "@set",
       "@id": "rec:format",
-      "@type": "@id"
+      "@type": "@id",
+      "@context": {
+        "name": "rec:name",
+        "mediaType": "rec:mediaType"
+      }
     },
     "contacts": {
       "@container": "@set",
