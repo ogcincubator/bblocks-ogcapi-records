@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON",
   "bblockName": "Schema for recordGeoJSON",
   "bblockId": "ogc.api.records.v1.schemas.recordGeoJSON",
-  "generated": "2025-11-22T03:18:53.520458+00:00",
+  "generated": "2025-11-24T09:48:56.196364+00:00",
   "result": true,
   "items": [
     {
@@ -51,7 +51,7 @@
               "exception": "ValidationError",
               "errorMessage": "'CSV' is not of type 'object'",
               "isError": true,
-              "message": "ValidationError: 'CSV' is not of type 'object'\n\nFailed validating 'type' in schema['properties']['properties']['properties']['formats']['items']:\n    {'anyOf': [{'required': ['name']}, {'required': ['mediaType']}],\n     'properties': {'mediaType': {'type': 'string'},\n                    'name': {'type': 'string'}},\n     'type': 'object'}\n\nOn instance['properties']['formats'][0]:\n    'CSV'"
+              "message": "ValidationError: 'CSV' is not of type 'object'\n\nFailed validating 'type' in schema['properties']['properties']['properties']['formats']['items']:\n    {'anyOf': [{'required': ['name']}, {'required': ['mediaType']}],\n     'properties': {'mediaType': {'type': 'string',\n                                  'x-jsonld-id': 'https://www.opengis.net/def/ogc-api/records/mediaType'},\n                    'name': {'type': 'string',\n                             'x-jsonld-id': 'https://www.opengis.net/def/ogc-api/records/name'}},\n     'type': 'object'}\n\nOn instance['properties']['formats'][0]:\n    'CSV'"
             }
           ]
         },
@@ -104,7 +104,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 126,
+              "size": 154,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
             }

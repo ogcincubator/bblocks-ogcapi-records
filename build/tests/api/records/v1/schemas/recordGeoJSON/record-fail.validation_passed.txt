@@ -1,5 +1,5 @@
 Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON
-Generated 2025-11-22T03:18:53.498944+00:00
+Generated 2025-11-24T09:48:56.172806+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -16,8 +16,10 @@ ValidationError: 'CSV' is not of type 'object'
 
 Failed validating 'type' in schema['properties']['properties']['properties']['formats']['items']:
     {'anyOf': [{'required': ['name']}, {'required': ['mediaType']}],
-     'properties': {'mediaType': {'type': 'string'},
-                    'name': {'type': 'string'}},
+     'properties': {'mediaType': {'type': 'string',
+                                  'x-jsonld-id': 'https://www.opengis.net/def/ogc-api/records/mediaType'},
+                    'name': {'type': 'string',
+                             'x-jsonld-id': 'https://www.opengis.net/def/ogc-api/records/name'}},
      'type': 'object'}
 
 On instance['properties']['formats'][0]:

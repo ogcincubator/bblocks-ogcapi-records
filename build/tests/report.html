@@ -51,7 +51,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2025-11-22T03:18:53.561595+00:00</small>
+            <small class="datetime">Generated at 2025-11-24T09:48:56.237303+00:00</small>
                 <p class="summary fw-semibold text-success">
                     Number of passing building blocks: 14 / 14 (100%)
                 </p>
@@ -60,28 +60,6 @@
                 <a href="#" class="collapse-all">Collapse all</a>
             </div>
                 <div class="accordion mt-2" id="bblock-reports">
-                        <div class="accordion-item bblock-report" data-bblock-id="ogc.api.records.v1.schemas.theme" id="bblock-ogc.api.records.v1.schemas.theme">
-                            <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-ogc\.api\.records\.v1\.schemas\.theme">
-                                    <div class="flex-fill">
-                                        Schema for theme
-                                        <small class="ms-2 bblock-id">ogc.api.records.v1.schemas.theme</small>
-                                    </div>
-
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (no tests)
-                                    </span>
-                                </button>
-                            </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.api.records.v1.schemas.theme">
-                                <div class="accordion-body">
-                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.api.records.v1.schemas.license" id="bblock-ogc.api.records.v1.schemas.license">
                             <h2 class="accordion-header bblock-title">
                                 <button class="accordion-button collapsed" type="button"
@@ -121,6 +99,28 @@
                                 </button>
                             </h2>
                             <div class="accordion-collapse collapse " id="bblock-collapse-ogc.api.records.v1.schemas.language">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.api.records.v1.schemas.theme" id="bblock-ogc.api.records.v1.schemas.theme">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.api\.records\.v1\.schemas\.theme">
+                                    <div class="flex-fill">
+                                        Schema for theme
+                                        <small class="ms-2 bblock-id">ogc.api.records.v1.schemas.theme</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.api.records.v1.schemas.theme">
                                 <div class="accordion-body">
                                         <div class="alert alert-info mb-0">No tests were found for this building block.</div>
                                 </div>
@@ -330,8 +330,10 @@
 
 Failed validating &#x27;type&#x27; in schema[&#x27;properties&#x27;][&#x27;properties&#x27;][&#x27;properties&#x27;][&#x27;formats&#x27;][&#x27;items&#x27;]:
     {&#x27;anyOf&#x27;: [{&#x27;required&#x27;: [&#x27;name&#x27;]}, {&#x27;required&#x27;: [&#x27;mediaType&#x27;]}],
-     &#x27;properties&#x27;: {&#x27;mediaType&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
-                    &#x27;name&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;}},
+     &#x27;properties&#x27;: {&#x27;mediaType&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;,
+                                  &#x27;x-jsonld-id&#x27;: &#x27;https://www.opengis.net/def/ogc-api/records/mediaType&#x27;},
+                    &#x27;name&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;,
+                             &#x27;x-jsonld-id&#x27;: &#x27;https://www.opengis.net/def/ogc-api/records/name&#x27;}},
      &#x27;type&#x27;: &#x27;object&#x27;}
 
 On instance[&#x27;properties&#x27;][&#x27;formats&#x27;][0]:

@@ -167,10 +167,12 @@
             ],
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/name"
               },
               "mediaType": {
-                "type": "string"
+                "type": "string",
+                "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/mediaType"
               }
             }
           },

@@ -81,8 +81,8 @@ path	@id
 /features/properties/themes/concepts/url	
 /features/properties/themes/scheme	
 /features/properties/formats	https://www.opengis.net/def/ogc-api/records/format
-/features/properties/formats/name	
-/features/properties/formats/mediaType	
+/features/properties/formats/name	https://www.opengis.net/def/ogc-api/records/name
+/features/properties/formats/mediaType	https://www.opengis.net/def/ogc-api/records/mediaType
 /features/properties/contacts	http://www.w3.org/ns/dcat#contactPoint
 /features/properties/contacts/identifier	
 /features/properties/contacts/name	

@@ -130,8 +130,10 @@ properties:
           properties:
             name:
               type: string
+              x-jsonld-id: https://www.opengis.net/def/ogc-api/records/name
             mediaType:
               type: string
+              x-jsonld-id: https://www.opengis.net/def/ogc-api/records/mediaType
         x-jsonld-container: '@set'
         x-jsonld-id: https://www.opengis.net/def/ogc-api/records/format
         x-jsonld-type: '@id'
