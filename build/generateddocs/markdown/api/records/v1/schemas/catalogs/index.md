@@ -3,7 +3,7 @@
 
 `ogc.api.records.v1.schemas.catalogs` *v0.1*
 
-This building block corresponds to the schema for an OGC API Records catalogs
+A collection schema allowing This building block corresponds to the schema for an OGC API Records: Catalogs
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
@@ -52,6 +52,17 @@ Links to the schema:
     "hreflang": "dct:language",
     "title": "rdfs:label",
     "length": "dct:extent",
+    "concepts": {
+      "@context": {
+        "id": "thns:id",
+        "title": "dct:title",
+        "description": "dct:description",
+        "url": "@id"
+      },
+      "@id": "thns:concepts",
+      "@container": "@set"
+    },
+    "scheme": "thns:scheme",
     "created": "dct:created",
     "updated": "dct:modified",
     "uriTemplate": {
@@ -68,6 +79,7 @@ Links to the schema:
     "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dct": "http://purl.org/dc/terms/",
+    "thns": "https://w3id.org/ogc/stac/themes/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rec": "https://www.opengis.net/def/ogc-api/records/",
     "@version": 1.1

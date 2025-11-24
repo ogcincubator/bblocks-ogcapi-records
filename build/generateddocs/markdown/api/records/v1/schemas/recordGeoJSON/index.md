@@ -722,6 +722,7 @@ This example is to test records examples.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rec: <https://www.opengis.net/def/ogc-api/records/> .
+@prefix thns: <https://w3id.org/ogc/stac/themes/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone> a <file:///github/workspace/dataset>,
@@ -732,36 +733,36 @@ This example is to test records examples.
     dct:modified "2021-02-08T00:00:00Z" ;
     dct:temporal [ ] ;
     dct:title "Total Ozone - daily observations" ;
-    rdfs:seeAlso [ rdfs:label "OGC Web Map Service (WMS)" ;
-            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            oa:hasTarget <https://geo.woudc.org/ows?service=WMS&request=GetCapabilities> ],
+    rdfs:seeAlso [ rdfs:label "Total Ozone Preview Image" ;
+            dct:format "image/png" ;
+            ns1:relation <http://www.iana.org/assignments/relation/preview> ;
+            oa:hasTarget <https://woudc.org/data/preview.png> ],
         [ rdfs:label "Static dataset archive file" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:format "application/zip" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
             oa:hasTarget <https://woudc.org/archive/Summaries/dataset-snapshots/totalozone.zip> ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
-            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
-        [ rdfs:label "Total Ozone Preview Image" ;
-            dct:format "image/png" ;
-            ns1:relation <http://www.iana.org/assignments/relation/preview> ;
-            oa:hasTarget <https://woudc.org/data/preview.png> ],
+        [ rdfs:label "OGC Web Map Service (WMS)" ;
+            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
+            oa:hasTarget <https://geo.woudc.org/ows?service=WMS&request=GetCapabilities> ],
         [ rdfs:label "Web Accessible Folder (WAF)" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:format "text/html" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
             oa:hasTarget <https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1> ],
-        [ rdfs:label "Data Search / Download User Interface" ;
-            dct:format "text/html" ;
-            ns1:relation <http://www.iana.org/assignments/relation/search> ;
-            oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/collection> ;
+            oa:hasTarget <https://woudc.org/data/dataset_info.php> ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
+            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
         [ rdfs:label "OGC Web Feature Service (WFS)" ;
             ns1:relation <http://www.iana.org/assignments/relation/describes> ;
             oa:hasTarget <https://geo.woudc.org/ows?service=WFS&request=GetCapabilities> ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/collection> ;
-            oa:hasTarget <https://woudc.org/data/dataset_info.php> ] ;
+        [ rdfs:label "Data Search / Download User Interface" ;
+            dct:format "text/html" ;
+            ns1:relation <http://www.iana.org/assignments/relation/search> ;
+            oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ] ;
     dcat:contactPoint [ rdfs:seeAlso [ dct:format "text/html" ;
                     ns1:relation <http://www.iana.org/assignments/relation/about> ;
                     oa:hasTarget <https://woudc.org> ] ] ;
@@ -775,49 +776,88 @@ This example is to test records examples.
     dcat:license "other" ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( -180 -90 ) ( -180 90 ) ( 180 90 ) ( 180 -90 ) ( -180 -90 ) ) ) ] ;
-    rec:format [ rec:mediaType "application/vnd.google-earth.kml+xml" ;
-            rec:name "KML" ],
-        [ rec:mediaType "application/vnd.shp" ;
-            rec:name "SHAPEFILE" ],
+    rec:format [ rec:mediaType "image/svg+xml" ;
+            rec:name "SVG" ],
         [ rec:mediaType "application/vnd.google-earth.kmz" ;
             rec:name "KMZ" ],
-        [ rec:mediaType "image/tiff" ;
-            rec:name "TIFF" ],
-        [ rec:mediaType "image/gif" ;
-            rec:name "GIF" ],
-        [ rec:mediaType "application/geo+json" ;
-            rec:name "GeoJSON" ],
-        [ rec:mediaType "image/jpeg" ;
-            rec:name "JPEG" ],
-        [ rec:mediaType "application/x-pdf" ;
-            rec:name "PDF" ],
-        [ rec:mediaType "text/xml; subtype=gml/2.1.2" ;
-            rec:name "GML2" ],
-        [ rec:mediaType "text/csv" ;
-            rec:name "CSV" ],
-        [ rec:mediaType "image/svg+xml" ;
-            rec:name "SVG" ],
         [ rec:mediaType "image/png" ;
             rec:name "PNG" ],
+        [ rec:mediaType "application/geo+json" ;
+            rec:name "GeoJSON" ],
+        [ rec:mediaType "application/x-pdf" ;
+            rec:name "PDF" ],
+        [ rec:mediaType "image/gif" ;
+            rec:name "GIF" ],
+        [ rec:mediaType "application/vnd.shp" ;
+            rec:name "SHAPEFILE" ],
+        [ rec:mediaType "text/xml; subtype=gml/2.1.2" ;
+            rec:name "GML2" ],
+        [ rec:mediaType "text/plain" ;
+            rec:name "TEXT" ],
+        [ rec:mediaType "image/tiff" ;
+            rec:name "TIFF" ],
+        [ rec:mediaType "application/vnd.google-earth.kml+xml" ;
+            rec:name "KML" ],
         [ rec:mediaType "text/xml; subtype=gml/3.1.1" ;
             rec:name "GML3" ],
-        [ rec:mediaType "text/plain" ;
-            rec:name "TEXT" ] ;
+        [ rec:mediaType "image/jpeg" ;
+            rec:name "JPEG" ],
+        [ rec:mediaType "text/csv" ;
+            rec:name "CSV" ] ;
     rec:hasLinkTemplate [ rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
             ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            rec:hasVariable "{\"bbox\":{\"description\":\"...\",\"items\":{\"format\":\"double\",\"type\":\"number\"},\"maxItems\":4,\"minItems\":4,\"type\":\"array\"},\"crs\":{\"description\":\"...\",\"enum\":[\"EPSG:4326\",\"EPSG:3857\"],\"type\":\"string\"},\"format\":{\"enum\":[\"application/vnd.google-earth.kml+xml\",\"application/vnd.google-earth.kmz\",\"image/png\",\"image/jpeg\",\"image/gif\",\"image/png; mode=8bit\",\"application/x-pdf\",\"image/svg+xml\",\"image/tiff\"],\"type\":\"string\"},\"height\":{\"description\":\"...\",\"format\":\"integer\",\"maximum\":5000,\"minimum\":600,\"type\":\"number\"},\"width\":{\"description\":\"...\",\"format\":\"integer\",\"maximum\":5000,\"minimum\":600,\"type\":\"number\"}}"^^rdf:JSON ;
-            rec:uriTemplate "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}"^^xsd:string ],
+            rec:hasVariable "{\"maxFeatures\":{\"default\":10,\"type\":\"number\"},\"outputFormat\":{\"default\":\"text/xml; subtype=gml/2.1.2; driver=ogr\",\"enum\":[\"text/xml; subtype=gml/3.1.1\",\"text/xml; subtype=gml/2.1.2; driver=ogr\",\"application/json; subtype=geojson\",\"application/vnd.google-earth.kml+xml\",\"application/vnd.shp\",\"text/plain\",\"text/csv\"],\"type\":\"string\"}}"^^rdf:JSON ;
+            rec:uriTemplate "https://geo.woudc.org/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=woudc:totalozone&maxFeatures={maxFeatures}&outputFormat={outputFormat}"^^xsd:string ],
         [ rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
             ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            rec:hasVariable "{\"maxFeatures\":{\"default\":10,\"type\":\"number\"},\"outputFormat\":{\"default\":\"text/xml; subtype=gml/2.1.2; driver=ogr\",\"enum\":[\"text/xml; subtype=gml/3.1.1\",\"text/xml; subtype=gml/2.1.2; driver=ogr\",\"application/json; subtype=geojson\",\"application/vnd.google-earth.kml+xml\",\"application/vnd.shp\",\"text/plain\",\"text/csv\"],\"type\":\"string\"}}"^^rdf:JSON ;
-            rec:uriTemplate "https://geo.woudc.org/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=woudc:totalozone&maxFeatures={maxFeatures}&outputFormat={outputFormat}"^^xsd:string ] ;
+            rec:hasVariable "{\"bbox\":{\"description\":\"...\",\"items\":{\"format\":\"double\",\"type\":\"number\"},\"maxItems\":4,\"minItems\":4,\"type\":\"array\"},\"crs\":{\"description\":\"...\",\"enum\":[\"EPSG:4326\",\"EPSG:3857\"],\"type\":\"string\"},\"format\":{\"enum\":[\"application/vnd.google-earth.kml+xml\",\"application/vnd.google-earth.kmz\",\"image/png\",\"image/jpeg\",\"image/gif\",\"image/png; mode=8bit\",\"application/x-pdf\",\"image/svg+xml\",\"image/tiff\"],\"type\":\"string\"},\"height\":{\"description\":\"...\",\"format\":\"integer\",\"maximum\":5000,\"minimum\":600,\"type\":\"number\"},\"width\":{\"description\":\"...\",\"format\":\"integer\",\"maximum\":5000,\"minimum\":600,\"type\":\"number\"}}"^^rdf:JSON ;
+            rec:uriTemplate "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}"^^xsd:string ] ;
     rec:language [ ] ;
     rec:languages [ ],
         [ ] ;
     rec:scopedIdentifier [ rec:id "urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone" ;
             rec:scheme "WMO:WIS" ] ;
-    rec:themes [ ],
-        [ ] .
+    rec:themes [ thns:concepts <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_brewer>,
+                <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson>,
+                <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter>,
+                <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_hoelper>,
+                <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_microtops>,
+                <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_pion>,
+                <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_saoz>,
+                <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_spectral>,
+                <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_vassey> ;
+            thns:scheme "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode" ],
+        [ thns:concepts <https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_atmosphericComposition>,
+                <https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_observationPlatform>,
+                <https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_pollution>,
+                <https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_rocketSounding> ;
+            thns:scheme "https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode" ] .
+
+<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_brewer> thns:id "brewer" .
+
+<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson> thns:id "dobson" .
+
+<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter> thns:id "filter" .
+
+<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_hoelper> thns:id "hoelper" .
+
+<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_microtops> thns:id "microtops" .
+
+<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_pion> thns:id "pion" .
+
+<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_saoz> thns:id "saoz" .
+
+<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_spectral> thns:id "spectral" .
+
+<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_vassey> thns:id "vassey" .
+
+<https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_atmosphericComposition> thns:id "atmosphericComposition" .
+
+<https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_observationPlatform> thns:id "observationPlatform" .
+
+<https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_pollution> thns:id "pollution" .
+
+<https://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_CategoryCode_rocketSounding> thns:id "rocketSounding" .
 
 
 ```
@@ -1102,6 +1142,17 @@ Links to the schema:
       "@id": "rec:scopedIdentifier"
     },
     "themes": {
+      "@context": {
+        "concepts": {
+          "@context": {
+            "id": "thns:id",
+            "url": "@id"
+          },
+          "@id": "thns:concepts",
+          "@container": "@set"
+        },
+        "scheme": "thns:scheme"
+      },
       "@container": "@set",
       "@id": "rec:themes"
     },
@@ -1180,6 +1231,7 @@ Links to the schema:
     "vcard": "http://www.w3.org/2006/vcard/ns#",
     "prov": "http://www.w3.org/ns/prov#",
     "foaf": "http://xmlns.com/foaf/0.1/",
+    "thns": "https://w3id.org/ogc/stac/themes/",
     "@version": 1.1
   }
 }

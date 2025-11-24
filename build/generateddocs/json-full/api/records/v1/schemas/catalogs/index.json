@@ -19,7 +19,7 @@
     "ogcapi-records",
     "records"
   ],
-  "abstract": "This building block corresponds to the schema for an OGC API Records catalogs",
+  "abstract": "A collection schema allowing This building block corresponds to the schema for an OGC API Records: Catalogs",
   "shaclShapes": {},
   "dependsOn": [
     "ogc.api.features.v1.schemas.collections",

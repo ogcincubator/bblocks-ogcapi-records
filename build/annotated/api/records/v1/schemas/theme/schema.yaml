@@ -19,16 +19,22 @@ properties:
         id:
           type: string
           description: An identifier for the concept.
+          x-jsonld-id: https://w3id.org/ogc/stac/themes/id
         title:
           type: string
           description: A human readable title for the concept.
+          x-jsonld-id: http://purl.org/dc/terms/title
         description:
           type: string
           description: A human readable description for the concept.
+          x-jsonld-id: http://purl.org/dc/terms/description
         url:
           type: string
           format: uri
           description: A URI providing further description of the concept.
+          x-jsonld-id: '@id'
+    x-jsonld-id: https://w3id.org/ogc/stac/themes/concepts
+    x-jsonld-container: '@set'
   scheme:
     type: string
     description: 'An identifier for the knowledge organization system used
@@ -46,3 +52,7 @@ properties:
       enumerating the list of schemes in the queryable''s schema
 
       definition.'
+    x-jsonld-id: https://w3id.org/ogc/stac/themes/scheme
+x-jsonld-prefixes:
+  thns: https://w3id.org/ogc/stac/themes/
+  dct: http://purl.org/dc/terms/

@@ -23,14 +23,135 @@
     "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/schema.json"
   },
-  "abstract": "This building block corresponds to the schema for an OGC API Records theme",
+  "abstract": "This building block corresponds to the schema for an OGC API Records theme. This is generalised for reuse by STAC themes extension by allowing either name or title to be mapped to dct:title .",
   "shaclShapes": {},
+  "ldContext": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/context.jsonld",
   "remoteCacheDir": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/remote_cache/",
   "sourceSchema": "https://github.com/opengeospatial/ogcapi-records/raw/master/core/openapi/schemas/theme.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/theme/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/theme/",
   "rdfData": [],
   "validationPassed": true,
-  "annotatedSchema": "type: object\nrequired:\n- concepts\n- scheme\nproperties:\n  concepts:\n    type: array\n    description: 'One or more entity/concept identifiers from this knowledge\n\n      system. it is recommended that a resolvable URI be used for\n\n      each entity/concept identifier.'\n    minItems: 1\n    items:\n      type: object\n      required:\n      - id\n      properties:\n        id:\n          type: string\n          description: An identifier for the concept.\n        title:\n          type: string\n          description: A human readable title for the concept.\n        description:\n          type: string\n          description: A human readable description for the concept.\n        url:\n          type: string\n          format: uri\n          description: A URI providing further description of the concept.\n  scheme:\n    type: string\n    description: 'An identifier for the knowledge organization system used\n\n      to classify the resource.  It is recommended that the\n\n      identifier be a resolvable URI.  The list of schemes used\n\n      in a searchable catalog can be determined by inspecting\n\n      the server''s OpenAPI document or, if the server implements\n\n      CQL2, by exposing a queryable (e.g. named `scheme`) and\n\n      enumerating the list of schemes in the queryable''s schema\n\n      definition.'\n",
+  "testOutputs": "https://github.com/ogcincubator/bblocks-ogcapi-records/blob/master/build/tests/api/records/v1/schemas/theme/",
+  "transforms": [
+    {
+      "id": "dcat-themes",
+      "type": "shacl-af-rule",
+      "ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/theme/transforms/dcat-themes.ttl",
+      "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix : <urn:example:shacl#> .\n\n:themeSchemeIdName\n  a sh:NodeShape ;\n  sh:targetSubjectsOf <https://w3id.org/ogc/stac/themes/schemes> ;\n  sh:rule [\n\t\ta sh:SPARQLRule ;\n\t\tsh:construct \"\"\"\n\t\t    PREFIX stac: <https://w3id.org/ogc/stac/themes/>\n\t\t    PREFIX dct: <http://purl.org/dc/terms/>\n\t\t\tCONSTRUCT {\n\t\t\t\t$this <http://www.w3.org/ns/dcat#theme> ?uriConcept ;\n                     dcterms:title  ?conceptName ;\n                     dcterms:description ?desc\n\t\t\t\t .\n\t\t\t}\n\t\t\tWHERE {\n\t\t\t\t$this <https://w3id.org/ogc/stac/themes/schemes> ?b .\n\t\t\t\t?b <https://w3id.org/ogc/stac/themes/concepts> ?concept; <https://w3id.org/ogc/stac/themes/scheme> ?scheme .\n\t\t\t\t?concept <https://w3id.org/ogc/stac/themes/id> ?conceptId.\n\t\t\t\tOPTIONAL { ?b stac:name|dcterms:title ?conceptName }.\n\t\t\t\tOPTIONAL { ?b dcterms:description ?desc }.\n\t\t\t\tBIND(IRI(CONCAT(?scheme, REPLACE(?conceptId, '.*?::', '/'))) as ?uriConcept)\n\t\t\t}\n\t\t\t\"\"\" ;\n\t] ;\n.\n\n:themeSchemeIRI\n  a sh:NodeShape ;\n  sh:targetSubjectsOf <https://w3id.org/ogc/stac/themes/schemes> ;\n  sh:rule [\n\t\ta sh:SPARQLRule ;\n\t\tsh:construct \"\"\"\n\t\t    PREFIX stac: <https://w3id.org/ogc/stac/themes/>\n\t\t    PREFIX dct: <http://purl.org/dc/terms/>\n\t\t\tCONSTRUCT {\n\t\t\t\t$this <http://www.w3.org/ns/dcat#theme> ?uriConcept ;\n\t\t\t\t    dcterms:title  ?conceptName ;\n\t\t\t\t    dcterms:description ?desc .\n\t\t\t}\n\t\t\tWHERE {\n\t\t\t\t$this <https://w3id.org/ogc/stac/themes/schemes> ?b .\n\t\t\t\t?b <https://w3id.org/ogc/stac/themes/concepts> ?concept; <https://w3id.org/ogc/stac/themes/scheme> ?scheme .\n\t\t\t\tOPTIONAL { ?b stac:name|dcterms:title ?conceptName }.\n\t\t\t\tOPTIONAL { ?b dcterms:description ?desc }.\n\t\t\t\tFILTER(ISIRI(?concept) && !REGEX(str(?concept), \"^https?://\") && CONTAINS(str(?concept), \"::\"))\n\t\t\t\tBIND(IRI(CONCAT(?scheme, REPLACE(STR(?concept), '.*?::', '/'))) as ?uriConcept)\n\t\t\t}\n\t\t\t\"\"\" ;\n\t] ;\n.\n\n:themeConceptIsIRI\n  a sh:NodeShape ;\n  sh:targetSubjectsOf <https://w3id.org/ogc/stac/themes/schemes> ;\n  sh:rule [\n\t\ta sh:SPARQLRule ;\n\t\tsh:construct \"\"\"\n\t\t\tPREFIX stac: <https://w3id.org/ogc/stac/themes/>\n\t\t    PREFIX dct: <http://purl.org/dc/terms/>\n\t\t\tCONSTRUCT {\n\t\t\t\t$this <http://www.w3.org/ns/dcat#theme> ?concept ;\n\t\t\t\t    dcterms:title  ?conceptName ;\n\t\t\t\t    dcterms:description ?desc.\n\t\t\t}\n\t\t\tWHERE {\n\t\t\t\t$this <https://w3id.org/ogc/stac/themes/schemes> ?b .\n\t\t\t\t?b <https://w3id.org/ogc/stac/themes/concepts> ?concept .\n\t\t\t\tOPTIONAL { ?b stac:name|dcterms:title ?conceptName }.\n\t\t\t\tOPTIONAL { ?b dcterms:description ?desc }.\n\t\t\t\tFILTER(ISIRI(?concept) && REGEX(str(?concept), \"^https?://\"))\n\t\t\t}\n\t\t\t\"\"\" ;\n\t] ;\n.",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "id": "ttl",
+            "defaultExtension": "ttl",
+            "label": "RDF/Turtle",
+            "mimeType": "text/turtle",
+            "aliases": [
+              "turtle",
+              "rdf/turtle"
+            ],
+            "extensions": [
+              "ttl"
+            ]
+          },
+          {
+            "id": "rdf",
+            "defaultExtension": "rdf",
+            "label": "RDF/XML",
+            "mimeType": "application/rdf+xml",
+            "aliases": [
+              "rdf/xml"
+            ],
+            "extensions": [
+              "rdf"
+            ]
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "id": "ttl",
+            "defaultExtension": "ttl",
+            "label": "RDF/Turtle",
+            "mimeType": "text/turtle",
+            "aliases": [
+              "turtle",
+              "rdf/turtle"
+            ],
+            "extensions": [
+              "ttl"
+            ]
+          },
+          {
+            "id": "rdf",
+            "defaultExtension": "rdf",
+            "label": "RDF/XML",
+            "mimeType": "application/rdf+xml",
+            "aliases": [
+              "rdf/xml"
+            ],
+            "extensions": [
+              "rdf"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "examples": [
+    {
+      "title": "Themes using URIs",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/urls.json",
+          "base-uri": "https://example.com/stac/themes/example-1/",
+          "code": "{\n  \"concepts\": [\n    {\n      \"id\": \"dobson\",\n      \"url\": \"https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson\"\n    },\n    {\n      \"id\": \"filter\",\n      \"url\": \"https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter\"\n    }\n  ],\n  \"scheme\": \"https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode\"\n}",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/context.jsonld\",\n  \"concepts\": [\n    {\n      \"id\": \"dobson\",\n      \"url\": \"https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson\"\n    },\n    {\n      \"id\": \"filter\",\n      \"url\": \"https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter\"\n    }\n  ],\n  \"scheme\": \"https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode\"\n}",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix thns: <https://w3id.org/ogc/stac/themes/> .\n\n<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson> thns:id \"dobson\" .\n\n<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter> thns:id \"filter\" .\n\n[] thns:concepts <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson>,\n        <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter> ;\n    thns:scheme \"https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode\" .\n\n",
+          "transformResults": {
+            "dcat-themes": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/transforms/example_1_3.dcat-themes.ttl"
+          },
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Themes using schemes",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/schemes.json",
+          "base-uri": "https://example.com/stac/themes/example-2/",
+          "code": "{\n  \"concepts\": [\n    {\n      \"id\": \"geonames::2976077\",\n      \"title\": \"For\u00eat de Saou\",\n      \"description\": \"A very nice forest\"\n    },\n    {\n      \"id\": \"geonames::11071625\",\n      \"title\": \"Auvergne-Rh\u00f4ne-Alpes\",\n      \"description\": \"A wonderful place for cheese\"\n    }\n  ],\n  \"scheme\": \"https://www.geonames.org\"\n}",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/context.jsonld\",\n  \"concepts\": [\n    {\n      \"id\": \"geonames::2976077\",\n      \"title\": \"For\\u00eat de Saou\",\n      \"description\": \"A very nice forest\"\n    },\n    {\n      \"id\": \"geonames::11071625\",\n      \"title\": \"Auvergne-Rh\\u00f4ne-Alpes\",\n      \"description\": \"A wonderful place for cheese\"\n    }\n  ],\n  \"scheme\": \"https://www.geonames.org\"\n}",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix thns: <https://w3id.org/ogc/stac/themes/> .\n\n[] thns:concepts [ dcterms:description \"A wonderful place for cheese\" ;\n            dcterms:title \"Auvergne-Rh\u00f4ne-Alpes\" ;\n            thns:id \"geonames::11071625\" ],\n        [ dcterms:description \"A very nice forest\" ;\n            dcterms:title \"For\u00eat de Saou\" ;\n            thns:id \"geonames::2976077\" ] ;\n    thns:scheme \"https://www.geonames.org\" .\n\n",
+          "transformResults": {
+            "dcat-themes": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/transforms/example_2_3.dcat-themes.ttl"
+          },
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/example_2_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "type: object\nrequired:\n- concepts\n- scheme\nproperties:\n  concepts:\n    type: array\n    description: 'One or more entity/concept identifiers from this knowledge\n\n      system. it is recommended that a resolvable URI be used for\n\n      each entity/concept identifier.'\n    minItems: 1\n    items:\n      type: object\n      required:\n      - id\n      properties:\n        id:\n          type: string\n          description: An identifier for the concept.\n          x-jsonld-id: https://w3id.org/ogc/stac/themes/id\n        title:\n          type: string\n          description: A human readable title for the concept.\n          x-jsonld-id: http://purl.org/dc/terms/title\n        description:\n          type: string\n          description: A human readable description for the concept.\n          x-jsonld-id: http://purl.org/dc/terms/description\n        url:\n          type: string\n          format: uri\n          description: A URI providing further description of the concept.\n          x-jsonld-id: '@id'\n    x-jsonld-id: https://w3id.org/ogc/stac/themes/concepts\n    x-jsonld-container: '@set'\n  scheme:\n    type: string\n    description: 'An identifier for the knowledge organization system used\n\n      to classify the resource.  It is recommended that the\n\n      identifier be a resolvable URI.  The list of schemes used\n\n      in a searchable catalog can be determined by inspecting\n\n      the server''s OpenAPI document or, if the server implements\n\n      CQL2, by exposing a queryable (e.g. named `scheme`) and\n\n      enumerating the list of schemes in the queryable''s schema\n\n      definition.'\n    x-jsonld-id: https://w3id.org/ogc/stac/themes/scheme\nx-jsonld-prefixes:\n  thns: https://w3id.org/ogc/stac/themes/\n  dct: http://purl.org/dc/terms/\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-records",
   "gitPath": "_sources/v1/schemas/theme"
 }

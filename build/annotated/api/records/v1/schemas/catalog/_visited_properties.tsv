@@ -66,12 +66,12 @@ path	@id
 /contacts/contactInstructions	
 /contacts/roles	
 /themes	
-/themes/concepts	
-/themes/concepts/id	
-/themes/concepts/title	
-/themes/concepts/description	
-/themes/concepts/url	
-/themes/scheme	
+/themes/concepts	https://w3id.org/ogc/stac/themes/concepts
+/themes/concepts/id	https://w3id.org/ogc/stac/themes/id
+/themes/concepts/title	http://purl.org/dc/terms/title
+/themes/concepts/description	http://purl.org/dc/terms/description
+/themes/concepts/url	@id
+/themes/scheme	https://w3id.org/ogc/stac/themes/scheme
 /license	
 /rights	
 /conformsTo	

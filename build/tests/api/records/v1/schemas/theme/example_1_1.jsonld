@@ -1,0 +1,14 @@
+{
+  "@context": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/context.jsonld",
+  "concepts": [
+    {
+      "id": "dobson",
+      "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson"
+    },
+    {
+      "id": "filter",
+      "url": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter"
+    }
+  ],
+  "scheme": "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode"
+}

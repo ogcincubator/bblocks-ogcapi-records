@@ -74,12 +74,12 @@ path	@id
 /features/properties/externalIds/scheme	https://www.opengis.net/def/ogc-api/records/scheme
 /features/properties/externalIds/value	https://www.opengis.net/def/ogc-api/records/id
 /features/properties/themes	https://www.opengis.net/def/ogc-api/records/themes
-/features/properties/themes/concepts	
-/features/properties/themes/concepts/id	
-/features/properties/themes/concepts/title	
-/features/properties/themes/concepts/description	
-/features/properties/themes/concepts/url	
-/features/properties/themes/scheme	
+/features/properties/themes/concepts	https://w3id.org/ogc/stac/themes/concepts
+/features/properties/themes/concepts/id	https://w3id.org/ogc/stac/themes/id
+/features/properties/themes/concepts/title	http://purl.org/dc/terms/title
+/features/properties/themes/concepts/description	http://purl.org/dc/terms/description
+/features/properties/themes/concepts/url	@id
+/features/properties/themes/scheme	https://w3id.org/ogc/stac/themes/scheme
 /features/properties/formats	https://www.opengis.net/def/ogc-api/records/format
 /features/properties/formats/name	https://www.opengis.net/def/ogc-api/records/name
 /features/properties/formats/mediaType	https://www.opengis.net/def/ogc-api/records/mediaType

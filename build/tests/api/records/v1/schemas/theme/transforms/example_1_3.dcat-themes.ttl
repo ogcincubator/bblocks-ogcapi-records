@@ -1,0 +1,10 @@
+@prefix thns: <https://w3id.org/ogc/stac/themes/> .
+
+<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson> thns:id "dobson" .
+
+<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter> thns:id "filter" .
+
+[] thns:concepts <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson>,
+        <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter> ;
+    thns:scheme "https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode" .
+

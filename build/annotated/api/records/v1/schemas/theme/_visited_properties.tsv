@@ -1,0 +1,7 @@
+path	@id
+/concepts	https://w3id.org/ogc/stac/themes/concepts
+/concepts/id	https://w3id.org/ogc/stac/themes/id
+/concepts/title	http://purl.org/dc/terms/title
+/concepts/description	http://purl.org/dc/terms/description
+/concepts/url	@id
+/scheme	https://w3id.org/ogc/stac/themes/scheme

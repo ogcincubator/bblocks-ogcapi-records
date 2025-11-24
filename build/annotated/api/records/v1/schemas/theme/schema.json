@@ -17,27 +17,38 @@
         "properties": {
           "id": {
             "type": "string",
-            "description": "An identifier for the concept."
+            "description": "An identifier for the concept.",
+            "x-jsonld-id": "https://w3id.org/ogc/stac/themes/id"
           },
           "title": {
             "type": "string",
-            "description": "A human readable title for the concept."
+            "description": "A human readable title for the concept.",
+            "x-jsonld-id": "http://purl.org/dc/terms/title"
           },
           "description": {
             "type": "string",
-            "description": "A human readable description for the concept."
+            "description": "A human readable description for the concept.",
+            "x-jsonld-id": "http://purl.org/dc/terms/description"
           },
           "url": {
             "type": "string",
             "format": "uri",
-            "description": "A URI providing further description of the concept."
+            "description": "A URI providing further description of the concept.",
+            "x-jsonld-id": "@id"
           }
         }
-      }
+      },
+      "x-jsonld-id": "https://w3id.org/ogc/stac/themes/concepts",
+      "x-jsonld-container": "@set"
     },
     "scheme": {
       "type": "string",
-      "description": "An identifier for the knowledge organization system used\nto classify the resource.  It is recommended that the\nidentifier be a resolvable URI.  The list of schemes used\nin a searchable catalog can be determined by inspecting\nthe server's OpenAPI document or, if the server implements\nCQL2, by exposing a queryable (e.g. named `scheme`) and\nenumerating the list of schemes in the queryable's schema\ndefinition."
+      "description": "An identifier for the knowledge organization system used\nto classify the resource.  It is recommended that the\nidentifier be a resolvable URI.  The list of schemes used\nin a searchable catalog can be determined by inspecting\nthe server's OpenAPI document or, if the server implements\nCQL2, by exposing a queryable (e.g. named `scheme`) and\nenumerating the list of schemes in the queryable's schema\ndefinition.",
+      "x-jsonld-id": "https://w3id.org/ogc/stac/themes/scheme"
     }
+  },
+  "x-jsonld-prefixes": {
+    "thns": "https://w3id.org/ogc/stac/themes/",
+    "dct": "http://purl.org/dc/terms/"
   }
 }

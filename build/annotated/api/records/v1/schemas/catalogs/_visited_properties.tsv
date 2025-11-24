@@ -75,12 +75,12 @@ path	@id
 /collections/contacts/contactInstructions	
 /collections/contacts/roles	
 /collections/themes	
-/collections/themes/concepts	
-/collections/themes/concepts/id	
-/collections/themes/concepts/title	
-/collections/themes/concepts/description	
-/collections/themes/concepts/url	
-/collections/themes/scheme	
+/collections/themes/concepts	https://w3id.org/ogc/stac/themes/concepts
+/collections/themes/concepts/id	https://w3id.org/ogc/stac/themes/id
+/collections/themes/concepts/title	http://purl.org/dc/terms/title
+/collections/themes/concepts/description	http://purl.org/dc/terms/description
+/collections/themes/concepts/url	@id
+/collections/themes/scheme	https://w3id.org/ogc/stac/themes/scheme
 /collections/license	
 /collections/rights	
 /collections/conformsTo	
