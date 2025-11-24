@@ -1,0 +1,13 @@
+- title: Themes using URIs
+
+  snippets:
+    - language: json
+      ref: examples/urls.json
+      base-uri: https://example.com/stac/themes/example-1/
+
+- title: Themes using schemes
+
+  snippets:
+    - language: json
+      ref: examples/schemes.json
+      base-uri: https://example.com/stac/themes/example-2/

@@ -17,5 +17,5 @@
     "records"
   ],
   "schema": "https://github.com/opengeospatial/ogcapi-records/raw/master/core/openapi/schemas/theme.yaml",
-  "abstract": "This building block corresponds to the schema for an OGC API Records theme"
+  "abstract": "This building block corresponds to the schema for an OGC API Records theme. This is generalised for reuse by STAC themes extension by allowing either name or title to be mapped to dct:title ."
 }

@@ -1,0 +1,15 @@
+{
+  "concepts": [
+    {
+      "id": "geonames::2976077",
+      "title": "Forêt de Saou",
+      "description": "A very nice forest"
+    },
+    {
+      "id": "geonames::11071625",
+      "title": "Auvergne-Rhône-Alpes",
+      "description": "A wonderful place for cheese"
+    }
+  ],
+  "scheme": "https://www.geonames.org"
+}

@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "thns": "https://w3id.org/ogc/stac/themes/",
+    "dct": "http://purl.org/dc/terms/",
+    "concepts": {
+      "@id": "thns:concepts",
+      "@container": "@set",
+      "@context": {
+        "title": "dct:title",
+        "description": "dct:description",
+        "id": "thns:id",
+        "url": "@id"
+      }
+    },
+    "scheme": {
+      "@id": "thns:scheme"
+    }
+  }
+}
