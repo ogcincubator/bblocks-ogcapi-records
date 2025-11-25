@@ -1,0 +1,8 @@
+- title: OGC API spec example of record
+  content: |-
+    This example is to test records examples.
+
+  snippets:
+    - language: json
+      ref: example.json
+

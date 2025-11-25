@@ -9,6 +9,7 @@
 rec:testVarExists
     a                  sh:NodeShape ;
     sh:targetObjectsOf rec:hasLinkTemplate ;
+    sh:targetSubjectsOf rec:uriTemplate ;
     sh:message         "variables must exist in uri template" ;
     sh:sparql          [ sh:select """
       PREFIX rec:    <https://www.opengis.net/def/ogc-api/records/>
@@ -17,11 +18,11 @@ rec:testVarExists
       WHERE {
         BIND (rec:hasVariable as ?path)
         $this rec:hasVariable ?var .
-        $this oa:hasTarget ?template .
-        BIND ( STRAFTER ( STR(?var),STR( rec: ) AS ?value )
+        $this rec:uriTemplate ?template .
+        BIND ( STRAFTER ( STR(?var),STR( rec: ) ) AS ?value )
       }
       GROUP BY $this ?path ?value ?template
-      HAVING ( COUNT(?var) != SUM(
+      HAVING ( COUNT(?var) = SUM(
          IF(
             CONTAINS(?template, CONCAT("{",?value,"}"  )),1,0 )
   ) )

@@ -7,6 +7,9 @@
   "register": "ogcapi-records",
   "version": "0.1",
   "dateOfLastChange": "2024-01-23",
+  "dependsOn": [
+        "ogc.api.records.records-ontology"
+  ],
   "sources": [
     {
       "title": "OGC API Records - Draft",
