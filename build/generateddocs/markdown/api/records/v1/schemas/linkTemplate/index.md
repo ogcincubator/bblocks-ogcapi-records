@@ -7,6 +7,150 @@ This building block corresponds to the schema for an OGC API Records linkTemplat
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
+## Examples
+
+### OGC API spec example of record
+This example is to test records examples.
+#### json
+```json
+{
+  "rel": "describes",
+  "title": "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations",
+  "uriTemplate": "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}",
+  "variables": {
+    "bbox": {
+      "description": "...",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "double"
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "crs": {
+      "description": "...",
+      "type": "string",
+      "enum": [
+        "EPSG:4326",
+        "EPSG:3857"
+      ]
+    },
+    "width": {
+      "description": "...",
+      "type": "number",
+      "format": "integer",
+      "minimum": 600,
+      "maximum": 5000
+    },
+    "height": {
+      "description": "...",
+      "type": "number",
+      "format": "integer",
+      "minimum": 600,
+      "maximum": 5000
+    },
+    "format": {
+      "type": "string",
+      "enum": [
+        "application/vnd.google-earth.kml+xml",
+        "application/vnd.google-earth.kmz",
+        "image/png",
+        "image/jpeg",
+        "image/gif",
+        "image/png; mode=8bit",
+        "application/x-pdf",
+        "image/svg+xml",
+        "image/tiff"
+      ]
+    }
+  }
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "@context": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkTemplate/context.jsonld",
+  "rel": "describes",
+  "title": "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations",
+  "uriTemplate": "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}",
+  "variables": {
+    "bbox": {
+      "description": "...",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "double"
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "crs": {
+      "description": "...",
+      "type": "string",
+      "enum": [
+        "EPSG:4326",
+        "EPSG:3857"
+      ]
+    },
+    "width": {
+      "description": "...",
+      "type": "number",
+      "format": "integer",
+      "minimum": 600,
+      "maximum": 5000
+    },
+    "height": {
+      "description": "...",
+      "type": "number",
+      "format": "integer",
+      "minimum": 600,
+      "maximum": 5000
+    },
+    "format": {
+      "type": "string",
+      "enum": [
+        "application/vnd.google-earth.kml+xml",
+        "application/vnd.google-earth.kmz",
+        "image/png",
+        "image/jpeg",
+        "image/gif",
+        "image/png; mode=8bit",
+        "application/x-pdf",
+        "image/svg+xml",
+        "image/tiff"
+      ]
+    }
+  }
+}
+```
+
+#### ttl
+```ttl
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rec: <https://www.opengis.net/def/ogc-api/records/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
+    ns1:relation <http://www.iana.org/assignments/relation/describes> ;
+    rec:hasVariable [ dct:format "array" ;
+            dct:identifier "bbox" ],
+        [ dct:format "number" ;
+            dct:identifier "height" ],
+        [ dct:format "string" ;
+            dct:identifier "crs" ],
+        [ dct:format "number" ;
+            dct:identifier "width" ],
+        [ dct:format "string" ;
+            dct:identifier "format" ] ;
+    rec:uriTemplate "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}"^^xsd:string .
+
+
+```
+
 ## Schema
 
 ```yaml
@@ -38,7 +182,6 @@ allOf:
       x-jsonld-id: https://www.opengis.net/def/ogc-api/records/hasVariable
       x-jsonld-container: '@index'
       x-jsonld-index: http://purl.org/dc/terms/identifier
-      x-jsonld-type: '@json'
 x-jsonld-prefixes:
   rec: https://www.opengis.net/def/ogc-api/records/
   dct: http://purl.org/dc/terms/
@@ -81,8 +224,7 @@ Links to the schema:
     "variables": {
       "@id": "rec:hasVariable",
       "@container": "@index",
-      "@index": "dct:identifier",
-      "@type": "@json"
+      "@index": "dct:identifier"
     },
     "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

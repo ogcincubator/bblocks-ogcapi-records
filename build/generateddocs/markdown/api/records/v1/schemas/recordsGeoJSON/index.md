@@ -163,8 +163,7 @@ Links to the schema:
     "variables": {
       "@id": "rec:hasVariable",
       "@container": "@index",
-      "@index": "dct:identifier",
-      "@type": "@json"
+      "@index": "dct:identifier"
     },
     "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

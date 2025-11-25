@@ -1,0 +1,22 @@
+Validation report for ogc.api.records.v1.schemas.linkTemplate - Schema for linkTemplate
+Generated 2025-11-25T21:51:40.769274+00:00
+=== General ===
+
+** Validation error **
+Test was expected to fail but it did not.
+=== End General ===
+
+=== Files ===
+Using var-exists-fail.ttl from test resources
+=== End Files ===
+
+=== SHACL ===
+Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:
+ - Shape rec:testVarExists: <urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone>/rec:hasLinkTemplate
+
+=== End SHACL ===
+

@@ -21,15 +21,12 @@
     "Records",
     "ontology"
   ],
-  "shaclShapes": {
-    "ogc.api.records.records-ontology": [
-      "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/records-ontology/rules.shacl"
-    ]
-  },
+  "shaclShapes": {},
   "ontology": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/records-ontology/ontology.ttl",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/records-ontology/",
   "rdfData": [],
   "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-ogcapi-records/blob/master/build/tests/api/records/records-ontology/",
   "examples": [
     {
       "title": "Record example as TTL",

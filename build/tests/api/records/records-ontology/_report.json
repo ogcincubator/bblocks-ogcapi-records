@@ -2,13 +2,46 @@
   "title": "Validation report for ogc.api.records.records-ontology - OGC API Records Ontology",
   "bblockName": "OGC API Records Ontology",
   "bblockId": "ogc.api.records.records-ontology",
-  "generated": "2025-11-25T11:59:04.796464+00:00",
+  "generated": "2025-11-25T21:51:40.570274+00:00",
   "result": true,
-  "items": [],
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/records/records-ontology/example_1_1.ttl",
+        "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/records-ontology/example_1_1.ttl",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 127,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "globalErrors": {},
   "counts": {
-    "total": 0,
-    "passed": 0,
+    "total": 1,
+    "passed": 1,
     "failed": 0
   }
 }

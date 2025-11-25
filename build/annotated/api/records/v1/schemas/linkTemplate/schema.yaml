@@ -26,7 +26,6 @@ allOf:
       x-jsonld-id: https://www.opengis.net/def/ogc-api/records/hasVariable
       x-jsonld-container: '@index'
       x-jsonld-index: http://purl.org/dc/terms/identifier
-      x-jsonld-type: '@json'
 x-jsonld-prefixes:
   rec: https://www.opengis.net/def/ogc-api/records/
   dct: http://purl.org/dc/terms/

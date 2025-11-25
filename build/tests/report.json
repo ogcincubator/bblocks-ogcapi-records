@@ -1,16 +1,63 @@
 {
   "summary": {
     "total": 15,
-    "passed": 15,
-    "failed": 0,
-    "result": true
+    "passed": 14,
+    "failed": 1,
+    "result": false
   },
   "bblocks": {
     "ogc.api.records.records-ontology": {
       "title": "Validation report for ogc.api.records.records-ontology - OGC API Records Ontology",
       "bblockName": "OGC API Records Ontology",
       "bblockId": "ogc.api.records.records-ontology",
-      "generated": "2025-11-25T11:59:04.796464+00:00",
+      "generated": "2025-11-25T21:51:40.570274+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/api/records/records-ontology/example_1_1.ttl",
+            "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/records-ontology/example_1_1.ttl",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "text/turtle"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.ttl from examples"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 127,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.language": {
+      "title": "Validation report for ogc.api.records.v1.schemas.language - Schema for language",
+      "bblockName": "Schema for language",
+      "bblockId": "ogc.api.records.v1.schemas.language",
+      "generated": "2025-11-25T21:51:40.577576+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -20,11 +67,11 @@
         "failed": 0
       }
     },
-    "ogc.api.records.v1.schemas.language": {
-      "title": "Validation report for ogc.api.records.v1.schemas.language - Schema for language",
-      "bblockName": "Schema for language",
-      "bblockId": "ogc.api.records.v1.schemas.language",
-      "generated": "2025-11-25T11:59:04.803766+00:00",
+    "ogc.api.records.v1.schemas.license": {
+      "title": "Validation report for ogc.api.records.v1.schemas.license - Schema for license",
+      "bblockName": "Schema for license",
+      "bblockId": "ogc.api.records.v1.schemas.license",
+      "generated": "2025-11-25T21:51:40.582437+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -38,7 +85,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.theme - Schema for theme",
       "bblockName": "Schema for theme",
       "bblockId": "ogc.api.records.v1.schemas.theme",
-      "generated": "2025-11-25T11:59:04.820627+00:00",
+      "generated": "2025-11-25T21:51:40.597001+00:00",
       "result": true,
       "items": [
         {
@@ -159,25 +206,11 @@
         "failed": 0
       }
     },
-    "ogc.api.records.v1.schemas.license": {
-      "title": "Validation report for ogc.api.records.v1.schemas.license - Schema for license",
-      "bblockName": "Schema for license",
-      "bblockId": "ogc.api.records.v1.schemas.license",
-      "generated": "2025-11-25T11:59:04.843897+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
     "ogc.api.records.v1.schemas.roles": {
       "title": "Validation report for ogc.api.records.v1.schemas.roles - Schema for roles",
       "bblockName": "Schema for roles",
       "bblockId": "ogc.api.records.v1.schemas.roles",
-      "generated": "2025-11-25T11:59:04.849279+00:00",
+      "generated": "2025-11-25T21:51:40.621880+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -191,7 +224,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.linkBase - Schema for linkBase",
       "bblockName": "Schema for linkBase",
       "bblockId": "ogc.api.records.v1.schemas.linkBase",
-      "generated": "2025-11-25T11:59:04.856739+00:00",
+      "generated": "2025-11-25T21:51:40.629188+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -205,7 +238,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.time - Schema for time",
       "bblockName": "Schema for time",
       "bblockId": "ogc.api.records.v1.schemas.time",
-      "generated": "2025-11-25T11:59:04.864040+00:00",
+      "generated": "2025-11-25T21:51:40.636118+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -219,7 +252,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.contact - Schema for contact",
       "bblockName": "Schema for contact",
       "bblockId": "ogc.api.records.v1.schemas.contact",
-      "generated": "2025-11-25T11:59:04.878019+00:00",
+      "generated": "2025-11-25T21:51:40.649936+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -233,7 +266,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.link - Schema for link",
       "bblockName": "Schema for link",
       "bblockId": "ogc.api.records.v1.schemas.link",
-      "generated": "2025-11-25T11:59:04.885139+00:00",
+      "generated": "2025-11-25T21:51:40.656722+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -247,21 +280,160 @@
       "title": "Validation report for ogc.api.records.v1.schemas.linkTemplate - Schema for linkTemplate",
       "bblockName": "Schema for linkTemplate",
       "bblockId": "ogc.api.records.v1.schemas.linkTemplate",
-      "generated": "2025-11-25T11:59:04.892689+00:00",
-      "result": true,
-      "items": [],
+      "generated": "2025-11-25T21:51:40.804286+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "TEST_RESOURCE",
+            "requireFail": true,
+            "filename": "_sources/v1/schemas/linkTemplate/tests/var-exists-fail.ttl",
+            "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/tests/var-exists-fail.ttl",
+            "language": "ttl"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "GENERAL",
+              "title": "General",
+              "entries": [
+                {
+                  "op": "require-fail",
+                  "isError": true,
+                  "message": "Test was expected to fail but it did not."
+                }
+              ]
+            },
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using var-exists-fail.ttl from test resources"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/v1/schemas/linkTemplate/rules.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/v1/schemas/linkTemplate/rules.shacl",
+                  "focusNodes": {
+                    "rec:testVarExists": {
+                      "nodes": [
+                        "<urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone>/rec:hasLinkTemplate"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testVarExists: <urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone>/rec:hasLinkTemplate\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/api/records/v1/schemas/linkTemplate/example_1_1.json",
+            "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/linkTemplate/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 18,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/v1/schemas/linkTemplate/rules.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/v1/schemas/linkTemplate/rules.shacl",
+                  "focusNodes": {
+                    "rec:testVarExists": {
+                      "nodes": [
+                        "_:Nf7f76211a1324d9fbadb1cc135f71848"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testVarExists: _:Nf7f76211a1324d9fbadb1cc135f71848\n"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "globalErrors": {},
       "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
+        "total": 2,
+        "passed": 1,
+        "failed": 1
       }
     },
     "ogc.api.records.v1.schemas.landingPage": {
       "title": "Validation report for ogc.api.records.v1.schemas.landingPage - Schema for landingPage",
       "bblockName": "Schema for landingPage",
       "bblockId": "ogc.api.records.v1.schemas.landingPage",
-      "generated": "2025-11-25T11:59:04.899589+00:00",
+      "generated": "2025-11-25T21:51:40.811799+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -275,7 +447,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON",
       "bblockName": "Schema for recordGeoJSON",
       "bblockId": "ogc.api.records.v1.schemas.recordGeoJSON",
-      "generated": "2025-11-25T11:59:05.275905+00:00",
+      "generated": "2025-11-25T21:51:41.085951+00:00",
       "result": true,
       "items": [
         {
@@ -377,7 +549,7 @@
                   "op": "ttl-create",
                   "empty": false,
                   "filename": "example_1_1.ttl",
-                  "size": 182,
+                  "size": 205,
                   "isError": false,
                   "message": "Output Turtle example_1_1.ttl created"
                 }
@@ -392,6 +564,32 @@
                   "result": true,
                   "isError": false,
                   "message": "Validation passed"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/v1/schemas/linkTemplate/rules.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/v1/schemas/linkTemplate/rules.shacl",
+                  "focusNodes": {
+                    "rec:testVarExists": {
+                      "nodes": [
+                        "<urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone>/rec:hasLinkTemplate",
+                        "<urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone>/rec:hasLinkTemplate"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testVarExists: <urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone>/rec:hasLinkTemplate,<urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone>/rec:hasLinkTemplate\n"
                 }
               ]
             }
@@ -409,7 +607,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.catalog - Schema for catalog",
       "bblockName": "Schema for catalog",
       "bblockId": "ogc.api.records.v1.schemas.catalog",
-      "generated": "2025-11-25T11:59:05.290084+00:00",
+      "generated": "2025-11-25T21:51:41.100973+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -423,7 +621,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.recordsGeoJSON - Schema for recordsGeoJSON",
       "bblockName": "Schema for recordsGeoJSON",
       "bblockId": "ogc.api.records.v1.schemas.recordsGeoJSON",
-      "generated": "2025-11-25T11:59:05.298079+00:00",
+      "generated": "2025-11-25T21:51:41.110925+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -437,7 +635,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.catalogs - Schema for catalogs",
       "bblockName": "Schema for catalogs",
       "bblockId": "ogc.api.records.v1.schemas.catalogs",
-      "generated": "2025-11-25T11:59:05.305309+00:00",
+      "generated": "2025-11-25T21:51:41.119204+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},

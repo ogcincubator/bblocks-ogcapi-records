@@ -28,8 +28,7 @@
           "description": "This object contains one key per substitution variable in the templated URL.  Each key defines the schema of one substitution variable using a JSON Schema fragment and can thus include things like the data type of the variable, enumerations, minimum values, maximum values, etc.",
           "x-jsonld-id": "https://www.opengis.net/def/ogc-api/records/hasVariable",
           "x-jsonld-container": "@index",
-          "x-jsonld-index": "http://purl.org/dc/terms/identifier",
-          "x-jsonld-type": "@json"
+          "x-jsonld-index": "http://purl.org/dc/terms/identifier"
         }
       }
     }

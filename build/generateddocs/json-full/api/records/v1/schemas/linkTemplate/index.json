@@ -20,7 +20,11 @@
     "records"
   ],
   "abstract": "This building block corresponds to the schema for an OGC API Records linkTemplate",
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.api.records.v1.schemas.linkTemplate": [
+      "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/rules.shacl"
+    ]
+  },
   "dependsOn": [
     "ogc.api.records.v1.schemas.linkBase"
   ],
@@ -33,8 +37,33 @@
   "sourceLdContext": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/",
   "rdfData": [],
-  "validationPassed": true,
-  "annotatedSchema": "$comment: Adapted from https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/linkTemplate.yaml\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml\n- type: object\n  required:\n  - uriTemplate\n  properties:\n    uriTemplate:\n      type: string\n      description: Supplies a resolvable URI to a remote resource (or resource fragment).\n      example: http://data.example.com/buildings/(building-id}\n      x-jsonld-type: xsd:string\n      x-jsonld-id: https://www.opengis.net/def/ogc-api/records/uriTemplate\n    varBase:\n      type: string\n      description: The base URI to which the variable name can be appended to retrieve\n        the definition of the variable as a JSON Schema fragment.\n      format: url\n      x-jsonld-id: https://www.opengis.net/def/ogc-api/records/varBase\n    variables:\n      type: object\n      description: This object contains one key per substitution variable in the templated\n        URL.  Each key defines the schema of one substitution variable using a JSON\n        Schema fragment and can thus include things like the data type of the variable,\n        enumerations, minimum values, maximum values, etc.\n      x-jsonld-id: https://www.opengis.net/def/ogc-api/records/hasVariable\n      x-jsonld-container: '@index'\n      x-jsonld-index: http://purl.org/dc/terms/identifier\n      x-jsonld-type: '@json'\nx-jsonld-prefixes:\n  rec: https://www.opengis.net/def/ogc-api/records/\n  dct: http://purl.org/dc/terms/\n",
+  "validationPassed": false,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-ogcapi-records/blob/master/build/tests/api/records/v1/schemas/linkTemplate/",
+  "examples": [
+    {
+      "title": "OGC API spec example of record",
+      "content": "This example is to test records examples.",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "example.json",
+          "code": "{\n  \"rel\": \"describes\",\n  \"title\": \"World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations\",\n  \"uriTemplate\": \"https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}\",\n  \"variables\": {\n    \"bbox\": {\n      \"description\": \"...\",\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"number\",\n        \"format\": \"double\"\n      },\n      \"minItems\": 4,\n      \"maxItems\": 4\n    },\n    \"crs\": {\n      \"description\": \"...\",\n      \"type\": \"string\",\n      \"enum\": [\n        \"EPSG:4326\",\n        \"EPSG:3857\"\n      ]\n    },\n    \"width\": {\n      \"description\": \"...\",\n      \"type\": \"number\",\n      \"format\": \"integer\",\n      \"minimum\": 600,\n      \"maximum\": 5000\n    },\n    \"height\": {\n      \"description\": \"...\",\n      \"type\": \"number\",\n      \"format\": \"integer\",\n      \"minimum\": 600,\n      \"maximum\": 5000\n    },\n    \"format\": {\n      \"type\": \"string\",\n      \"enum\": [\n        \"application/vnd.google-earth.kml+xml\",\n        \"application/vnd.google-earth.kmz\",\n        \"image/png\",\n        \"image/jpeg\",\n        \"image/gif\",\n        \"image/png; mode=8bit\",\n        \"application/x-pdf\",\n        \"image/svg+xml\",\n        \"image/tiff\"\n      ]\n    }\n  }\n}",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/linkTemplate/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkTemplate/context.jsonld\",\n  \"rel\": \"describes\",\n  \"title\": \"World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations\",\n  \"uriTemplate\": \"https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}\",\n  \"variables\": {\n    \"bbox\": {\n      \"description\": \"...\",\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"number\",\n        \"format\": \"double\"\n      },\n      \"minItems\": 4,\n      \"maxItems\": 4\n    },\n    \"crs\": {\n      \"description\": \"...\",\n      \"type\": \"string\",\n      \"enum\": [\n        \"EPSG:4326\",\n        \"EPSG:3857\"\n      ]\n    },\n    \"width\": {\n      \"description\": \"...\",\n      \"type\": \"number\",\n      \"format\": \"integer\",\n      \"minimum\": 600,\n      \"maximum\": 5000\n    },\n    \"height\": {\n      \"description\": \"...\",\n      \"type\": \"number\",\n      \"format\": \"integer\",\n      \"minimum\": 600,\n      \"maximum\": 5000\n    },\n    \"format\": {\n      \"type\": \"string\",\n      \"enum\": [\n        \"application/vnd.google-earth.kml+xml\",\n        \"application/vnd.google-earth.kmz\",\n        \"image/png\",\n        \"image/jpeg\",\n        \"image/gif\",\n        \"image/png; mode=8bit\",\n        \"application/x-pdf\",\n        \"image/svg+xml\",\n        \"image/tiff\"\n      ]\n    }\n  }\n}",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/linkTemplate/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix rec: <https://www.opengis.net/def/ogc-api/records/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] rdfs:label \"World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations\" ;\n    ns1:relation <http://www.iana.org/assignments/relation/describes> ;\n    rec:hasVariable [ dct:format \"array\" ;\n            dct:identifier \"bbox\" ],\n        [ dct:format \"number\" ;\n            dct:identifier \"height\" ],\n        [ dct:format \"string\" ;\n            dct:identifier \"crs\" ],\n        [ dct:format \"number\" ;\n            dct:identifier \"width\" ],\n        [ dct:format \"string\" ;\n            dct:identifier \"format\" ] ;\n    rec:uriTemplate \"https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}\"^^xsd:string .\n\n",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/linkTemplate/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$comment: Adapted from https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/openapi/schemas/linkTemplate.yaml\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml\n- type: object\n  required:\n  - uriTemplate\n  properties:\n    uriTemplate:\n      type: string\n      description: Supplies a resolvable URI to a remote resource (or resource fragment).\n      example: http://data.example.com/buildings/(building-id}\n      x-jsonld-type: xsd:string\n      x-jsonld-id: https://www.opengis.net/def/ogc-api/records/uriTemplate\n    varBase:\n      type: string\n      description: The base URI to which the variable name can be appended to retrieve\n        the definition of the variable as a JSON Schema fragment.\n      format: url\n      x-jsonld-id: https://www.opengis.net/def/ogc-api/records/varBase\n    variables:\n      type: object\n      description: This object contains one key per substitution variable in the templated\n        URL.  Each key defines the schema of one substitution variable using a JSON\n        Schema fragment and can thus include things like the data type of the variable,\n        enumerations, minimum values, maximum values, etc.\n      x-jsonld-id: https://www.opengis.net/def/ogc-api/records/hasVariable\n      x-jsonld-container: '@index'\n      x-jsonld-index: http://purl.org/dc/terms/identifier\nx-jsonld-prefixes:\n  rec: https://www.opengis.net/def/ogc-api/records/\n  dct: http://purl.org/dc/terms/\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-records",
   "gitPath": "_sources/v1/schemas/linkTemplate"
 }
