@@ -740,29 +740,29 @@ This example is to test records examples.
         [ rdfs:label "OGC Web Map Service (WMS)" ;
             ns1:relation <http://www.iana.org/assignments/relation/describes> ;
             oa:hasTarget <https://geo.woudc.org/ows?service=WMS&request=GetCapabilities> ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
-            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
         [ rdfs:label "Web Accessible Folder (WAF)" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:format "text/html" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
             oa:hasTarget <https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1> ],
-        [ rdfs:label "Data Search / Download User Interface" ;
-            dct:format "text/html" ;
-            ns1:relation <http://www.iana.org/assignments/relation/search> ;
-            oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/collection> ;
-            oa:hasTarget <https://woudc.org/data/dataset_info.php> ],
         [ rdfs:label "Static dataset archive file" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:format "application/zip" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
             oa:hasTarget <https://woudc.org/archive/Summaries/dataset-snapshots/totalozone.zip> ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
+            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
         [ rdfs:label "OGC Web Feature Service (WFS)" ;
             ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            oa:hasTarget <https://geo.woudc.org/ows?service=WFS&request=GetCapabilities> ] ;
+            oa:hasTarget <https://geo.woudc.org/ows?service=WFS&request=GetCapabilities> ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/collection> ;
+            oa:hasTarget <https://woudc.org/data/dataset_info.php> ],
+        [ rdfs:label "Data Search / Download User Interface" ;
+            dct:format "text/html" ;
+            ns1:relation <http://www.iana.org/assignments/relation/search> ;
+            oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ] ;
     dcat:contactPoint [ rdfs:seeAlso [ dct:format "text/html" ;
                     ns1:relation <http://www.iana.org/assignments/relation/about> ;
                     oa:hasTarget <https://woudc.org> ] ] ;
@@ -776,42 +776,42 @@ This example is to test records examples.
     dcat:license "other" ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( -180 -90 ) ( -180 90 ) ( 180 90 ) ( 180 -90 ) ( -180 -90 ) ) ) ] ;
-    rec:format [ rec:mediaType "image/svg+xml" ;
-            rec:name "SVG" ],
+    rec:format [ rec:mediaType "image/tiff" ;
+            rec:name "TIFF" ],
         [ rec:mediaType "image/jpeg" ;
             rec:name "JPEG" ],
-        [ rec:mediaType "image/tiff" ;
-            rec:name "TIFF" ],
-        [ rec:mediaType "text/xml; subtype=gml/2.1.2" ;
-            rec:name "GML2" ],
-        [ rec:mediaType "image/png" ;
-            rec:name "PNG" ],
-        [ rec:mediaType "application/vnd.shp" ;
-            rec:name "SHAPEFILE" ],
         [ rec:mediaType "application/geo+json" ;
             rec:name "GeoJSON" ],
-        [ rec:mediaType "application/x-pdf" ;
-            rec:name "PDF" ],
         [ rec:mediaType "text/csv" ;
             rec:name "CSV" ],
-        [ rec:mediaType "image/gif" ;
-            rec:name "GIF" ],
+        [ rec:mediaType "application/x-pdf" ;
+            rec:name "PDF" ],
         [ rec:mediaType "application/vnd.google-earth.kmz" ;
             rec:name "KMZ" ],
-        [ rec:mediaType "text/xml; subtype=gml/3.1.1" ;
-            rec:name "GML3" ],
+        [ rec:mediaType "image/gif" ;
+            rec:name "GIF" ],
+        [ rec:mediaType "image/svg+xml" ;
+            rec:name "SVG" ],
         [ rec:mediaType "text/plain" ;
             rec:name "TEXT" ],
+        [ rec:mediaType "application/vnd.shp" ;
+            rec:name "SHAPEFILE" ],
         [ rec:mediaType "application/vnd.google-earth.kml+xml" ;
-            rec:name "KML" ] ;
+            rec:name "KML" ],
+        [ rec:mediaType "text/xml; subtype=gml/3.1.1" ;
+            rec:name "GML3" ],
+        [ rec:mediaType "image/png" ;
+            rec:name "PNG" ],
+        [ rec:mediaType "text/xml; subtype=gml/2.1.2" ;
+            rec:name "GML2" ] ;
     rec:hasLinkTemplate [ rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
             ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            rec:hasVariable "{\"maxFeatures\":{\"default\":10,\"type\":\"number\"},\"outputFormat\":{\"default\":\"text/xml; subtype=gml/2.1.2; driver=ogr\",\"enum\":[\"text/xml; subtype=gml/3.1.1\",\"text/xml; subtype=gml/2.1.2; driver=ogr\",\"application/json; subtype=geojson\",\"application/vnd.google-earth.kml+xml\",\"application/vnd.shp\",\"text/plain\",\"text/csv\"],\"type\":\"string\"}}"^^rdf:JSON ;
-            rec:uriTemplate "https://geo.woudc.org/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=woudc:totalozone&maxFeatures={maxFeatures}&outputFormat={outputFormat}"^^xsd:string ],
+            rec:hasVariable "{\"bbox\":{\"description\":\"...\",\"items\":{\"format\":\"double\",\"type\":\"number\"},\"maxItems\":4,\"minItems\":4,\"type\":\"array\"},\"crs\":{\"description\":\"...\",\"enum\":[\"EPSG:4326\",\"EPSG:3857\"],\"type\":\"string\"},\"format\":{\"enum\":[\"application/vnd.google-earth.kml+xml\",\"application/vnd.google-earth.kmz\",\"image/png\",\"image/jpeg\",\"image/gif\",\"image/png; mode=8bit\",\"application/x-pdf\",\"image/svg+xml\",\"image/tiff\"],\"type\":\"string\"},\"height\":{\"description\":\"...\",\"format\":\"integer\",\"maximum\":5000,\"minimum\":600,\"type\":\"number\"},\"width\":{\"description\":\"...\",\"format\":\"integer\",\"maximum\":5000,\"minimum\":600,\"type\":\"number\"}}"^^rdf:JSON ;
+            rec:uriTemplate "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}"^^xsd:string ],
         [ rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
             ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            rec:hasVariable "{\"bbox\":{\"description\":\"...\",\"items\":{\"format\":\"double\",\"type\":\"number\"},\"maxItems\":4,\"minItems\":4,\"type\":\"array\"},\"crs\":{\"description\":\"...\",\"enum\":[\"EPSG:4326\",\"EPSG:3857\"],\"type\":\"string\"},\"format\":{\"enum\":[\"application/vnd.google-earth.kml+xml\",\"application/vnd.google-earth.kmz\",\"image/png\",\"image/jpeg\",\"image/gif\",\"image/png; mode=8bit\",\"application/x-pdf\",\"image/svg+xml\",\"image/tiff\"],\"type\":\"string\"},\"height\":{\"description\":\"...\",\"format\":\"integer\",\"maximum\":5000,\"minimum\":600,\"type\":\"number\"},\"width\":{\"description\":\"...\",\"format\":\"integer\",\"maximum\":5000,\"minimum\":600,\"type\":\"number\"}}"^^rdf:JSON ;
-            rec:uriTemplate "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}"^^xsd:string ] ;
+            rec:hasVariable "{\"maxFeatures\":{\"default\":10,\"type\":\"number\"},\"outputFormat\":{\"default\":\"text/xml; subtype=gml/2.1.2; driver=ogr\",\"enum\":[\"text/xml; subtype=gml/3.1.1\",\"text/xml; subtype=gml/2.1.2; driver=ogr\",\"application/json; subtype=geojson\",\"application/vnd.google-earth.kml+xml\",\"application/vnd.shp\",\"text/plain\",\"text/csv\"],\"type\":\"string\"}}"^^rdf:JSON ;
+            rec:uriTemplate "https://geo.woudc.org/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=woudc:totalozone&maxFeatures={maxFeatures}&outputFormat={outputFormat}"^^xsd:string ] ;
     rec:language [ ] ;
     rec:languages [ ],
         [ ] ;
