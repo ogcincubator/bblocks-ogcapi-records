@@ -17,14 +17,13 @@ rec:testVarExists
       SELECT $this ?path ?value ?template
       WHERE {
         BIND (rec:hasVariable as ?path)
-        $this rec:hasVariable ?var .
+        $this rec:hasVariable/dct:identifier ?var .
         $this rec:uriTemplate ?template .
-        BIND ( STRAFTER ( STR(?var),STR( rec: ) ) AS ?value )
       }
       GROUP BY $this ?path ?value ?template
-      HAVING ( COUNT(?var) = SUM(
+      HAVING ( COUNT(?var) != SUM(
          IF(
-            CONTAINS(?template, CONCAT("{",?value,"}"  )),1,0 )
+            CONTAINS(?template, CONCAT("{",?var,"}"  )),1,0 )
   ) )
 
     """ ; ]
