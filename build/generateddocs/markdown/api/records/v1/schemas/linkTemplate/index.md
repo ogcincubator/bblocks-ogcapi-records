@@ -3,10 +3,23 @@
 
 `ogc.api.records.v1.schemas.linkTemplate` *v0.1*
 
-This building block corresponds to the schema for an OGC API Records linkTemplate
+This building block corresponds to the schema for an OGC API Records linkTemplate.
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
+## Description
+
+## Link Template
+
+### JSON-LD mapping
+
+This Building block maps variables to **blank nodes** - this means that multiple mappings can co-exist in a system without clashing, even if the same variable name is re-used.
+
+(if identification of variables is required at a global level @id can be used in variable names)
+
+### Tests:
+ 
+tests if variables present in uriTemplates exist in variable declarations using SHACL
 ## Examples
 
 ### OGC API spec example of record
@@ -29,6 +42,7 @@ This example is to test records examples.
       "maxItems": 4
     },
     "crs": {
+      "@id": "https://org.org/some-standard-param-set/crs",
       "description": "...",
       "type": "string",
       "enum": [
@@ -87,6 +101,7 @@ This example is to test records examples.
       "maxItems": 4
     },
     "crs": {
+      "@id": "https://org.org/some-standard-param-set/crs",
       "description": "...",
       "type": "string",
       "enum": [
@@ -134,18 +149,20 @@ This example is to test records examples.
 @prefix rec: <https://www.opengis.net/def/ogc-api/records/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://org.org/some-standard-param-set/crs> dct:format "string" ;
+    dct:identifier "crs" .
+
 [] rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
     ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-    rec:hasVariable [ dct:format "array" ;
-            dct:identifier "bbox" ],
-        [ dct:format "number" ;
+    rec:hasVariable [ dct:format "number" ;
             dct:identifier "height" ],
-        [ dct:format "string" ;
-            dct:identifier "crs" ],
+        [ dct:format "array" ;
+            dct:identifier "bbox" ],
         [ dct:format "number" ;
             dct:identifier "width" ],
         [ dct:format "string" ;
-            dct:identifier "format" ] ;
+            dct:identifier "format" ],
+        <https://org.org/some-standard-param-set/crs> ;
     rec:uriTemplate "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}"^^xsd:string .
 
 

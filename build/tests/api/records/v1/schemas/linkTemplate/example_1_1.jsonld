@@ -15,6 +15,7 @@
       "maxItems": 4
     },
     "crs": {
+      "@id": "https://org.org/some-standard-param-set/crs",
       "description": "...",
       "type": "string",
       "enum": [

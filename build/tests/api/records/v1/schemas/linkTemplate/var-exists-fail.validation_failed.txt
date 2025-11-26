@@ -1,5 +1,5 @@
 Validation report for ogc.api.records.v1.schemas.linkTemplate - Schema for linkTemplate
-Generated 2025-11-25T21:51:40.769274+00:00
+Generated 2025-11-26T05:41:18.882601+00:00
 === General ===
 
 ** Validation error **
@@ -7,8 +7,15 @@ Test was expected to fail but it did not.
 === End General ===
 
 === Files ===
-Using var-exists-fail.ttl from test resources
+Using var-exists-fail.json from test resources
+JSON-LD context is present - uplifting
+Output JSON-LD var-exists-fail.jsonld created
+Output Turtle var-exists-fail.ttl created
 === End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
 
 === SHACL ===
 Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:
@@ -16,7 +23,7 @@ Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:
   Conforms: True
   
 Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:
- - Shape rec:testVarExists: <urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone>/rec:hasLinkTemplate
+ - Shape rec:testVarExists: _:Naf072eec2928467a80785a0dd2de2ca9
 
 === End SHACL ===
 
