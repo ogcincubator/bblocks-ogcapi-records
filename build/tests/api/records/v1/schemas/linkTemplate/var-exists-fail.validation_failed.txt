@@ -1,5 +1,5 @@
 Validation report for ogc.api.records.v1.schemas.linkTemplate - Schema for linkTemplate
-Generated 2025-11-26T05:41:18.882601+00:00
+Generated 2025-11-28T03:22:53.305010+00:00
 === General ===
 
 ** Validation error **
@@ -23,7 +23,7 @@ Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:
   Conforms: True
   
 Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:
- - Shape rec:testVarExists: _:Naf072eec2928467a80785a0dd2de2ca9
+ - Shape rec:testVarExists: _:N19f6d14806b346f49468b73f4ca79204
 
 === End SHACL ===
 

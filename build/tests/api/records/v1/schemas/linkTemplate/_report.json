@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.linkTemplate - Schema for linkTemplate",
   "bblockName": "Schema for linkTemplate",
   "bblockId": "ogc.api.records.v1.schemas.linkTemplate",
-  "generated": "2025-11-26T05:41:18.906947+00:00",
+  "generated": "2025-11-28T03:22:53.329857+00:00",
   "result": false,
   "items": [
     {
@@ -83,12 +83,12 @@
               "focusNodes": {
                 "rec:testVarExists": {
                   "nodes": [
-                    "_:Naf072eec2928467a80785a0dd2de2ca9"
+                    "_:N19f6d14806b346f49468b73f4ca79204"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testVarExists: _:Naf072eec2928467a80785a0dd2de2ca9\n"
+              "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testVarExists: _:N19f6d14806b346f49468b73f4ca79204\n"
             }
           ]
         }
@@ -163,12 +163,12 @@
               "focusNodes": {
                 "rec:testVarExists": {
                   "nodes": [
-                    "_:N2ea2c7ad654c47c8b307a4314720698c"
+                    "_:N25566b1058854d768431267979b31269"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testVarExists: _:N2ea2c7ad654c47c8b307a4314720698c\n"
+              "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testVarExists: _:N25566b1058854d768431267979b31269\n"
             }
           ]
         }
