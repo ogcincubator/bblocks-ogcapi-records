@@ -37,6 +37,116 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "links": {
+      "@context": {
+        "anchor": {},
+        "type": "dct:type"
+      }
+    },
+    "collections": {},
+    "id": {},
+    "title": "rdfs:label",
+    "description": {},
+    "extent": {
+      "@context": {
+        "spatial": {
+          "@context": {
+            "bbox": {}
+          }
+        },
+        "temporal": {
+          "@context": {
+            "interval": {},
+            "trs": {}
+          }
+        }
+      }
+    },
+    "itemType": {},
+    "crs": {},
+    "type": "dct:format",
+    "keywords": {},
+    "language": {
+      "@context": {
+        "code": {},
+        "name": {},
+        "alternate": {},
+        "dir": {}
+      }
+    },
+    "languages": {
+      "@context": {
+        "code": {},
+        "name": {},
+        "alternate": {},
+        "dir": {}
+      }
+    },
+    "recordLanguages": {
+      "@context": {
+        "code": {},
+        "name": {},
+        "alternate": {},
+        "dir": {}
+      }
+    },
+    "created": "dct:created",
+    "updated": "dct:modified",
+    "contacts": {
+      "@context": {
+        "identifier": {},
+        "name": {},
+        "position": {},
+        "organization": {},
+        "logo": {
+          "@context": {
+            "anchor": {},
+            "type": "dct:type"
+          }
+        },
+        "phones": {
+          "@context": {
+            "value": {}
+          }
+        },
+        "emails": {
+          "@context": {
+            "value": {}
+          }
+        },
+        "addresses": {
+          "@context": {
+            "deliveryPoint": {},
+            "city": {},
+            "administrativeArea": {},
+            "postalCode": {},
+            "country": {}
+          }
+        },
+        "hoursOfService": {},
+        "contactInstructions": {},
+        "roles": {}
+      }
+    },
+    "themes": {
+      "@context": {
+        "concepts": {
+          "@context": {
+            "id": "thns:id",
+            "title": "dct:title",
+            "description": "dct:description",
+            "url": "@id"
+          },
+          "@id": "thns:concepts",
+          "@container": "@set"
+        },
+        "scheme": "thns:scheme"
+      }
+    },
+    "license": {},
+    "rights": {},
+    "conformsTo": {},
+    "linkTemplates": {},
     "href": {
       "@type": "@id",
       "@id": "oa:hasTarget"
@@ -48,23 +158,8 @@ Links to the schema:
       "@id": "http://www.iana.org/assignments/relation",
       "@type": "@id"
     },
-    "type": "dct:format",
     "hreflang": "dct:language",
-    "title": "rdfs:label",
     "length": "dct:extent",
-    "concepts": {
-      "@context": {
-        "id": "thns:id",
-        "title": "dct:title",
-        "description": "dct:description",
-        "url": "@id"
-      },
-      "@id": "thns:concepts",
-      "@container": "@set"
-    },
-    "scheme": "thns:scheme",
-    "created": "dct:created",
-    "updated": "dct:modified",
     "uriTemplate": {
       "@type": "xsd:string",
       "@id": "rec:uriTemplate"

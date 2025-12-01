@@ -38,24 +38,36 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "href": {
-      "@type": "@id",
-      "@id": "oa:hasTarget"
-    },
-    "rel": {
+    "links": {
       "@context": {
-        "@base": "http://www.iana.org/assignments/relation/"
+        "anchor": {}
       },
-      "@id": "http://www.iana.org/assignments/relation",
-      "@type": "@id"
+      "@id": "rdfs:seeAlso"
     },
-    "type": "dct:format",
-    "hreflang": "dct:language",
-    "title": {
-      "@id": "rdfs:label",
-      "@container": "@set"
+    "collections": {
+      "@context": {
+        "description": {},
+        "links": {
+          "@context": {
+            "anchor": {},
+            "type": "dct:type"
+          }
+        },
+        "extent": {
+          "@context": {
+            "spatial": {},
+            "temporal": {
+              "@context": {
+                "interval": {},
+                "trs": {}
+              }
+            }
+          }
+        },
+        "itemType": {},
+        "crs": {}
+      }
     },
-    "length": "dct:extent",
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
@@ -69,15 +81,140 @@ Links to the schema:
       "@container": "@set",
       "@id": "geojson:features"
     },
+    "type": "dct:format",
     "id": "@id",
-    "properties": "@nest",
+    "properties": {
+      "@context": {
+        "title": {
+          "@container": "@set",
+          "@id": "dct:title"
+        },
+        "description": {
+          "@container": "@set",
+          "@id": "dct:description"
+        },
+        "keywords": {
+          "@container": "@set",
+          "@id": "dcat:keyword"
+        },
+        "language": {
+          "@context": {
+            "code": {},
+            "name": {},
+            "alternate": {},
+            "dir": {}
+          },
+          "@id": "rec:language"
+        },
+        "languages": {
+          "@context": {
+            "code": {},
+            "name": {},
+            "alternate": {},
+            "dir": {}
+          },
+          "@container": "@set",
+          "@id": "rec:languages"
+        },
+        "resourceLanguages": {
+          "@context": {
+            "code": {},
+            "name": {},
+            "alternate": {},
+            "dir": {}
+          },
+          "@container": "@set",
+          "@id": "rec:resourceLanguages"
+        },
+        "externalIds": {
+          "@context": {
+            "scheme": "rec:scheme",
+            "value": "rec:id"
+          },
+          "@container": "@set",
+          "@id": "rec:scopedIdentifier"
+        },
+        "themes": {
+          "@context": {
+            "concepts": {
+              "@context": {
+                "id": "thns:id",
+                "url": "@id"
+              },
+              "@id": "thns:concepts",
+              "@container": "@set"
+            },
+            "scheme": "thns:scheme"
+          },
+          "@container": "@set",
+          "@id": "rec:themes"
+        },
+        "formats": {
+          "@context": {
+            "name": "rec:name",
+            "mediaType": "rec:mediaType"
+          },
+          "@container": "@set",
+          "@id": "rec:format",
+          "@type": "@id"
+        },
+        "contacts": {
+          "@context": {
+            "identifier": {},
+            "name": {},
+            "position": {},
+            "organization": {},
+            "logo": {
+              "@context": {
+                "anchor": {},
+                "type": "dct:type"
+              }
+            },
+            "phones": {
+              "@context": {
+                "value": {}
+              }
+            },
+            "emails": {
+              "@context": {
+                "value": {}
+              }
+            },
+            "addresses": {
+              "@context": {
+                "deliveryPoint": {},
+                "city": {},
+                "administrativeArea": {},
+                "postalCode": {},
+                "country": {}
+              }
+            },
+            "links": {
+              "@context": {
+                "anchor": {},
+                "type": "dct:type"
+              }
+            },
+            "hoursOfService": {},
+            "contactInstructions": {},
+            "roles": {}
+          },
+          "@container": "@set",
+          "@id": "dcat:contactPoint",
+          "@type": "@id"
+        },
+        "license": "dcat:license",
+        "rights": "dcat:rights"
+      }
+    },
     "geometry": {
       "@context": {
         "type": "@type",
         "coordinates": {
           "@container": "@list",
           "@id": "geojson:coordinates"
-        }
+        },
+        "geometries": {}
       },
       "@id": "geojson:geometry"
     },
@@ -85,76 +222,37 @@ Links to the schema:
       "@container": "@list",
       "@id": "geojson:bbox"
     },
-    "links": "rdfs:seeAlso",
     "conformsTo": {
       "@container": "@set",
       "@id": "dct:conformsTo",
       "@type": "@id"
     },
-    "time": "dct:temporal",
+    "time": {
+      "@context": {
+        "date": {},
+        "timestamp": {},
+        "interval": {},
+        "resolution": {}
+      },
+      "@id": "dct:temporal"
+    },
+    "linkTemplates": "rec:hasLinkTemplate",
+    "href": {
+      "@type": "@id",
+      "@id": "oa:hasTarget"
+    },
+    "rel": {
+      "@context": {
+        "@base": "http://www.iana.org/assignments/relation/"
+      },
+      "@id": "http://www.iana.org/assignments/relation",
+      "@type": "@id"
+    },
+    "hreflang": "dct:language",
+    "title": "rdfs:label",
+    "length": "dct:extent",
     "created": "dct:created",
     "updated": "dct:modified",
-    "description": {
-      "@container": "@set",
-      "@id": "dct:description"
-    },
-    "keywords": {
-      "@container": "@set",
-      "@id": "dcat:keyword"
-    },
-    "language": "rec:language",
-    "languages": {
-      "@container": "@set",
-      "@id": "rec:languages"
-    },
-    "resourceLanguages": {
-      "@container": "@set",
-      "@id": "rec:resourceLanguages"
-    },
-    "externalIds": {
-      "@context": {
-        "scheme": "rec:scheme",
-        "value": "rec:id"
-      },
-      "@container": "@set",
-      "@id": "rec:scopedIdentifier"
-    },
-    "themes": {
-      "@context": {
-        "concepts": {
-          "@context": {
-            "id": "thns:id",
-            "title": "dct:title",
-            "url": "@id"
-          },
-          "@id": "thns:concepts",
-          "@container": "@set"
-        },
-        "scheme": "thns:scheme"
-      },
-      "@container": "@set",
-      "@id": "rec:themes"
-    },
-    "formats": {
-      "@context": {
-        "name": "rec:name",
-        "mediaType": "rec:mediaType"
-      },
-      "@container": "@set",
-      "@id": "rec:format",
-      "@type": "@id"
-    },
-    "contacts": {
-      "@context": {
-        "type": "dct:type"
-      },
-      "@container": "@set",
-      "@id": "dcat:contactPoint",
-      "@type": "@id"
-    },
-    "license": "dcat:license",
-    "rights": "dcat:rights",
-    "linkTemplates": "rec:hasLinkTemplate",
     "uriTemplate": {
       "@type": "xsd:string",
       "@id": "rec:uriTemplate"

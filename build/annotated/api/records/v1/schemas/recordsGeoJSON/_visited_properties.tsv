@@ -20,6 +20,12 @@ path	@id
 /collections/links/title	http://www.w3.org/2000/01/rdf-schema#label
 /collections/links/length	http://purl.org/dc/terms/extent
 /collections/extent	
+/collections/extent/spatial	
+/collections/extent/spatial/bbox	
+/collections/extent/spatial/crs	
+/collections/extent/temporal	
+/collections/extent/temporal/interval	
+/collections/extent/temporal/trs	
 /collections/itemType	
 /collections/crs	
 /features	

@@ -43,6 +43,24 @@ Links to the schema:
 * YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/time/schema.json)
 * JSON version: [schema.json](https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/time/schema.yaml)
 
+
+# JSON-LD Context
+
+```jsonld
+{
+  "@context": {
+    "date": {},
+    "timestamp": {},
+    "interval": {},
+    "resolution": {},
+    "@version": 1.1
+  }
+}
+```
+
+You can find the full JSON-LD context here:
+[context.jsonld](https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/time/context.jsonld)
+
 ## Sources
 
 * [OGC API Records - Draft](https://docs.ogc.org/DRAFTS/20-004.html)

@@ -10,7 +10,7 @@
       "title": "Validation report for ogc.api.records.records-ontology - OGC API Records Ontology",
       "bblockName": "OGC API Records Ontology",
       "bblockId": "ogc.api.records.records-ontology",
-      "generated": "2025-11-28T03:22:53.117308+00:00",
+      "generated": "2025-12-01T03:34:06.938940+00:00",
       "result": true,
       "items": [
         {
@@ -53,39 +53,11 @@
         "failed": 0
       }
     },
-    "ogc.api.records.v1.schemas.language": {
-      "title": "Validation report for ogc.api.records.v1.schemas.language - Schema for language",
-      "bblockName": "Schema for language",
-      "bblockId": "ogc.api.records.v1.schemas.language",
-      "generated": "2025-11-28T03:22:53.124743+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
-    "ogc.api.records.v1.schemas.license": {
-      "title": "Validation report for ogc.api.records.v1.schemas.license - Schema for license",
-      "bblockName": "Schema for license",
-      "bblockId": "ogc.api.records.v1.schemas.license",
-      "generated": "2025-11-28T03:22:53.129627+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
     "ogc.api.records.v1.schemas.theme": {
       "title": "Validation report for ogc.api.records.v1.schemas.theme - Schema for theme",
       "bblockName": "Schema for theme",
       "bblockId": "ogc.api.records.v1.schemas.theme",
-      "generated": "2025-11-28T03:22:53.144370+00:00",
+      "generated": "2025-12-01T03:34:06.954831+00:00",
       "result": true,
       "items": [
         {
@@ -206,11 +178,39 @@
         "failed": 0
       }
     },
+    "ogc.api.records.v1.schemas.license": {
+      "title": "Validation report for ogc.api.records.v1.schemas.license - Schema for license",
+      "bblockName": "Schema for license",
+      "bblockId": "ogc.api.records.v1.schemas.license",
+      "generated": "2025-12-01T03:34:06.980636+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.records.v1.schemas.language": {
+      "title": "Validation report for ogc.api.records.v1.schemas.language - Schema for language",
+      "bblockName": "Schema for language",
+      "bblockId": "ogc.api.records.v1.schemas.language",
+      "generated": "2025-12-01T03:34:06.987382+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
     "ogc.api.records.v1.schemas.roles": {
       "title": "Validation report for ogc.api.records.v1.schemas.roles - Schema for roles",
       "bblockName": "Schema for roles",
       "bblockId": "ogc.api.records.v1.schemas.roles",
-      "generated": "2025-11-28T03:22:53.169703+00:00",
+      "generated": "2025-12-01T03:34:06.992776+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -224,7 +224,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.linkBase - Schema for linkBase",
       "bblockName": "Schema for linkBase",
       "bblockId": "ogc.api.records.v1.schemas.linkBase",
-      "generated": "2025-11-28T03:22:53.177023+00:00",
+      "generated": "2025-12-01T03:34:07.000258+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -238,7 +238,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.time - Schema for time",
       "bblockName": "Schema for time",
       "bblockId": "ogc.api.records.v1.schemas.time",
-      "generated": "2025-11-28T03:22:53.184120+00:00",
+      "generated": "2025-12-01T03:34:07.007951+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -252,7 +252,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.contact - Schema for contact",
       "bblockName": "Schema for contact",
       "bblockId": "ogc.api.records.v1.schemas.contact",
-      "generated": "2025-11-28T03:22:53.197983+00:00",
+      "generated": "2025-12-01T03:34:07.022105+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -266,7 +266,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.link - Schema for link",
       "bblockName": "Schema for link",
       "bblockId": "ogc.api.records.v1.schemas.link",
-      "generated": "2025-11-28T03:22:53.204724+00:00",
+      "generated": "2025-12-01T03:34:07.029125+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -280,7 +280,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.linkTemplate - Schema for linkTemplate",
       "bblockName": "Schema for linkTemplate",
       "bblockId": "ogc.api.records.v1.schemas.linkTemplate",
-      "generated": "2025-11-28T03:22:53.329857+00:00",
+      "generated": "2025-12-01T03:34:07.160197+00:00",
       "result": false,
       "items": [
         {
@@ -361,12 +361,12 @@
                   "focusNodes": {
                     "rec:testVarExists": {
                       "nodes": [
-                        "_:N19f6d14806b346f49468b73f4ca79204"
+                        "_:N5a89c2fc56114a1d8f3193c215f0d108"
                       ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testVarExists: _:N19f6d14806b346f49468b73f4ca79204\n"
+                  "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testVarExists: _:N5a89c2fc56114a1d8f3193c215f0d108\n"
                 }
               ]
             }
@@ -441,12 +441,12 @@
                   "focusNodes": {
                     "rec:testVarExists": {
                       "nodes": [
-                        "_:N25566b1058854d768431267979b31269"
+                        "_:Ndf8c9e9a6355403e8f4a386e5909b792"
                       ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testVarExists: _:N25566b1058854d768431267979b31269\n"
+                  "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testVarExists: _:Ndf8c9e9a6355403e8f4a386e5909b792\n"
                 }
               ]
             }
@@ -464,7 +464,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.landingPage - Schema for landingPage",
       "bblockName": "Schema for landingPage",
       "bblockId": "ogc.api.records.v1.schemas.landingPage",
-      "generated": "2025-11-28T03:22:53.337361+00:00",
+      "generated": "2025-12-01T03:34:07.168724+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -478,7 +478,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON",
       "bblockName": "Schema for recordGeoJSON",
       "bblockId": "ogc.api.records.v1.schemas.recordGeoJSON",
-      "generated": "2025-11-28T03:22:53.725075+00:00",
+      "generated": "2025-12-01T03:34:07.549290+00:00",
       "result": true,
       "items": [
         {
@@ -580,7 +580,7 @@
                   "op": "ttl-create",
                   "empty": false,
                   "filename": "example_1_1.ttl",
-                  "size": 205,
+                  "size": 109,
                   "isError": false,
                   "message": "Output Turtle example_1_1.ttl created"
                 }
@@ -638,7 +638,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.catalog - Schema for catalog",
       "bblockName": "Schema for catalog",
       "bblockId": "ogc.api.records.v1.schemas.catalog",
-      "generated": "2025-11-28T03:22:53.740147+00:00",
+      "generated": "2025-12-01T03:34:07.564951+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -652,7 +652,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.recordsGeoJSON - Schema for recordsGeoJSON",
       "bblockName": "Schema for recordsGeoJSON",
       "bblockId": "ogc.api.records.v1.schemas.recordsGeoJSON",
-      "generated": "2025-11-28T03:22:53.749338+00:00",
+      "generated": "2025-12-01T03:34:07.574652+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -666,7 +666,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.catalogs - Schema for catalogs",
       "bblockName": "Schema for catalogs",
       "bblockId": "ogc.api.records.v1.schemas.catalogs",
-      "generated": "2025-11-28T03:22:53.757593+00:00",
+      "generated": "2025-12-01T03:34:07.583591+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
