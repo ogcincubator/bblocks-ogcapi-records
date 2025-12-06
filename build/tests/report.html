@@ -51,9 +51,9 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2025-12-04T03:28:35.458764+00:00</small>
-                <p class="summary fw-semibold text-danger">
-                    Number of passing building blocks: 14 / 15 (93.33%)
+            <small class="datetime">Generated at 2025-12-06T02:51:25.583352+00:00</small>
+                <p class="summary fw-semibold text-success">
+                    Number of passing building blocks: 15 / 15 (100%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
@@ -347,7 +347,7 @@
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.api.records.v1.schemas.linkTemplate" id="bblock-ogc.api.records.v1.schemas.linkTemplate">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button " type="button"
+                                <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.api\.records\.v1\.schemas\.linkTemplate">
                                     <div class="flex-fill">
@@ -355,16 +355,16 @@
                                         <small class="ms-2 bblock-id">ogc.api.records.v1.schemas.linkTemplate</small>
                                     </div>
 
-                                    <span class="badge text-bg-danger me-2">
-                                            Tests Failed
-                                            (50% passed)
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.api.records.v1.schemas.linkTemplate">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.api.records.v1.schemas.linkTemplate">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-danger">
-                                            Test passed: 1 / 2
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 2 / 2
                                         </p>
                                         <div class="card mb-2 validation-item require-fail">
                                             <div class="card-body">
@@ -380,13 +380,13 @@
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-4">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
-                                                                    <div class="font-monospace entry-message section-general text-danger">Test was expected to fail but it did not.</div>
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using var-exists-fail.json from test resources</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
@@ -395,12 +395,60 @@
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:
   Validation Report
-  Conforms: True
+  Conforms: False
+  Results (2):
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: rec:testAllVarsInTemplate
+  	Focus Node: [ ns1:relation &lt;http://www.iana.org/assignments/relation/describes&gt; ; rdfs:label Literal(&quot;World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations&quot;) ; rec:hasVariable [ dct:format Literal(&quot;array&quot;) ; dct:identifier Literal(&quot;not-bbox&quot;) ] ; rec:uriTemplate Literal(&quot;https://geo.woudc.org/ows?crs={crs}&amp;bbox={bbox}&quot;, datatype=xsd:string) ]
+  	Value Node: [ ns1:relation &lt;http://www.iana.org/assignments/relation/describes&gt; ; rdfs:label Literal(&quot;World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations&quot;) ; rec:hasVariable [ dct:format Literal(&quot;array&quot;) ; dct:identifier Literal(&quot;not-bbox&quot;) ] ; rec:uriTemplate Literal(&quot;https://geo.woudc.org/ows?crs={crs}&amp;bbox={bbox}&quot;, datatype=xsd:string) ]
+  	Result Path: rec:hasVariable
+  	Source Constraint: [ sh:select Literal(&quot;
+        PREFIX rec:    &lt;https://www.opengis.net/def/ogc-api/records/&gt;
+        prefix oa: &lt;http://www.w3.org/ns/oa#&gt;
+        SELECT $this ?path ?value ?template
+        WHERE {
+          BIND (rec:hasVariable as ?path)
+          $this rec:hasVariable/dct:identifier ?var .
+          $this rec:uriTemplate ?template .
+        }
+        GROUP BY $this ?path ?value ?template
+        HAVING ( COUNT(?var) != SUM(
+           IF(
+              CONTAINS(?template, CONCAT(&quot;{&quot;,?var,&quot;}&quot;  )),1,0 )
+    ) )
+  
+      &quot;) ]
+  	Message: variables must exist in uri template
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: rec:testAllVarsExist
+  	Focus Node: [ ns1:relation &lt;http://www.iana.org/assignments/relation/describes&gt; ; rdfs:label Literal(&quot;World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations&quot;) ; rec:hasVariable [ dct:format Literal(&quot;array&quot;) ; dct:identifier Literal(&quot;not-bbox&quot;) ] ; rec:uriTemplate Literal(&quot;https://geo.woudc.org/ows?crs={crs}&amp;bbox={bbox}&quot;, datatype=xsd:string) ]
+  	Value Node: [ ns1:relation &lt;http://www.iana.org/assignments/relation/describes&gt; ; rdfs:label Literal(&quot;World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations&quot;) ; rec:hasVariable [ dct:format Literal(&quot;array&quot;) ; dct:identifier Literal(&quot;not-bbox&quot;) ] ; rec:uriTemplate Literal(&quot;https://geo.woudc.org/ows?crs={crs}&amp;bbox={bbox}&quot;, datatype=xsd:string) ]
+  	Result Path: rec:hasVariable
+  	Source Constraint: [ sh:select Literal(&quot;
+        PREFIX rec:    &lt;https://www.opengis.net/def/ogc-api/records/&gt;
+        prefix oa: &lt;http://www.w3.org/ns/oa#&gt;
+        SELECT $this ?path ?value ?template
+        WHERE {
+          BIND (rec:hasVariable as ?path)
+          $this rec:hasVariable/dct:identifier ?var .
+          $this rec:uriTemplate ?template .
+        }
+        GROUP BY $this ?path ?value ?template
+        HAVING ( COUNT(?var) != SUM(
+           IF(
+              CONTAINS(?template, CONCAT(&quot;{&quot;,?var,&quot;}&quot;  )),1,0 )
+    ) )
+  
+      &quot;) ]
+  	Message: variables must exist in uri template
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:
- - Shape rec:testVarExists: _:N185ca922aefe4f85a7aeddb40ea02c33
+ - Shape rec:testAllVarsInTemplate: _:N6d3c9a8814504478a1b101dcf7a9830f
+ - Shape rec:testAllVarsExist: _:N6d3c9a8814504478a1b101dcf7a9830f
 </div>
                                                     </div>
                                                 </div>
@@ -437,7 +485,8 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:
- - Shape rec:testVarExists: _:N47d31d16157f454494b3ef3a5160208b
+ - Shape rec:testAllVarsInTemplate: _:N13a532ae5fff4840a5c9d9dd6ef310b2
+ - Shape rec:testAllVarsExist: _:N13a532ae5fff4840a5c9d9dd6ef310b2
 </div>
                                                     </div>
                                                 </div>
@@ -564,7 +613,8 @@ On instance[&#x27;properties&#x27;][&#x27;formats&#x27;][0]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:
- - Shape rec:testVarExists: &lt;urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone&gt;/rec:hasLinkTemplate,&lt;urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone&gt;/rec:hasLinkTemplate
+ - Shape rec:testAllVarsInTemplate: &lt;urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone&gt;/rec:hasLinkTemplate,&lt;urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone&gt;/rec:hasLinkTemplate
+ - Shape rec:testAllVarsExist: &lt;urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone&gt;/rec:hasLinkTemplate,&lt;urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone&gt;/rec:hasLinkTemplate
 </div>
                                                     </div>
                                                 </div>

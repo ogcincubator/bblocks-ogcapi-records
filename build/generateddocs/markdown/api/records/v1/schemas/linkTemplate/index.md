@@ -155,11 +155,11 @@ This example is to test records examples.
 [] rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
     ns1:relation <http://www.iana.org/assignments/relation/describes> ;
     rec:hasVariable [ dct:format "number" ;
-            dct:identifier "width" ],
-        [ dct:format "number" ;
             dct:identifier "height" ],
         [ dct:format "string" ;
             dct:identifier "format" ],
+        [ dct:format "number" ;
+            dct:identifier "width" ],
         [ dct:format "array" ;
             dct:identifier "bbox" ],
         <https://org.org/some-standard-param-set/crs> ;

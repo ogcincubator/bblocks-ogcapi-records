@@ -7,6 +7,6 @@
 [] rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
     ns1:relation <http://www.iana.org/assignments/relation/describes> ;
     rec:hasVariable [ dct:format "array" ;
-            dct:identifier "bbox" ] ;
+            dct:identifier "not-bbox" ] ;
     rec:uriTemplate "https://geo.woudc.org/ows?crs={crs}&bbox={bbox}"^^xsd:string .
 

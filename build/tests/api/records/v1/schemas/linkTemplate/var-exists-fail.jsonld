@@ -4,7 +4,7 @@
   "title": "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations",
   "uriTemplate": "https://geo.woudc.org/ows?crs={crs}&bbox={bbox}",
   "variables": {
-    "bbox": {
+    "not-bbox": {
       "description": "...",
       "type": "array",
       "items": {
