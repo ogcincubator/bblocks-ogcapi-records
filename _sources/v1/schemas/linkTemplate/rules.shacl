@@ -14,29 +14,7 @@ rec:testAllVarsInTemplate
     sh:sparql          [ sh:select """
       PREFIX rec:    <https://www.opengis.net/def/ogc-api/records/>
       prefix oa: <http://www.w3.org/ns/oa#>
-      SELECT $this ?path ?value ?template
-      WHERE {
-        BIND (rec:hasVariable as ?path)
-        $this rec:hasVariable/dct:identifier ?var .
-        $this rec:uriTemplate ?template .
-      }
-      GROUP BY $this ?path ?value ?template
-      HAVING ( COUNT(?var) != SUM(
-         IF(
-            CONTAINS(?template, CONCAT("{",?var,"}"  )),1,0 )
-  ) )
-
-    """ ; ]
-.
-
-rec:testAllVarsExist
-    a                  sh:NodeShape ;
-    sh:targetObjectsOf rec:hasLinkTemplate ;
-    sh:targetSubjectsOf rec:uriTemplate ;
-    sh:message         "variables must exist in uri template" ;
-    sh:sparql          [ sh:select """
-      PREFIX rec:    <https://www.opengis.net/def/ogc-api/records/>
-      prefix oa: <http://www.w3.org/ns/oa#>
+      PREFIX dct: <http://purl.org/dc/terms/>
       SELECT $this ?path ?value ?template
       WHERE {
         BIND (rec:hasVariable as ?path)
