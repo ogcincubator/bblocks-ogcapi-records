@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.link - Schema for link",
   "bblockName": "Schema for link",
   "bblockId": "ogc.api.records.v1.schemas.link",
-  "generated": "2025-12-10T03:30:06.347759+00:00",
+  "generated": "2025-12-13T03:25:09.800857+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},
