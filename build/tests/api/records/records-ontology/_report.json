@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.records-ontology - OGC API Records Ontology",
   "bblockName": "OGC API Records Ontology",
   "bblockId": "ogc.api.records.records-ontology",
-  "generated": "2025-12-13T03:25:09.712634+00:00",
+  "generated": "2025-12-16T03:31:06.751801+00:00",
   "result": true,
   "items": [
     {
@@ -23,7 +23,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using example_1_1.ttl from examples"
+              "message": "Using example_1_1 from examples"
             },
             {
               "op": "ttl-create",
