@@ -110,75 +110,20 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "id": {},
     "title": "rdfs:label",
-    "description": {},
     "links": {
       "@context": {
-        "anchor": {},
         "type": "dct:type"
       }
     },
-    "extent": {
-      "@context": {
-        "spatial": {
-          "@context": {
-            "bbox": {}
-          }
-        },
-        "temporal": {
-          "@context": {
-            "interval": {},
-            "trs": {}
-          }
-        }
-      }
-    },
-    "itemType": {},
-    "crs": {},
     "type": "dct:format",
-    "keywords": {},
-    "language": {},
-    "code": {},
-    "name": {},
-    "alternate": {},
-    "dir": {},
-    "languages": {},
-    "recordLanguages": {},
     "created": "dct:created",
     "updated": "dct:modified",
-    "identifier": {},
-    "position": {},
-    "organization": {},
     "logo": {
       "@context": {
-        "anchor": {},
         "type": "dct:type"
       }
     },
-    "phones": {
-      "@context": {
-        "value": {}
-      }
-    },
-    "emails": {
-      "@context": {
-        "value": {}
-      }
-    },
-    "addresses": {
-      "@context": {
-        "deliveryPoint": {},
-        "city": {},
-        "administrativeArea": {},
-        "postalCode": {},
-        "country": {}
-      }
-    },
-    "hoursOfService": {},
-    "contactInstructions": {},
-    "roles": {},
-    "contacts": {},
     "concepts": {
       "@context": {
         "id": "thns:id",
@@ -190,10 +135,6 @@ Links to the schema:
       "@container": "@set"
     },
     "scheme": "thns:scheme",
-    "themes": {},
-    "license": {},
-    "rights": {},
-    "conformsTo": {},
     "href": {
       "@type": "@id",
       "@id": "oa:hasTarget"
@@ -217,7 +158,6 @@ Links to the schema:
       "@container": "@index",
       "@index": "dct:identifier"
     },
-    "linkTemplates": {},
     "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dct": "http://purl.org/dc/terms/",

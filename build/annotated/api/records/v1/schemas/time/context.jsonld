@@ -1,9 +1,0 @@
-{
-  "@context": {
-    "date": {},
-    "timestamp": {},
-    "interval": {},
-    "resolution": {},
-    "@version": 1.1
-  }
-}

@@ -1,5 +1,5 @@
 Validation report for ogc.api.records.v1.schemas.linkTemplate - Schema for linkTemplate
-Generated 2025-12-16T03:31:06.915354+00:00
+Generated 2025-12-19T03:30:37.811637+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -48,7 +48,7 @@ Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:
   	Message: variables must exist in uri template
   
 Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:
- - Shape rec:testAllVarsInTemplate: _:Nbd685acb07b64cc6966d25a909faee3f
+ - Shape rec:testAllVarsInTemplate: _:N54f7f4b41ff845c79305f0b29c19486e
 
 === End SHACL ===
 

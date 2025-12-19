@@ -726,7 +726,10 @@ This example is to test records examples.
 <urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone> a geojson:Feature ;
     dct:conformsTo <http://www.opengis.net/spec/ogcapi-records-1/1.0/conf/record-core> ;
     dct:temporal [ ] ;
-    rdfs:seeAlso [ rdfs:label "Static dataset archive file" ;
+    rdfs:seeAlso [ rdfs:label "OGC Web Map Service (WMS)" ;
+            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
+            oa:hasTarget <https://geo.woudc.org/ows?service=WMS&request=GetCapabilities> ],
+        [ rdfs:label "Static dataset archive file" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:format "application/zip" ;
             dct:modified "2015-01-23T00:00:00Z" ;
@@ -738,40 +741,28 @@ This example is to test records examples.
             dct:modified "2015-01-23T00:00:00Z" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
             oa:hasTarget <https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1> ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
+            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
         [ rdfs:label "Total Ozone Preview Image" ;
             dct:format "image/png" ;
             ns1:relation <http://www.iana.org/assignments/relation/preview> ;
             oa:hasTarget <https://woudc.org/data/preview.png> ],
-        [ rdfs:label "OGC Web Feature Service (WFS)" ;
-            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            oa:hasTarget <https://geo.woudc.org/ows?service=WFS&request=GetCapabilities> ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
-            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
-        [ rdfs:label "OGC Web Map Service (WMS)" ;
-            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            oa:hasTarget <https://geo.woudc.org/ows?service=WMS&request=GetCapabilities> ],
         [ rdfs:label "Data Search / Download User Interface" ;
             dct:format "text/html" ;
             ns1:relation <http://www.iana.org/assignments/relation/search> ;
             oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ],
         [ ns1:relation <http://www.iana.org/assignments/relation/collection> ;
-            oa:hasTarget <https://woudc.org/data/dataset_info.php> ] ;
+            oa:hasTarget <https://woudc.org/data/dataset_info.php> ],
+        [ rdfs:label "OGC Web Feature Service (WFS)" ;
+            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
+            oa:hasTarget <https://geo.woudc.org/ows?service=WFS&request=GetCapabilities> ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( -180 -90 ) ( -180 90 ) ( 180 90 ) ( 180 -90 ) ( -180 -90 ) ) ) ] ;
     rec:hasLinkTemplate [ rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
             ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            rec:hasVariable [ dct:format "string" ;
-                    dct:identifier "outputFormat" ],
-                [ dct:format "number" ;
-                    dct:identifier "maxFeatures" ] ;
-            rec:uriTemplate "https://geo.woudc.org/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=woudc:totalozone&maxFeatures={maxFeatures}&outputFormat={outputFormat}"^^xsd:string ],
-        [ rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
-            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
             rec:hasVariable [ dct:description "..." ;
                     dct:format "array" ;
                     dct:identifier "bbox" ],
-                [ dct:format "string" ;
-                    dct:identifier "format" ],
                 [ dct:description "..." ;
                     dct:format "number" ;
                     dct:identifier "width" ],
@@ -780,8 +771,17 @@ This example is to test records examples.
                     dct:identifier "height" ],
                 [ dct:description "..." ;
                     dct:format "string" ;
-                    dct:identifier "crs" ] ;
-            rec:uriTemplate "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}"^^xsd:string ] .
+                    dct:identifier "crs" ],
+                [ dct:format "string" ;
+                    dct:identifier "format" ] ;
+            rec:uriTemplate "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}"^^xsd:string ],
+        [ rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
+            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
+            rec:hasVariable [ dct:format "string" ;
+                    dct:identifier "outputFormat" ],
+                [ dct:format "number" ;
+                    dct:identifier "maxFeatures" ] ;
+            rec:uriTemplate "https://geo.woudc.org/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=woudc:totalozone&maxFeatures={maxFeatures}&outputFormat={outputFormat}"^^xsd:string ] .
 
 
 ```
@@ -998,14 +998,12 @@ Links to the schema:
     },
     "type": "@type",
     "id": "@id",
-    "properties": {},
     "geometry": {
       "@context": {
         "coordinates": {
           "@container": "@list",
           "@id": "geojson:coordinates"
-        },
-        "geometries": {}
+        }
       },
       "@id": "geojson:geometry"
     },
@@ -1034,15 +1032,7 @@ Links to the schema:
       "@id": "dct:conformsTo",
       "@type": "@id"
     },
-    "time": {
-      "@context": {
-        "date": {},
-        "timestamp": {},
-        "interval": {},
-        "resolution": {}
-      },
-      "@id": "dct:temporal"
-    },
+    "time": "dct:temporal",
     "created": "dct:created",
     "updated": "dct:modified",
     "title": {
@@ -1057,32 +1047,12 @@ Links to the schema:
       "@container": "@set",
       "@id": "dcat:keyword"
     },
-    "language": {
-      "@context": {
-        "code": {},
-        "name": {},
-        "alternate": {},
-        "dir": {}
-      },
-      "@id": "rec:language"
-    },
+    "language": "rec:language",
     "languages": {
-      "@context": {
-        "code": {},
-        "name": {},
-        "alternate": {},
-        "dir": {}
-      },
       "@container": "@set",
       "@id": "rec:languages"
     },
     "resourceLanguages": {
-      "@context": {
-        "code": {},
-        "name": {},
-        "alternate": {},
-        "dir": {}
-      },
       "@container": "@set",
       "@id": "rec:resourceLanguages"
     },
@@ -1120,10 +1090,6 @@ Links to the schema:
     },
     "contacts": {
       "@context": {
-        "identifier": {},
-        "name": {},
-        "position": {},
-        "organization": {},
         "logo": {
           "@context": {
             "rel": {
@@ -1133,30 +1099,10 @@ Links to the schema:
               "@id": "http://www.iana.org/assignments/relation",
               "@type": "@id"
             },
-            "anchor": {},
             "type": "dct:type",
             "hreflang": "dct:language",
             "title": "rdfs:label",
             "length": "dct:extent"
-          }
-        },
-        "phones": {
-          "@context": {
-            "value": {}
-          }
-        },
-        "emails": {
-          "@context": {
-            "value": {}
-          }
-        },
-        "addresses": {
-          "@context": {
-            "deliveryPoint": {},
-            "city": {},
-            "administrativeArea": {},
-            "postalCode": {},
-            "country": {}
           }
         },
         "links": {
@@ -1168,16 +1114,12 @@ Links to the schema:
               "@id": "http://www.iana.org/assignments/relation",
               "@type": "@id"
             },
-            "anchor": {},
             "type": "dct:type",
             "hreflang": "dct:language",
             "title": "rdfs:label",
             "length": "dct:extent"
           }
-        },
-        "hoursOfService": {},
-        "contactInstructions": {},
-        "roles": {}
+        }
       },
       "@container": "@set",
       "@id": "dcat:contactPoint",

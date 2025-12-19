@@ -39,93 +39,20 @@ Links to the schema:
   "@context": {
     "links": {
       "@context": {
-        "anchor": {},
         "type": "dct:type"
       }
     },
-    "collections": {},
-    "id": {},
     "title": "rdfs:label",
-    "description": {},
-    "extent": {
-      "@context": {
-        "spatial": {
-          "@context": {
-            "bbox": {}
-          }
-        },
-        "temporal": {
-          "@context": {
-            "interval": {},
-            "trs": {}
-          }
-        }
-      }
-    },
-    "itemType": {},
-    "crs": {},
     "type": "dct:format",
-    "keywords": {},
-    "language": {
-      "@context": {
-        "code": {},
-        "name": {},
-        "alternate": {},
-        "dir": {}
-      }
-    },
-    "languages": {
-      "@context": {
-        "code": {},
-        "name": {},
-        "alternate": {},
-        "dir": {}
-      }
-    },
-    "recordLanguages": {
-      "@context": {
-        "code": {},
-        "name": {},
-        "alternate": {},
-        "dir": {}
-      }
-    },
     "created": "dct:created",
     "updated": "dct:modified",
     "contacts": {
       "@context": {
-        "identifier": {},
-        "name": {},
-        "position": {},
-        "organization": {},
         "logo": {
           "@context": {
-            "anchor": {},
             "type": "dct:type"
           }
-        },
-        "phones": {
-          "@context": {
-            "value": {}
-          }
-        },
-        "emails": {
-          "@context": {
-            "value": {}
-          }
-        },
-        "addresses": {
-          "@context": {
-            "deliveryPoint": {},
-            "city": {},
-            "administrativeArea": {},
-            "postalCode": {},
-            "country": {}
-          }
-        },
-        "hoursOfService": {},
-        "contactInstructions": {},
-        "roles": {}
+        }
       }
     },
     "themes": {
@@ -143,10 +70,6 @@ Links to the schema:
         "scheme": "thns:scheme"
       }
     },
-    "license": {},
-    "rights": {},
-    "conformsTo": {},
-    "linkTemplates": {},
     "href": {
       "@type": "@id",
       "@id": "oa:hasTarget"

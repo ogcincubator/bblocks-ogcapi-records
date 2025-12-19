@@ -38,34 +38,14 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "links": {
-      "@context": {
-        "anchor": {}
-      },
-      "@id": "rdfs:seeAlso"
-    },
+    "links": "rdfs:seeAlso",
     "collections": {
       "@context": {
-        "description": {},
         "links": {
           "@context": {
-            "anchor": {},
             "type": "dct:type"
           }
-        },
-        "extent": {
-          "@context": {
-            "spatial": {},
-            "temporal": {
-              "@context": {
-                "interval": {},
-                "trs": {}
-              }
-            }
-          }
-        },
-        "itemType": {},
-        "crs": {}
+        }
       }
     },
     "Feature": "geojson:Feature",
@@ -97,32 +77,12 @@ Links to the schema:
           "@container": "@set",
           "@id": "dcat:keyword"
         },
-        "language": {
-          "@context": {
-            "code": {},
-            "name": {},
-            "alternate": {},
-            "dir": {}
-          },
-          "@id": "rec:language"
-        },
+        "language": "rec:language",
         "languages": {
-          "@context": {
-            "code": {},
-            "name": {},
-            "alternate": {},
-            "dir": {}
-          },
           "@container": "@set",
           "@id": "rec:languages"
         },
         "resourceLanguages": {
-          "@context": {
-            "code": {},
-            "name": {},
-            "alternate": {},
-            "dir": {}
-          },
           "@container": "@set",
           "@id": "rec:resourceLanguages"
         },
@@ -160,44 +120,16 @@ Links to the schema:
         },
         "contacts": {
           "@context": {
-            "identifier": {},
-            "name": {},
-            "position": {},
-            "organization": {},
             "logo": {
               "@context": {
-                "anchor": {},
                 "type": "dct:type"
-              }
-            },
-            "phones": {
-              "@context": {
-                "value": {}
-              }
-            },
-            "emails": {
-              "@context": {
-                "value": {}
-              }
-            },
-            "addresses": {
-              "@context": {
-                "deliveryPoint": {},
-                "city": {},
-                "administrativeArea": {},
-                "postalCode": {},
-                "country": {}
               }
             },
             "links": {
               "@context": {
-                "anchor": {},
                 "type": "dct:type"
               }
-            },
-            "hoursOfService": {},
-            "contactInstructions": {},
-            "roles": {}
+            }
           },
           "@container": "@set",
           "@id": "dcat:contactPoint",
@@ -213,8 +145,7 @@ Links to the schema:
         "coordinates": {
           "@container": "@list",
           "@id": "geojson:coordinates"
-        },
-        "geometries": {}
+        }
       },
       "@id": "geojson:geometry"
     },
@@ -227,15 +158,7 @@ Links to the schema:
       "@id": "dct:conformsTo",
       "@type": "@id"
     },
-    "time": {
-      "@context": {
-        "date": {},
-        "timestamp": {},
-        "interval": {},
-        "resolution": {}
-      },
-      "@id": "dct:temporal"
-    },
+    "time": "dct:temporal",
     "linkTemplates": "rec:hasLinkTemplate",
     "href": {
       "@type": "@id",
