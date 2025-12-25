@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON",
   "bblockName": "Schema for recordGeoJSON",
   "bblockId": "ogc.api.records.v1.schemas.recordGeoJSON",
-  "generated": "2025-12-22T03:32:46.559850+00:00",
+  "generated": "2025-12-25T03:31:11.667658+00:00",
   "result": true,
   "items": [
     {
@@ -104,7 +104,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 109,
+              "size": 108,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
             }
