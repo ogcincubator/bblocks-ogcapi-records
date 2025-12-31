@@ -8,7 +8,7 @@
   "itemClass": "schema",
   "register": "ogcapi-records",
   "version": "0.1",
-  "dateOfLastChange": "2025-12-25",
+  "dateOfLastChange": "2025-12-28",
   "sources": [
     {
       "title": "OGC API Records - Draft",
@@ -26,8 +26,8 @@
     ]
   },
   "dependsOn": [
-    "ogc.api.records.v1.schemas.linkTemplate",
     "ogc.api.records.v1.schemas.catalog",
+    "ogc.api.records.v1.schemas.linkTemplate",
     "ogc.api.features.v1.schemas.collections"
   ],
   "schema": {
