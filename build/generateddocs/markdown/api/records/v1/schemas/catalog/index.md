@@ -111,19 +111,9 @@ Links to the schema:
 {
   "@context": {
     "title": "rdfs:label",
-    "links": {
-      "@context": {
-        "type": "dct:type"
-      }
-    },
     "type": "dct:format",
     "created": "dct:created",
     "updated": "dct:modified",
-    "logo": {
-      "@context": {
-        "type": "dct:type"
-      }
-    },
     "concepts": {
       "@context": {
         "id": "thns:id",

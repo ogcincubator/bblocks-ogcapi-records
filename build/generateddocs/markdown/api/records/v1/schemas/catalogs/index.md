@@ -37,39 +37,10 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "links": {
-      "@context": {
-        "type": "dct:type"
-      }
-    },
     "title": "rdfs:label",
     "type": "dct:format",
     "created": "dct:created",
     "updated": "dct:modified",
-    "contacts": {
-      "@context": {
-        "logo": {
-          "@context": {
-            "type": "dct:type"
-          }
-        }
-      }
-    },
-    "themes": {
-      "@context": {
-        "concepts": {
-          "@context": {
-            "id": "thns:id",
-            "title": "dct:title",
-            "description": "dct:description",
-            "url": "@id"
-          },
-          "@id": "thns:concepts",
-          "@container": "@set"
-        },
-        "scheme": "thns:scheme"
-      }
-    },
     "href": {
       "@type": "@id",
       "@id": "oa:hasTarget"

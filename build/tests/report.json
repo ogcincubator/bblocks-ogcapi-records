@@ -10,7 +10,7 @@
       "title": "Validation report for ogc.api.records.records-ontology - OGC API Records Ontology",
       "bblockName": "OGC API Records Ontology",
       "bblockId": "ogc.api.records.records-ontology",
-      "generated": "2026-01-07T03:31:41.617102+00:00",
+      "generated": "2026-01-10T03:30:34.094041+00:00",
       "result": true,
       "items": [
         {
@@ -57,7 +57,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.license - Schema for license",
       "bblockName": "Schema for license",
       "bblockId": "ogc.api.records.v1.schemas.license",
-      "generated": "2026-01-07T03:31:41.622515+00:00",
+      "generated": "2026-01-10T03:30:34.099533+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -71,7 +71,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.language - Schema for language",
       "bblockName": "Schema for language",
       "bblockId": "ogc.api.records.v1.schemas.language",
-      "generated": "2026-01-07T03:31:41.628979+00:00",
+      "generated": "2026-01-10T03:30:34.106013+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -85,7 +85,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.theme - Schema for theme",
       "bblockName": "Schema for theme",
       "bblockId": "ogc.api.records.v1.schemas.theme",
-      "generated": "2026-01-07T03:31:41.642984+00:00",
+      "generated": "2026-01-10T03:30:34.120427+00:00",
       "result": true,
       "items": [
         {
@@ -210,7 +210,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.roles - Schema for roles",
       "bblockName": "Schema for roles",
       "bblockId": "ogc.api.records.v1.schemas.roles",
-      "generated": "2026-01-07T03:31:41.668649+00:00",
+      "generated": "2026-01-10T03:30:34.146126+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -224,7 +224,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.linkBase - Schema for linkBase",
       "bblockName": "Schema for linkBase",
       "bblockId": "ogc.api.records.v1.schemas.linkBase",
-      "generated": "2026-01-07T03:31:41.676086+00:00",
+      "generated": "2026-01-10T03:30:34.153611+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -238,7 +238,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.time - Schema for time",
       "bblockName": "Schema for time",
       "bblockId": "ogc.api.records.v1.schemas.time",
-      "generated": "2026-01-07T03:31:41.683623+00:00",
+      "generated": "2026-01-10T03:30:34.160792+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -252,7 +252,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.contact - Schema for contact",
       "bblockName": "Schema for contact",
       "bblockId": "ogc.api.records.v1.schemas.contact",
-      "generated": "2026-01-07T03:31:41.697752+00:00",
+      "generated": "2026-01-10T03:30:34.174687+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -266,7 +266,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.link - Schema for link",
       "bblockName": "Schema for link",
       "bblockId": "ogc.api.records.v1.schemas.link",
-      "generated": "2026-01-07T03:31:41.704839+00:00",
+      "generated": "2026-01-10T03:30:34.181397+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -280,7 +280,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.linkTemplate - Schema for linkTemplate",
       "bblockName": "Schema for linkTemplate",
       "bblockId": "ogc.api.records.v1.schemas.linkTemplate",
-      "generated": "2026-01-07T03:31:41.835581+00:00",
+      "generated": "2026-01-10T03:30:34.307172+00:00",
       "result": true,
       "items": [
         {
@@ -352,7 +352,7 @@
                 {
                   "op": "shacl-report",
                   "shaclFile": "_sources/v1/schemas/linkTemplate/rules.shacl",
-                  "graph": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix rec: <https://www.opengis.net/def/ogc-api/records/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode _:Ncd1f81fbb22b4c41b2a2c4ca326c7c31 ;\n            sh:resultMessage \"variables must exist in uri template\" ;\n            sh:resultPath rec:hasVariable ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraint [ sh:select \"\"\"\n      PREFIX rec:    <https://www.opengis.net/def/ogc-api/records/>\n      prefix oa: <http://www.w3.org/ns/oa#>\n      PREFIX dct: <http://purl.org/dc/terms/>\n      SELECT $this ?path ?value ?template\n      WHERE {\n        BIND (rec:hasVariable as ?path)\n        $this rec:hasVariable/dct:identifier ?var .\n        $this rec:uriTemplate ?template .\n      }\n      GROUP BY $this ?path ?value ?template\n      HAVING ( COUNT(?var) != SUM(\n         IF(\n            CONTAINS(?template, CONCAT(\"{\",?var,\"}\"  )),1,0 )\n  ) )\n\n    \"\"\" ] ;\n            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;\n            sh:sourceShape rec:testAllVarsInTemplate ;\n            sh:value _:Ncd1f81fbb22b4c41b2a2c4ca326c7c31 ] .\n\n_:N0dce628e0ca54dadad8e5044c25bce2d dcterms:format \"array\" ;\n    dcterms:identifier \"not-bbox\" .\n\n_:Ncd1f81fbb22b4c41b2a2c4ca326c7c31 rdfs:label \"World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations\" ;\n    ns1:relation <http://www.iana.org/assignments/relation/describes> ;\n    rec:hasVariable _:N0dce628e0ca54dadad8e5044c25bce2d ;\n    rec:uriTemplate \"https://geo.woudc.org/ows?crs={crs}&bbox={bbox}\"^^xsd:string .\n\n",
+                  "graph": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix rec: <https://www.opengis.net/def/ogc-api/records/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode _:Nb25dbbf3c5aa40baa2db04e6e464e808 ;\n            sh:resultMessage \"variables must exist in uri template\" ;\n            sh:resultPath rec:hasVariable ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraint [ sh:select \"\"\"\n      PREFIX rec:    <https://www.opengis.net/def/ogc-api/records/>\n      prefix oa: <http://www.w3.org/ns/oa#>\n      PREFIX dct: <http://purl.org/dc/terms/>\n      SELECT $this ?path ?value ?template\n      WHERE {\n        BIND (rec:hasVariable as ?path)\n        $this rec:hasVariable/dct:identifier ?var .\n        $this rec:uriTemplate ?template .\n      }\n      GROUP BY $this ?path ?value ?template\n      HAVING ( COUNT(?var) != SUM(\n         IF(\n            CONTAINS(?template, CONCAT(\"{\",?var,\"}\"  )),1,0 )\n  ) )\n\n    \"\"\" ] ;\n            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;\n            sh:sourceShape rec:testAllVarsInTemplate ;\n            sh:value _:Nb25dbbf3c5aa40baa2db04e6e464e808 ] .\n\n_:N5ec46b2cff80426ca9d5ea872f135df6 dcterms:format \"array\" ;\n    dcterms:identifier \"not-bbox\" .\n\n_:Nb25dbbf3c5aa40baa2db04e6e464e808 rdfs:label \"World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations\" ;\n    ns1:relation <http://www.iana.org/assignments/relation/describes> ;\n    rec:hasVariable _:N5ec46b2cff80426ca9d5ea872f135df6 ;\n    rec:uriTemplate \"https://geo.woudc.org/ows?crs={crs}&bbox={bbox}\"^^xsd:string .\n\n",
                   "isError": true,
                   "message": "Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:\n  Validation Report\n  Conforms: False\n  Results (1):\n  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: rec:testAllVarsInTemplate\n  \tFocus Node: [ ns1:relation <http://www.iana.org/assignments/relation/describes> ; rdfs:label Literal(\"World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations\") ; rec:hasVariable [ dct:format Literal(\"array\") ; dct:identifier Literal(\"not-bbox\") ] ; rec:uriTemplate Literal(\"https://geo.woudc.org/ows?crs={crs}&bbox={bbox}\", datatype=xsd:string) ]\n  \tValue Node: [ ns1:relation <http://www.iana.org/assignments/relation/describes> ; rdfs:label Literal(\"World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations\") ; rec:hasVariable [ dct:format Literal(\"array\") ; dct:identifier Literal(\"not-bbox\") ] ; rec:uriTemplate Literal(\"https://geo.woudc.org/ows?crs={crs}&bbox={bbox}\", datatype=xsd:string) ]\n  \tResult Path: rec:hasVariable\n  \tSource Constraint: [ sh:select Literal(\"\n        PREFIX rec:    <https://www.opengis.net/def/ogc-api/records/>\n        prefix oa: <http://www.w3.org/ns/oa#>\n        PREFIX dct: <http://purl.org/dc/terms/>\n        SELECT $this ?path ?value ?template\n        WHERE {\n          BIND (rec:hasVariable as ?path)\n          $this rec:hasVariable/dct:identifier ?var .\n          $this rec:uriTemplate ?template .\n        }\n        GROUP BY $this ?path ?value ?template\n        HAVING ( COUNT(?var) != SUM(\n           IF(\n              CONTAINS(?template, CONCAT(\"{\",?var,\"}\"  )),1,0 )\n    ) )\n  \n      \") ]\n  \tMessage: variables must exist in uri template\n  "
                 },
@@ -361,12 +361,12 @@
                   "focusNodes": {
                     "rec:testAllVarsInTemplate": {
                       "nodes": [
-                        "_:Ncd1f81fbb22b4c41b2a2c4ca326c7c31"
+                        "_:Nb25dbbf3c5aa40baa2db04e6e464e808"
                       ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testAllVarsInTemplate: _:Ncd1f81fbb22b4c41b2a2c4ca326c7c31\n"
+                  "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testAllVarsInTemplate: _:Nb25dbbf3c5aa40baa2db04e6e464e808\n"
                 }
               ]
             }
@@ -441,12 +441,12 @@
                   "focusNodes": {
                     "rec:testAllVarsInTemplate": {
                       "nodes": [
-                        "_:N191b7b0f7bbe4998926e44f9214b9ee9"
+                        "_:N87ec8430b6d34e7490a3986d119abc14"
                       ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testAllVarsInTemplate: _:N191b7b0f7bbe4998926e44f9214b9ee9\n"
+                  "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testAllVarsInTemplate: _:N87ec8430b6d34e7490a3986d119abc14\n"
                 }
               ]
             }
@@ -464,7 +464,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.landingPage - Schema for landingPage",
       "bblockName": "Schema for landingPage",
       "bblockId": "ogc.api.records.v1.schemas.landingPage",
-      "generated": "2026-01-07T03:31:41.843872+00:00",
+      "generated": "2026-01-10T03:30:34.315154+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -478,7 +478,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON",
       "bblockName": "Schema for recordGeoJSON",
       "bblockId": "ogc.api.records.v1.schemas.recordGeoJSON",
-      "generated": "2026-01-07T03:31:42.084741+00:00",
+      "generated": "2026-01-10T03:30:34.838533+00:00",
       "result": true,
       "items": [
         {
@@ -580,7 +580,7 @@
                   "op": "ttl-create",
                   "empty": false,
                   "filename": "example_1_1.ttl",
-                  "size": 108,
+                  "size": 109,
                   "isError": false,
                   "message": "Output Turtle example_1_1.ttl created"
                 }
@@ -638,7 +638,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.catalog - Schema for catalog",
       "bblockName": "Schema for catalog",
       "bblockId": "ogc.api.records.v1.schemas.catalog",
-      "generated": "2026-01-07T03:31:42.100333+00:00",
+      "generated": "2026-01-10T03:30:34.853537+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -652,7 +652,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.recordsGeoJSON - Schema for recordsGeoJSON",
       "bblockName": "Schema for recordsGeoJSON",
       "bblockId": "ogc.api.records.v1.schemas.recordsGeoJSON",
-      "generated": "2026-01-07T03:31:42.109913+00:00",
+      "generated": "2026-01-10T03:30:34.862341+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -666,7 +666,7 @@
       "title": "Validation report for ogc.api.records.v1.schemas.catalogs - Schema for catalogs",
       "bblockName": "Schema for catalogs",
       "bblockId": "ogc.api.records.v1.schemas.catalogs",
-      "generated": "2026-01-07T03:31:42.118484+00:00",
+      "generated": "2026-01-10T03:30:34.870589+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},

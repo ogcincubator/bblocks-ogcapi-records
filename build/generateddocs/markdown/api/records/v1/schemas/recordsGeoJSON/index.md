@@ -39,15 +39,6 @@ Links to the schema:
 {
   "@context": {
     "links": "rdfs:seeAlso",
-    "collections": {
-      "@context": {
-        "links": {
-          "@context": {
-            "type": "dct:type"
-          }
-        }
-      }
-    },
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
@@ -63,97 +54,20 @@ Links to the schema:
     },
     "type": "dct:format",
     "id": "@id",
-    "properties": {
-      "@context": {
-        "title": {
-          "@container": "@set",
-          "@id": "dct:title"
-        },
-        "description": {
-          "@container": "@set",
-          "@id": "dct:description"
-        },
-        "keywords": {
-          "@container": "@set",
-          "@id": "dcat:keyword"
-        },
-        "language": "rec:language",
-        "languages": {
-          "@container": "@set",
-          "@id": "rec:languages"
-        },
-        "resourceLanguages": {
-          "@container": "@set",
-          "@id": "rec:resourceLanguages"
-        },
-        "externalIds": {
-          "@context": {
-            "scheme": "rec:scheme",
-            "value": "rec:id"
-          },
-          "@container": "@set",
-          "@id": "rec:scopedIdentifier"
-        },
-        "themes": {
-          "@context": {
-            "concepts": {
-              "@context": {
-                "id": "thns:id",
-                "url": "@id"
-              },
-              "@id": "thns:concepts",
-              "@container": "@set"
-            },
-            "scheme": "thns:scheme"
-          },
-          "@container": "@set",
-          "@id": "rec:themes"
-        },
-        "formats": {
-          "@context": {
-            "name": "rec:name",
-            "mediaType": "rec:mediaType"
-          },
-          "@container": "@set",
-          "@id": "rec:format",
-          "@type": "@id"
-        },
-        "contacts": {
-          "@context": {
-            "logo": {
-              "@context": {
-                "type": "dct:type"
-              }
-            },
-            "links": {
-              "@context": {
-                "type": "dct:type"
-              }
-            }
-          },
-          "@container": "@set",
-          "@id": "dcat:contactPoint",
-          "@type": "@id"
-        },
-        "license": "dcat:license",
-        "rights": "dcat:rights"
-      }
-    },
     "geometry": {
       "@context": {
         "type": "@type",
         "coordinates": {
           "@container": "@list",
           "@id": "geojson:coordinates"
-        },
-        "bbox": {
-          "@container": "@list",
-          "@id": "geojson:bbox"
         }
       },
       "@id": "geojson:geometry"
     },
-    "bbox": "geojson:bbox",
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
     "conformsTo": {
       "@container": "@set",
       "@id": "dct:conformsTo",
