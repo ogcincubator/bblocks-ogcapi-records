@@ -157,9 +157,9 @@ This example is to test records examples.
     rec:hasVariable [ dct:format "array" ;
             dct:identifier "bbox" ],
         [ dct:format "number" ;
-            dct:identifier "width" ],
-        [ dct:format "number" ;
             dct:identifier "height" ],
+        [ dct:format "number" ;
+            dct:identifier "width" ],
         [ dct:format "string" ;
             dct:identifier "format" ],
         <https://org.org/some-standard-param-set/crs> ;
