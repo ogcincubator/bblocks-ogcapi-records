@@ -15,6 +15,73 @@
     },
     "type": "@type",
     "id": "@id",
+    "properties": {
+      "@id": "@nest",
+      "@context": {
+        "created": "dct:created",
+        "updated": "dct:modified",
+        "title": {
+          "@container": "@set",
+          "@id": "dct:title"
+        },
+        "description": {
+          "@container": "@set",
+          "@id": "dct:description"
+        },
+        "keywords": {
+          "@container": "@set",
+          "@id": "dcat:keyword"
+        },
+        "language": "rec:language",
+        "languages": {
+          "@container": "@set",
+          "@id": "rec:languages"
+        },
+        "resourceLanguages": {
+          "@container": "@set",
+          "@id": "rec:resourceLanguages"
+        },
+        "externalIds": {
+          "@context": {
+            "scheme": "rec:scheme",
+            "value": "rec:id"
+          },
+          "@container": "@set",
+          "@id": "rec:scopedIdentifier"
+        },
+        "themes": {
+          "@context": {
+            "concepts": {
+              "@context": {
+                "id": "thns:id",
+                "url": "@id"
+              },
+              "@id": "thns:concepts",
+              "@container": "@set"
+            },
+            "scheme": "thns:scheme"
+          },
+          "@container": "@set",
+          "@id": "rec:themes"
+        },
+        "formats": {
+          "@context": {
+            "name": "rec:name",
+            "mediaType": "rec:mediaType"
+          },
+          "@container": "@set",
+          "@id": "rec:format",
+          "@type": "@id"
+        },
+        "contacts": {
+          "@container": "@set",
+          "@id": "dcat:contactPoint",
+          "@type": "@id"
+        },
+        "license": "dcat:license",
+        "rights": "dcat:rights"
+      }
+    },
     "geometry": {
       "@context": {
         "coordinates": {
@@ -40,7 +107,9 @@
         "type": "dct:format",
         "hreflang": "dct:language",
         "title": "rdfs:label",
-        "length": "dct:extent"
+        "length": "dct:extent",
+        "created": "dct:created",
+        "updated": "dct:modified"
       },
       "@id": "rdfs:seeAlso"
     },
@@ -50,68 +119,6 @@
       "@type": "@id"
     },
     "time": "dct:temporal",
-    "created": "dct:created",
-    "updated": "dct:modified",
-    "title": {
-      "@container": "@set",
-      "@id": "dct:title"
-    },
-    "description": {
-      "@container": "@set",
-      "@id": "dct:description"
-    },
-    "keywords": {
-      "@container": "@set",
-      "@id": "dcat:keyword"
-    },
-    "language": "rec:language",
-    "languages": {
-      "@container": "@set",
-      "@id": "rec:languages"
-    },
-    "resourceLanguages": {
-      "@container": "@set",
-      "@id": "rec:resourceLanguages"
-    },
-    "externalIds": {
-      "@context": {
-        "scheme": "rec:scheme",
-        "value": "rec:id"
-      },
-      "@container": "@set",
-      "@id": "rec:scopedIdentifier"
-    },
-    "themes": {
-      "@context": {
-        "concepts": {
-          "@context": {
-            "id": "thns:id",
-            "url": "@id"
-          },
-          "@id": "thns:concepts",
-          "@container": "@set"
-        },
-        "scheme": "thns:scheme"
-      },
-      "@container": "@set",
-      "@id": "rec:themes"
-    },
-    "formats": {
-      "@context": {
-        "name": "rec:name",
-        "mediaType": "rec:mediaType"
-      },
-      "@container": "@set",
-      "@id": "rec:format",
-      "@type": "@id"
-    },
-    "contacts": {
-      "@container": "@set",
-      "@id": "dcat:contactPoint",
-      "@type": "@id"
-    },
-    "license": "dcat:license",
-    "rights": "dcat:rights",
     "linkTemplates": {
       "@context": {
         "rel": {
@@ -125,6 +132,8 @@
         "hreflang": "dct:language",
         "title": "rdfs:label",
         "length": "dct:extent",
+        "created": "dct:created",
+        "updated": "dct:modified",
         "uriTemplate": {
           "@type": "xsd:string",
           "@id": "rec:uriTemplate"

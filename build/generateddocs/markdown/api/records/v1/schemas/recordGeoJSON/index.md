@@ -723,39 +723,40 @@ This example is to test records examples.
 @prefix rec: <https://www.opengis.net/def/ogc-api/records/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone> a geojson:Feature ;
+<urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone> a <file:///github/workspace/dataset>,
+        geojson:Feature ;
     dct:conformsTo <http://www.opengis.net/spec/ogcapi-records-1/1.0/conf/record-core> ;
     dct:temporal [ ] ;
-    rdfs:seeAlso [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
-            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
-        [ rdfs:label "Data Search / Download User Interface" ;
-            dct:format "text/html" ;
-            ns1:relation <http://www.iana.org/assignments/relation/search> ;
-            oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/collection> ;
+    rdfs:seeAlso [ ns1:relation <http://www.iana.org/assignments/relation/collection> ;
             oa:hasTarget <https://woudc.org/data/dataset_info.php> ],
+        [ rdfs:label "OGC Web Map Service (WMS)" ;
+            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
+            oa:hasTarget <https://geo.woudc.org/ows?service=WMS&request=GetCapabilities> ],
         [ rdfs:label "Static dataset archive file" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:format "application/zip" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
             oa:hasTarget <https://woudc.org/archive/Summaries/dataset-snapshots/totalozone.zip> ],
-        [ rdfs:label "OGC Web Map Service (WMS)" ;
-            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            oa:hasTarget <https://geo.woudc.org/ows?service=WMS&request=GetCapabilities> ],
-        [ rdfs:label "Total Ozone Preview Image" ;
-            dct:format "image/png" ;
-            ns1:relation <http://www.iana.org/assignments/relation/preview> ;
-            oa:hasTarget <https://woudc.org/data/preview.png> ],
         [ rdfs:label "OGC Web Feature Service (WFS)" ;
             ns1:relation <http://www.iana.org/assignments/relation/describes> ;
             oa:hasTarget <https://geo.woudc.org/ows?service=WFS&request=GetCapabilities> ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
+            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
         [ rdfs:label "Web Accessible Folder (WAF)" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:format "text/html" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
-            oa:hasTarget <https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1> ] ;
+            oa:hasTarget <https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1> ],
+        [ rdfs:label "Total Ozone Preview Image" ;
+            dct:format "image/png" ;
+            ns1:relation <http://www.iana.org/assignments/relation/preview> ;
+            oa:hasTarget <https://woudc.org/data/preview.png> ],
+        [ rdfs:label "Data Search / Download User Interface" ;
+            dct:format "text/html" ;
+            ns1:relation <http://www.iana.org/assignments/relation/search> ;
+            oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( -180 -90 ) ( -180 90 ) ( 180 90 ) ( 180 -90 ) ( -180 -90 ) ) ) ] ;
     rec:hasLinkTemplate [ rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
@@ -767,17 +768,13 @@ This example is to test records examples.
             rec:uriTemplate "https://geo.woudc.org/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=woudc:totalozone&maxFeatures={maxFeatures}&outputFormat={outputFormat}"^^xsd:string ],
         [ rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
             ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            rec:hasVariable [ dct:description "..." ;
-                    dct:format "number" ;
-                    dct:identifier "width" ],
-                [ dct:description "..." ;
-                    dct:format "array" ;
-                    dct:identifier "bbox" ],
-                [ dct:description "..." ;
-                    dct:format "string" ;
+            rec:hasVariable [ dct:format "string" ;
                     dct:identifier "crs" ],
-                [ dct:description "..." ;
-                    dct:format "number" ;
+                [ dct:format "array" ;
+                    dct:identifier "bbox" ],
+                [ dct:format "number" ;
+                    dct:identifier "width" ],
+                [ dct:format "number" ;
                     dct:identifier "height" ],
                 [ dct:format "string" ;
                     dct:identifier "format" ] ;
@@ -998,6 +995,73 @@ Links to the schema:
     },
     "type": "@type",
     "id": "@id",
+    "properties": {
+      "@id": "@nest",
+      "@context": {
+        "created": "dct:created",
+        "updated": "dct:modified",
+        "title": {
+          "@container": "@set",
+          "@id": "dct:title"
+        },
+        "description": {
+          "@container": "@set",
+          "@id": "dct:description"
+        },
+        "keywords": {
+          "@container": "@set",
+          "@id": "dcat:keyword"
+        },
+        "language": "rec:language",
+        "languages": {
+          "@container": "@set",
+          "@id": "rec:languages"
+        },
+        "resourceLanguages": {
+          "@container": "@set",
+          "@id": "rec:resourceLanguages"
+        },
+        "externalIds": {
+          "@context": {
+            "scheme": "rec:scheme",
+            "value": "rec:id"
+          },
+          "@container": "@set",
+          "@id": "rec:scopedIdentifier"
+        },
+        "themes": {
+          "@context": {
+            "concepts": {
+              "@context": {
+                "id": "thns:id",
+                "url": "@id"
+              },
+              "@id": "thns:concepts",
+              "@container": "@set"
+            },
+            "scheme": "thns:scheme"
+          },
+          "@container": "@set",
+          "@id": "rec:themes"
+        },
+        "formats": {
+          "@context": {
+            "name": "rec:name",
+            "mediaType": "rec:mediaType"
+          },
+          "@container": "@set",
+          "@id": "rec:format",
+          "@type": "@id"
+        },
+        "contacts": {
+          "@container": "@set",
+          "@id": "dcat:contactPoint",
+          "@type": "@id"
+        },
+        "license": "dcat:license",
+        "rights": "dcat:rights"
+      }
+    },
     "geometry": {
       "@context": {
         "coordinates": {
@@ -1023,7 +1087,9 @@ Links to the schema:
         "type": "dct:format",
         "hreflang": "dct:language",
         "title": "rdfs:label",
-        "length": "dct:extent"
+        "length": "dct:extent",
+        "created": "dct:created",
+        "updated": "dct:modified"
       },
       "@id": "rdfs:seeAlso"
     },
@@ -1033,68 +1099,6 @@ Links to the schema:
       "@type": "@id"
     },
     "time": "dct:temporal",
-    "created": "dct:created",
-    "updated": "dct:modified",
-    "title": {
-      "@container": "@set",
-      "@id": "dct:title"
-    },
-    "description": {
-      "@container": "@set",
-      "@id": "dct:description"
-    },
-    "keywords": {
-      "@container": "@set",
-      "@id": "dcat:keyword"
-    },
-    "language": "rec:language",
-    "languages": {
-      "@container": "@set",
-      "@id": "rec:languages"
-    },
-    "resourceLanguages": {
-      "@container": "@set",
-      "@id": "rec:resourceLanguages"
-    },
-    "externalIds": {
-      "@context": {
-        "scheme": "rec:scheme",
-        "value": "rec:id"
-      },
-      "@container": "@set",
-      "@id": "rec:scopedIdentifier"
-    },
-    "themes": {
-      "@context": {
-        "concepts": {
-          "@context": {
-            "id": "thns:id",
-            "url": "@id"
-          },
-          "@id": "thns:concepts",
-          "@container": "@set"
-        },
-        "scheme": "thns:scheme"
-      },
-      "@container": "@set",
-      "@id": "rec:themes"
-    },
-    "formats": {
-      "@context": {
-        "name": "rec:name",
-        "mediaType": "rec:mediaType"
-      },
-      "@container": "@set",
-      "@id": "rec:format",
-      "@type": "@id"
-    },
-    "contacts": {
-      "@container": "@set",
-      "@id": "dcat:contactPoint",
-      "@type": "@id"
-    },
-    "license": "dcat:license",
-    "rights": "dcat:rights",
     "linkTemplates": {
       "@context": {
         "rel": {
@@ -1108,6 +1112,8 @@ Links to the schema:
         "hreflang": "dct:language",
         "title": "rdfs:label",
         "length": "dct:extent",
+        "created": "dct:created",
+        "updated": "dct:modified",
         "uriTemplate": {
           "@type": "xsd:string",
           "@id": "rec:uriTemplate"
