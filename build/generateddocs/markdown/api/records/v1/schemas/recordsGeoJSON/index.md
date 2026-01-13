@@ -38,6 +38,7 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "links": "rdfs:seeAlso",
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
@@ -47,10 +48,58 @@ Links to the schema:
     "MultiPolygon": "geojson:MultiPolygon",
     "Point": "geojson:Point",
     "Polygon": "geojson:Polygon",
-    "properties": "@nest",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
+    "type": "dct:format",
+    "id": "@id",
+    "geometry": {
+      "@context": {
+        "type": "@type",
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        }
+      },
+      "@id": "geojson:geometry"
+    },
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
+    "conformsTo": {
+      "@container": "@set",
+      "@id": "dct:conformsTo",
+      "@type": "@id"
+    },
+    "time": "dct:temporal",
+    "linkTemplates": "rec:hasLinkTemplate",
     "href": {
       "@type": "@id",
       "@id": "oa:hasTarget"
+    },
+    "rel": {
+      "@context": {
+        "@base": "http://www.iana.org/assignments/relation/"
+      },
+      "@id": "http://www.iana.org/assignments/relation",
+      "@type": "@id"
+    },
+    "hreflang": "dct:language",
+    "title": "rdfs:label",
+    "length": "dct:extent",
+    "created": "dct:created",
+    "updated": "dct:modified",
+    "uriTemplate": {
+      "@type": "xsd:string",
+      "@id": "rec:uriTemplate"
+    },
+    "varBase": "rec:varBase",
+    "variables": {
+      "@id": "rec:hasVariable",
+      "@container": "@index",
+      "@index": "dct:identifier"
     },
     "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

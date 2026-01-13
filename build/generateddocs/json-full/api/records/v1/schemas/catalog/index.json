@@ -27,10 +27,10 @@
   },
   "dependsOn": [
     "ogc.api.records.v1.schemas.theme",
-    "ogc.api.records.v1.schemas.language",
+    "ogc.api.records.v1.schemas.linkTemplate",
     "ogc.api.features.v1.schemas.collection",
     "ogc.api.records.v1.schemas.license",
-    "ogc.api.records.v1.schemas.linkTemplate",
+    "ogc.api.records.v1.schemas.language",
     "ogc.api.records.v1.schemas.contact"
   ],
   "schema": {

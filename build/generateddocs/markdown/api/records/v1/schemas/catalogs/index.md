@@ -37,9 +37,32 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "title": "rdfs:label",
+    "type": "dct:format",
+    "created": "dct:created",
+    "updated": "dct:modified",
     "href": {
       "@type": "@id",
       "@id": "oa:hasTarget"
+    },
+    "rel": {
+      "@context": {
+        "@base": "http://www.iana.org/assignments/relation/"
+      },
+      "@id": "http://www.iana.org/assignments/relation",
+      "@type": "@id"
+    },
+    "hreflang": "dct:language",
+    "length": "dct:extent",
+    "uriTemplate": {
+      "@type": "xsd:string",
+      "@id": "rec:uriTemplate"
+    },
+    "varBase": "rec:varBase",
+    "variables": {
+      "@id": "rec:hasVariable",
+      "@container": "@index",
+      "@index": "dct:identifier"
     },
     "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
