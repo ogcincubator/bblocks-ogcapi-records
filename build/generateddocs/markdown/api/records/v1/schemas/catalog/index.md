@@ -111,6 +111,12 @@ Links to the schema:
 {
   "@context": {
     "title": "rdfs:label",
+    "links": {
+      "@context": {
+        "type": "dct:type"
+      },
+      "@id": "rdfs:seeAlso"
+    },
     "concepts": {
       "@context": {
         "id": "thns:id",
@@ -148,8 +154,8 @@ Links to the schema:
       "@container": "@index",
       "@index": "dct:identifier"
     },
-    "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
     "thns": "https://w3id.org/ogc/stac/themes/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",

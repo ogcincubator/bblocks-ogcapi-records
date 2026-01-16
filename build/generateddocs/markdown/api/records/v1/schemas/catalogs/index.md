@@ -37,6 +37,12 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "links": {
+      "@context": {
+        "type": "dct:type"
+      },
+      "@id": "rdfs:seeAlso"
+    },
     "title": "rdfs:label",
     "type": "dct:format",
     "created": "dct:created",

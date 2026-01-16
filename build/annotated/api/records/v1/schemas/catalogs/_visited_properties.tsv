@@ -1,5 +1,5 @@
 path	@id
-/links	
+/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
 /links/href	http://www.w3.org/ns/oa#hasTarget
 /links/rel	http://www.iana.org/assignments/relation
 /links/anchor	
@@ -11,7 +11,7 @@ path	@id
 /collections/id	
 /collections/title	
 /collections/description	
-/collections/links	
+/collections/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
 /collections/links/href	http://www.w3.org/ns/oa#hasTarget
 /collections/links/rel	http://www.iana.org/assignments/relation
 /collections/links/anchor	
