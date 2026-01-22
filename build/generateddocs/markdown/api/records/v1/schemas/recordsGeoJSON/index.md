@@ -38,7 +38,12 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "links": "rdfs:seeAlso",
+    "links": {
+      "@context": {
+        "title": "rdfs:label"
+      },
+      "@id": "rdfs:seeAlso"
+    },
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
@@ -54,6 +59,7 @@ Links to the schema:
     },
     "type": "dct:format",
     "id": "@id",
+    "properties": "@nest",
     "geometry": {
       "@context": {
         "type": "@type",
@@ -74,7 +80,12 @@ Links to the schema:
       "@type": "@id"
     },
     "time": "dct:temporal",
-    "linkTemplates": "rec:hasLinkTemplate",
+    "linkTemplates": {
+      "@context": {
+        "title": "rdfs:label"
+      },
+      "@id": "rec:hasLinkTemplate"
+    },
     "href": {
       "@type": "@id",
       "@id": "oa:hasTarget"
@@ -87,7 +98,10 @@ Links to the schema:
       "@type": "@id"
     },
     "hreflang": "dct:language",
-    "title": "rdfs:label",
+    "title": {
+      "@id": "dct:title",
+      "@container": "@set"
+    },
     "length": "dct:extent",
     "created": "dct:created",
     "updated": "dct:modified",
@@ -117,6 +131,62 @@ Links to the schema:
     "prov": "http://www.w3.org/ns/prov#",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "thns": "https://w3id.org/ogc/stac/themes/",
+    "description": {
+      "@container": "@set",
+      "@id": "dct:description"
+    },
+    "keywords": {
+      "@container": "@set",
+      "@id": "dcat:keyword"
+    },
+    "language": "rec:language",
+    "languages": {
+      "@container": "@set",
+      "@id": "rec:languages"
+    },
+    "resourceLanguages": {
+      "@container": "@set",
+      "@id": "rec:resourceLanguages"
+    },
+    "externalIds": {
+      "@context": {
+        "scheme": "rec:scheme",
+        "value": "rec:id"
+      },
+      "@container": "@set",
+      "@id": "rec:scopedIdentifier"
+    },
+    "themes": {
+      "@context": {
+        "concepts": {
+          "@context": {
+            "id": "thns:id",
+            "url": "@id"
+          },
+          "@id": "thns:concepts",
+          "@container": "@set"
+        },
+        "scheme": "thns:scheme"
+      },
+      "@container": "@set",
+      "@id": "rec:themes"
+    },
+    "formats": {
+      "@context": {
+        "name": "rec:name",
+        "mediaType": "rec:mediaType"
+      },
+      "@container": "@set",
+      "@id": "rec:format",
+      "@type": "@id"
+    },
+    "contacts": {
+      "@container": "@set",
+      "@id": "dcat:contactPoint",
+      "@type": "@id"
+    },
+    "license": "dcat:license",
+    "rights": "dcat:rights",
     "@version": 1.1
   }
 }

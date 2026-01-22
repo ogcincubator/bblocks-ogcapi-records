@@ -1,6 +1,5 @@
 {
   "@context": {
-    "title": "rdfs:label",
     "links": {
       "@context": {
         "type": "dct:type"
@@ -31,6 +30,7 @@
     },
     "type": "dct:format",
     "hreflang": "dct:language",
+    "title": "rdfs:label",
     "length": "dct:extent",
     "created": "dct:created",
     "updated": "dct:modified",

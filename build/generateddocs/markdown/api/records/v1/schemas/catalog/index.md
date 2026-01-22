@@ -110,7 +110,6 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "title": "rdfs:label",
     "links": {
       "@context": {
         "type": "dct:type"
@@ -141,6 +140,7 @@ Links to the schema:
     },
     "type": "dct:format",
     "hreflang": "dct:language",
+    "title": "rdfs:label",
     "length": "dct:extent",
     "created": "dct:created",
     "updated": "dct:modified",

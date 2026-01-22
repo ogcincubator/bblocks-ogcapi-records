@@ -43,10 +43,6 @@ Links to the schema:
       },
       "@id": "rdfs:seeAlso"
     },
-    "title": "rdfs:label",
-    "type": "dct:format",
-    "created": "dct:created",
-    "updated": "dct:modified",
     "href": {
       "@type": "@id",
       "@id": "oa:hasTarget"
@@ -58,8 +54,12 @@ Links to the schema:
       "@id": "http://www.iana.org/assignments/relation",
       "@type": "@id"
     },
+    "type": "dct:format",
     "hreflang": "dct:language",
+    "title": "rdfs:label",
     "length": "dct:extent",
+    "created": "dct:created",
+    "updated": "dct:modified",
     "uriTemplate": {
       "@type": "xsd:string",
       "@id": "rec:uriTemplate"
