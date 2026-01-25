@@ -733,36 +733,36 @@ This example is to test records examples.
     dct:modified "2021-02-08T00:00:00Z" ;
     dct:temporal [ ] ;
     dct:title "Total Ozone - daily observations" ;
-    rdfs:seeAlso [ rdfs:label "OGC Web Feature Service (WFS)" ;
-            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            oa:hasTarget <https://geo.woudc.org/ows?service=WFS&request=GetCapabilities> ],
-        [ rdfs:label "Data Search / Download User Interface" ;
-            dct:format "text/html" ;
-            ns1:relation <http://www.iana.org/assignments/relation/search> ;
-            oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/collection> ;
-            oa:hasTarget <https://woudc.org/data/dataset_info.php> ],
-        [ rdfs:label "OGC Web Map Service (WMS)" ;
-            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            oa:hasTarget <https://geo.woudc.org/ows?service=WMS&request=GetCapabilities> ],
-        [ rdfs:label "Web Accessible Folder (WAF)" ;
+    rdfs:seeAlso [ rdfs:label "Web Accessible Folder (WAF)" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:format "text/html" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
             oa:hasTarget <https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1> ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
+            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
         [ rdfs:label "Static dataset archive file" ;
             dct:created "2015-01-23T00:00:00Z" ;
             dct:format "application/zip" ;
             dct:modified "2015-01-23T00:00:00Z" ;
             ns1:relation <http://www.iana.org/assignments/relation/enclosure> ;
             oa:hasTarget <https://woudc.org/archive/Summaries/dataset-snapshots/totalozone.zip> ],
-        [ ns1:relation <http://www.iana.org/assignments/relation/license> ;
-            oa:hasTarget <https://woudc.org/about/data-policy.php> ],
+        [ rdfs:label "OGC Web Map Service (WMS)" ;
+            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
+            oa:hasTarget <https://geo.woudc.org/ows?service=WMS&request=GetCapabilities> ],
+        [ rdfs:label "OGC Web Feature Service (WFS)" ;
+            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
+            oa:hasTarget <https://geo.woudc.org/ows?service=WFS&request=GetCapabilities> ],
+        [ ns1:relation <http://www.iana.org/assignments/relation/collection> ;
+            oa:hasTarget <https://woudc.org/data/dataset_info.php> ],
         [ rdfs:label "Total Ozone Preview Image" ;
             dct:format "image/png" ;
             ns1:relation <http://www.iana.org/assignments/relation/preview> ;
-            oa:hasTarget <https://woudc.org/data/preview.png> ] ;
+            oa:hasTarget <https://woudc.org/data/preview.png> ],
+        [ rdfs:label "Data Search / Download User Interface" ;
+            dct:format "text/html" ;
+            ns1:relation <http://www.iana.org/assignments/relation/search> ;
+            oa:hasTarget <https://woudc.org/data/explore.php?dataset=totalozone> ] ;
     dcat:contactPoint [ rdfs:seeAlso [ dct:format "text/html" ;
                     ns1:relation <http://www.iana.org/assignments/relation/about> ;
                     oa:hasTarget <https://woudc.org> ] ] ;
@@ -776,58 +776,58 @@ This example is to test records examples.
     dcat:license "other" ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( -180 -90 ) ( -180 90 ) ( 180 90 ) ( 180 -90 ) ( -180 -90 ) ) ) ] ;
-    rec:format [ rec:mediaType "image/jpeg" ;
-            rec:name "JPEG" ],
-        [ rec:mediaType "application/vnd.google-earth.kml+xml" ;
-            rec:name "KML" ],
-        [ rec:mediaType "text/csv" ;
-            rec:name "CSV" ],
-        [ rec:mediaType "text/xml; subtype=gml/2.1.2" ;
-            rec:name "GML2" ],
-        [ rec:mediaType "application/x-pdf" ;
-            rec:name "PDF" ],
-        [ rec:mediaType "image/tiff" ;
-            rec:name "TIFF" ],
-        [ rec:mediaType "application/geo+json" ;
-            rec:name "GeoJSON" ],
-        [ rec:mediaType "text/xml; subtype=gml/3.1.1" ;
+    rec:format [ rec:mediaType "text/xml; subtype=gml/3.1.1" ;
             rec:name "GML3" ],
         [ rec:mediaType "application/vnd.google-earth.kmz" ;
             rec:name "KMZ" ],
         [ rec:mediaType "image/png" ;
             rec:name "PNG" ],
+        [ rec:mediaType "image/gif" ;
+            rec:name "GIF" ],
+        [ rec:mediaType "image/tiff" ;
+            rec:name "TIFF" ],
+        [ rec:mediaType "text/xml; subtype=gml/2.1.2" ;
+            rec:name "GML2" ],
+        [ rec:mediaType "application/vnd.google-earth.kml+xml" ;
+            rec:name "KML" ],
+        [ rec:mediaType "application/geo+json" ;
+            rec:name "GeoJSON" ],
         [ rec:mediaType "application/vnd.shp" ;
             rec:name "SHAPEFILE" ],
-        [ rec:mediaType "image/svg+xml" ;
-            rec:name "SVG" ],
+        [ rec:mediaType "text/csv" ;
+            rec:name "CSV" ],
+        [ rec:mediaType "application/x-pdf" ;
+            rec:name "PDF" ],
         [ rec:mediaType "text/plain" ;
             rec:name "TEXT" ],
-        [ rec:mediaType "image/gif" ;
-            rec:name "GIF" ] ;
+        [ rec:mediaType "image/svg+xml" ;
+            rec:name "SVG" ],
+        [ rec:mediaType "image/jpeg" ;
+            rec:name "JPEG" ] ;
     rec:hasLinkTemplate [ rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
-            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
-            rec:hasVariable [ dct:description "..." ;
-                    dct:format "number" ;
-                    dct:identifier "width" ],
-                [ dct:format "string" ;
-                    dct:identifier "format" ],
-                [ dct:description "..." ;
-                    dct:format "string" ;
-                    dct:identifier "crs" ],
-                [ dct:description "..." ;
-                    dct:format "number" ;
-                    dct:identifier "height" ],
-                [ dct:description "..." ;
-                    dct:format "array" ;
-                    dct:identifier "bbox" ] ;
-            rec:uriTemplate "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}"^^xsd:string ],
-        [ rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
             ns1:relation <http://www.iana.org/assignments/relation/describes> ;
             rec:hasVariable [ dct:format "number" ;
                     dct:identifier "maxFeatures" ],
                 [ dct:format "string" ;
                     dct:identifier "outputFormat" ] ;
-            rec:uriTemplate "https://geo.woudc.org/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=woudc:totalozone&maxFeatures={maxFeatures}&outputFormat={outputFormat}"^^xsd:string ] ;
+            rec:uriTemplate "https://geo.woudc.org/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=woudc:totalozone&maxFeatures={maxFeatures}&outputFormat={outputFormat}"^^xsd:string ],
+        [ rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
+            ns1:relation <http://www.iana.org/assignments/relation/describes> ;
+            rec:hasVariable [ dct:description "..." ;
+                    dct:format "number" ;
+                    dct:identifier "height" ],
+                [ dct:description "..." ;
+                    dct:format "array" ;
+                    dct:identifier "bbox" ],
+                [ dct:description "..." ;
+                    dct:format "number" ;
+                    dct:identifier "width" ],
+                [ dct:description "..." ;
+                    dct:format "string" ;
+                    dct:identifier "crs" ],
+                [ dct:format "string" ;
+                    dct:identifier "format" ] ;
+            rec:uriTemplate "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}"^^xsd:string ] ;
     rec:language [ ] ;
     rec:languages [ ],
         [ ] ;
