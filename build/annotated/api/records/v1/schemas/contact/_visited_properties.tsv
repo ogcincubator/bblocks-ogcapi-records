@@ -1,37 +1,37 @@
 path	@id
-/identifier	
-/name	
-/position	
-/organization	
-/logo	
-/logo/href	http://www.w3.org/ns/oa#hasTarget
-/logo/rel	http://www.iana.org/assignments/relation
-/logo/anchor	
-/logo/type	http://purl.org/dc/terms/type
-/logo/hreflang	http://purl.org/dc/terms/language
-/logo/title	http://www.w3.org/2000/01/rdf-schema#label
-/logo/length	http://purl.org/dc/terms/extent
-/phones	
-/phones/value	
-/phones/roles	
-/emails	
-/emails/value	
-/emails/roles	
-/addresses	
-/addresses/deliveryPoint	
-/addresses/city	
-/addresses/administrativeArea	
-/addresses/postalCode	
-/addresses/country	
-/addresses/roles	
-/links	
-/links/href	http://www.w3.org/ns/oa#hasTarget
-/links/rel	http://www.iana.org/assignments/relation
-/links/anchor	
-/links/type	http://purl.org/dc/terms/type
-/links/hreflang	http://purl.org/dc/terms/language
-/links/title	http://www.w3.org/2000/01/rdf-schema#label
-/links/length	http://purl.org/dc/terms/extent
-/hoursOfService	
-/contactInstructions	
-/roles	
+/identifier	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/name	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/position	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/organization	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/logo	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/logo/href	('http://www.w3.org/ns/oa#hasTarget', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/logo/rel	('http://www.iana.org/assignments/relation', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/logo/anchor	(None, 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/logo/type	('http://purl.org/dc/terms/type', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/logo/hreflang	('http://purl.org/dc/terms/language', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/logo/title	('http://www.w3.org/2000/01/rdf-schema#label', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/logo/length	('http://purl.org/dc/terms/extent', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/phones	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/phones/value	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/phones/roles	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/emails	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/emails/value	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/emails/roles	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/addresses	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/addresses/deliveryPoint	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/addresses/city	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/addresses/administrativeArea	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/addresses/postalCode	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/addresses/country	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/addresses/roles	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/links	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/links/href	('http://www.w3.org/ns/oa#hasTarget', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/rel	('http://www.iana.org/assignments/relation', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/anchor	(None, 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/type	('http://purl.org/dc/terms/type', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/hreflang	('http://purl.org/dc/terms/language', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/title	('http://www.w3.org/2000/01/rdf-schema#label', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/length	('http://purl.org/dc/terms/extent', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/hoursOfService	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/contactInstructions	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))
+/roles	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/contact/schema.yaml'))

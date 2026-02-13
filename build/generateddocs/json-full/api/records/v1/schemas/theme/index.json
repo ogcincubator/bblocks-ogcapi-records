@@ -8,7 +8,7 @@
   "itemClass": "schema",
   "register": "ogcapi-records",
   "version": "0.1",
-  "dateOfLastChange": "2026-02-07",
+  "dateOfLastChange": "2026-02-10",
   "sources": [
     {
       "title": "OGC API Records - Draft",
@@ -142,7 +142,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix thns: <https://w3id.org/ogc/stac/themes/> .\n\n[] thns:concepts [ dcterms:description \"A wonderful place for cheese\" ;\n            dcterms:title \"Auvergne-Rh\u00f4ne-Alpes\" ;\n            thns:id \"geonames::11071625\" ],\n        [ dcterms:description \"A very nice forest\" ;\n            dcterms:title \"For\u00eat de Saou\" ;\n            thns:id \"geonames::2976077\" ] ;\n    thns:scheme \"https://www.geonames.org\" .\n\n",
+          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix thns: <https://w3id.org/ogc/stac/themes/> .\n\n[] thns:concepts [ dcterms:description \"A very nice forest\" ;\n            dcterms:title \"For\u00eat de Saou\" ;\n            thns:id \"geonames::2976077\" ],\n        [ dcterms:description \"A wonderful place for cheese\" ;\n            dcterms:title \"Auvergne-Rh\u00f4ne-Alpes\" ;\n            thns:id \"geonames::11071625\" ] ;\n    thns:scheme \"https://www.geonames.org\" .\n\n",
           "transformResults": {
             "dcat-themes": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/transforms/example_2_3.dcat-themes.ttl"
           },

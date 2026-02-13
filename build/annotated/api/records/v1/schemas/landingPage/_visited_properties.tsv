@@ -1,34 +1,34 @@
 path	@id
-/title	
-/description	
-/links	
-/links/href	http://www.w3.org/ns/oa#hasTarget
-/links/rel	http://www.iana.org/assignments/relation
-/links/anchor	
-/links/type	http://purl.org/dc/terms/type
-/links/hreflang	http://purl.org/dc/terms/language
-/links/title	http://www.w3.org/2000/01/rdf-schema#label
-/links/length	http://purl.org/dc/terms/extent
-/linkTemplates	
-/linkTemplates/title	
-/linkTemplates/description	
-/linkTemplates/links	
-/linkTemplates/links/href	http://www.w3.org/ns/oa#hasTarget
-/linkTemplates/links/rel	http://www.iana.org/assignments/relation
-/linkTemplates/links/anchor	
-/linkTemplates/links/type	http://purl.org/dc/terms/type
-/linkTemplates/links/hreflang	http://purl.org/dc/terms/language
-/linkTemplates/links/title	http://www.w3.org/2000/01/rdf-schema#label
-/linkTemplates/links/length	http://purl.org/dc/terms/extent
-/linkTemplates/linkTemplates	
-/linkTemplates/linkTemplates/title	
-/linkTemplates/linkTemplates/description	
-/linkTemplates/linkTemplates/links	
-/linkTemplates/linkTemplates/links/href	http://www.w3.org/ns/oa#hasTarget
-/linkTemplates/linkTemplates/links/rel	http://www.iana.org/assignments/relation
-/linkTemplates/linkTemplates/links/anchor	
-/linkTemplates/linkTemplates/links/type	http://purl.org/dc/terms/type
-/linkTemplates/linkTemplates/links/hreflang	http://purl.org/dc/terms/language
-/linkTemplates/linkTemplates/links/title	http://www.w3.org/2000/01/rdf-schema#label
-/linkTemplates/linkTemplates/links/length	http://purl.org/dc/terms/extent
-/linkTemplates/linkTemplates/linkTemplates	
+/title	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema.yaml')
+/description	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema.yaml')
+/links	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema.yaml')
+/links/href	('http://www.w3.org/ns/oa#hasTarget', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/rel	('http://www.iana.org/assignments/relation', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/anchor	(None, 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/type	('http://purl.org/dc/terms/type', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/hreflang	('http://purl.org/dc/terms/language', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/title	('http://www.w3.org/2000/01/rdf-schema#label', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/length	('http://purl.org/dc/terms/extent', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/landingPage/schema.yaml'))
+/linkTemplates/title	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema.yaml')
+/linkTemplates/description	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema.yaml')
+/linkTemplates/links	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema.yaml')
+/linkTemplates/links/href	('http://www.w3.org/ns/oa#hasTarget', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates/links/rel	('http://www.iana.org/assignments/relation', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates/links/anchor	(None, 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates/links/type	('http://purl.org/dc/terms/type', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates/links/hreflang	('http://purl.org/dc/terms/language', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates/links/title	('http://www.w3.org/2000/01/rdf-schema#label', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates/links/length	('http://purl.org/dc/terms/extent', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates/linkTemplates	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/landingPage/schema.yaml')
+/linkTemplates/linkTemplates/title	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema.yaml')
+/linkTemplates/linkTemplates/description	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema.yaml')
+/linkTemplates/linkTemplates/links	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/landingPage/schema.yaml')
+/linkTemplates/linkTemplates/links/href	('http://www.w3.org/ns/oa#hasTarget', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates/linkTemplates/links/rel	('http://www.iana.org/assignments/relation', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates/linkTemplates/links/anchor	(None, 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates/linkTemplates/links/type	('http://purl.org/dc/terms/type', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates/linkTemplates/links/hreflang	('http://purl.org/dc/terms/language', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates/linkTemplates/links/title	('http://www.w3.org/2000/01/rdf-schema#label', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates/linkTemplates/links/length	('http://purl.org/dc/terms/extent', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/linkTemplates/linkTemplates/linkTemplates	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/landingPage/schema.yaml')

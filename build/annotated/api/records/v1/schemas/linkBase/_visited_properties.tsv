@@ -1,8 +1,8 @@
 path	@id
-/rel	http://www.iana.org/assignments/relation
-/type	http://purl.org/dc/terms/format
-/hreflang	http://purl.org/dc/terms/language
-/title	http://www.w3.org/2000/01/rdf-schema#label
-/length	http://purl.org/dc/terms/extent
-/created	http://purl.org/dc/terms/created
-/updated	http://purl.org/dc/terms/modified
+/rel	('http://www.iana.org/assignments/relation', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/linkBase/schema.yaml'))
+/type	('http://purl.org/dc/terms/format', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/linkBase/schema.yaml'))
+/hreflang	('http://purl.org/dc/terms/language', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/linkBase/schema.yaml'))
+/title	('http://www.w3.org/2000/01/rdf-schema#label', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/linkBase/schema.yaml'))
+/length	('http://purl.org/dc/terms/extent', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/linkBase/schema.yaml'))
+/created	('http://purl.org/dc/terms/created', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/linkBase/schema.yaml'))
+/updated	('http://purl.org/dc/terms/modified', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/linkBase/schema.yaml'))

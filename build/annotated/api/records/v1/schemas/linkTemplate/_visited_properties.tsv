@@ -1,11 +1,11 @@
 path	@id
-/rel	http://www.iana.org/assignments/relation
-/type	http://purl.org/dc/terms/format
-/hreflang	http://purl.org/dc/terms/language
-/title	http://www.w3.org/2000/01/rdf-schema#label
-/length	http://purl.org/dc/terms/extent
-/created	http://purl.org/dc/terms/created
-/updated	http://purl.org/dc/terms/modified
-/uriTemplate	https://www.opengis.net/def/ogc-api/records/uriTemplate
-/varBase	https://www.opengis.net/def/ogc-api/records/varBase
-/variables	https://www.opengis.net/def/ogc-api/records/hasVariable
+/rel	('http://www.iana.org/assignments/relation', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/type	('http://purl.org/dc/terms/format', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/hreflang	('http://purl.org/dc/terms/language', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/title	('http://www.w3.org/2000/01/rdf-schema#label', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/length	('http://purl.org/dc/terms/extent', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/created	('http://purl.org/dc/terms/created', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/updated	('http://purl.org/dc/terms/modified', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/uriTemplate	('https://www.opengis.net/def/ogc-api/records/uriTemplate', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/linkTemplate/schema.yaml'))
+/varBase	('https://www.opengis.net/def/ogc-api/records/varBase', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/linkTemplate/schema.yaml'))
+/variables	('https://www.opengis.net/def/ogc-api/records/hasVariable', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/linkTemplate/schema.yaml'))

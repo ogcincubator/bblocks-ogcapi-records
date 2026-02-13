@@ -1,148 +1,148 @@
 path	@id
-/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
-/links/href	http://www.w3.org/ns/oa#hasTarget
-/links/rel	http://www.iana.org/assignments/relation
-/links/anchor	
-/links/type	http://purl.org/dc/terms/type
-/links/hreflang	http://purl.org/dc/terms/language
-/links/title	http://www.w3.org/2000/01/rdf-schema#label
-/links/length	http://purl.org/dc/terms/extent
-/collections	
-/collections/id	
-/collections/title	
-/collections/description	
-/collections/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
-/collections/links/href	http://www.w3.org/ns/oa#hasTarget
-/collections/links/rel	http://www.iana.org/assignments/relation
-/collections/links/anchor	
-/collections/links/type	http://purl.org/dc/terms/type
-/collections/links/hreflang	http://purl.org/dc/terms/language
-/collections/links/title	http://www.w3.org/2000/01/rdf-schema#label
-/collections/links/length	http://purl.org/dc/terms/extent
-/collections/extent	
-/collections/itemType	
-/collections/crs	
-/features	
-/features/type	@type
-/features/id	@id
-/features/properties	@nest
-/features/geometry	https://purl.org/geojson/vocab#geometry
-/features/geometry/type	@type
-/features/geometry/coordinates	https://purl.org/geojson/vocab#coordinates
-/features/geometry/bbox	https://purl.org/geojson/vocab#bbox
-/features/geometry/geometries	
-/features/geometry/geometries/type	@type
-/features/geometry/geometries/coordinates	https://purl.org/geojson/vocab#coordinates
-/features/geometry/geometries/bbox	https://purl.org/geojson/vocab#bbox
-/features/bbox	https://purl.org/geojson/vocab#bbox
-/features/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
-/features/links/href	http://www.w3.org/ns/oa#hasTarget
-/features/links/rel	http://www.iana.org/assignments/relation
-/features/links/anchor	
-/features/links/type	http://purl.org/dc/terms/format
-/features/links/hreflang	http://purl.org/dc/terms/language
-/features/links/title	http://www.w3.org/2000/01/rdf-schema#label
-/features/links/length	http://purl.org/dc/terms/extent
-/features/conformsTo	http://purl.org/dc/terms/conformsTo
-/features/time	http://purl.org/dc/terms/temporal
-/features/time/date	
-/features/time/timestamp	
-/features/time/interval	
-/features/time/resolution	
-/features/properties/created	http://purl.org/dc/terms/created
-/features/properties/updated	http://purl.org/dc/terms/modified
-/features/properties/type	
-/features/properties/title	http://purl.org/dc/terms/title
-/features/properties/description	http://purl.org/dc/terms/description
-/features/properties/keywords	http://www.w3.org/ns/dcat#keyword
-/features/properties/language	https://www.opengis.net/def/ogc-api/records/language
-/features/properties/language/code	
-/features/properties/language/name	
-/features/properties/language/alternate	
-/features/properties/language/dir	
-/features/properties/languages	https://www.opengis.net/def/ogc-api/records/languages
-/features/properties/languages/code	
-/features/properties/languages/name	
-/features/properties/languages/alternate	
-/features/properties/languages/dir	
-/features/properties/resourceLanguages	https://www.opengis.net/def/ogc-api/records/resourceLanguages
-/features/properties/resourceLanguages/code	
-/features/properties/resourceLanguages/name	
-/features/properties/resourceLanguages/alternate	
-/features/properties/resourceLanguages/dir	
-/features/properties/externalIds	https://www.opengis.net/def/ogc-api/records/scopedIdentifier
-/features/properties/externalIds/scheme	https://www.opengis.net/def/ogc-api/records/scheme
-/features/properties/externalIds/value	https://www.opengis.net/def/ogc-api/records/id
-/features/properties/themes	https://www.opengis.net/def/ogc-api/records/themes
-/features/properties/themes/concepts	https://w3id.org/ogc/stac/themes/concepts
-/features/properties/themes/concepts/id	https://w3id.org/ogc/stac/themes/id
-/features/properties/themes/concepts/title	http://purl.org/dc/terms/title
-/features/properties/themes/concepts/description	http://purl.org/dc/terms/description
-/features/properties/themes/concepts/url	@id
-/features/properties/themes/scheme	https://w3id.org/ogc/stac/themes/scheme
-/features/properties/formats	https://www.opengis.net/def/ogc-api/records/format
-/features/properties/formats/name	https://www.opengis.net/def/ogc-api/records/name
-/features/properties/formats/mediaType	https://www.opengis.net/def/ogc-api/records/mediaType
-/features/properties/contacts	http://www.w3.org/ns/dcat#contactPoint
-/features/properties/contacts/identifier	
-/features/properties/contacts/name	
-/features/properties/contacts/position	
-/features/properties/contacts/organization	
-/features/properties/contacts/logo	
-/features/properties/contacts/logo/href	http://www.w3.org/ns/oa#hasTarget
-/features/properties/contacts/logo/rel	http://www.iana.org/assignments/relation
-/features/properties/contacts/logo/anchor	
-/features/properties/contacts/logo/type	http://purl.org/dc/terms/type
-/features/properties/contacts/logo/hreflang	http://purl.org/dc/terms/language
-/features/properties/contacts/logo/title	http://www.w3.org/2000/01/rdf-schema#label
-/features/properties/contacts/logo/length	http://purl.org/dc/terms/extent
-/features/properties/contacts/phones	
-/features/properties/contacts/phones/value	
-/features/properties/contacts/phones/roles	
-/features/properties/contacts/emails	
-/features/properties/contacts/emails/value	
-/features/properties/contacts/emails/roles	
-/features/properties/contacts/addresses	
-/features/properties/contacts/addresses/deliveryPoint	
-/features/properties/contacts/addresses/city	
-/features/properties/contacts/addresses/administrativeArea	
-/features/properties/contacts/addresses/postalCode	
-/features/properties/contacts/addresses/country	
-/features/properties/contacts/addresses/roles	
-/features/properties/contacts/links	
-/features/properties/contacts/links/href	http://www.w3.org/ns/oa#hasTarget
-/features/properties/contacts/links/rel	http://www.iana.org/assignments/relation
-/features/properties/contacts/links/anchor	
-/features/properties/contacts/links/type	http://purl.org/dc/terms/type
-/features/properties/contacts/links/hreflang	http://purl.org/dc/terms/language
-/features/properties/contacts/links/title	http://www.w3.org/2000/01/rdf-schema#label
-/features/properties/contacts/links/length	http://purl.org/dc/terms/extent
-/features/properties/contacts/hoursOfService	
-/features/properties/contacts/contactInstructions	
-/features/properties/contacts/roles	
-/features/properties/license	http://www.w3.org/ns/dcat#license
-/features/properties/rights	http://www.w3.org/ns/dcat#rights
-/features/links/created	http://purl.org/dc/terms/created
-/features/links/updated	http://purl.org/dc/terms/modified
-/features/linkTemplates	https://www.opengis.net/def/ogc-api/records/hasLinkTemplate
-/features/linkTemplates/rel	http://www.iana.org/assignments/relation
-/features/linkTemplates/type	http://purl.org/dc/terms/format
-/features/linkTemplates/hreflang	http://purl.org/dc/terms/language
-/features/linkTemplates/title	http://www.w3.org/2000/01/rdf-schema#label
-/features/linkTemplates/length	http://purl.org/dc/terms/extent
-/features/linkTemplates/created	http://purl.org/dc/terms/created
-/features/linkTemplates/updated	http://purl.org/dc/terms/modified
-/features/linkTemplates/uriTemplate	https://www.opengis.net/def/ogc-api/records/uriTemplate
-/features/linkTemplates/varBase	https://www.opengis.net/def/ogc-api/records/varBase
-/features/linkTemplates/variables	https://www.opengis.net/def/ogc-api/records/hasVariable
-/linkTemplates	
-/linkTemplates/rel	http://www.iana.org/assignments/relation
-/linkTemplates/type	http://purl.org/dc/terms/format
-/linkTemplates/hreflang	http://purl.org/dc/terms/language
-/linkTemplates/title	http://www.w3.org/2000/01/rdf-schema#label
-/linkTemplates/length	http://purl.org/dc/terms/extent
-/linkTemplates/created	http://purl.org/dc/terms/created
-/linkTemplates/updated	http://purl.org/dc/terms/modified
-/linkTemplates/uriTemplate	https://www.opengis.net/def/ogc-api/records/uriTemplate
-/linkTemplates/varBase	https://www.opengis.net/def/ogc-api/records/varBase
-/linkTemplates/variables	https://www.opengis.net/def/ogc-api/records/hasVariable
+/links	('http://www.w3.org/2000/01/rdf-schema#seeAlso', 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/schema.yaml')
+/links/href	('http://www.w3.org/ns/oa#hasTarget', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/rel	('http://www.iana.org/assignments/relation', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/anchor	(None, 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/type	('http://purl.org/dc/terms/type', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/hreflang	('http://purl.org/dc/terms/language', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/title	('http://www.w3.org/2000/01/rdf-schema#label', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/links/length	('http://purl.org/dc/terms/extent', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/collections	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collections/schema.yaml')
+/collections/id	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml')
+/collections/title	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml')
+/collections/description	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml')
+/collections/links	('http://www.w3.org/2000/01/rdf-schema#seeAlso', 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml')
+/collections/links/href	('http://www.w3.org/ns/oa#hasTarget', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/collections/links/rel	('http://www.iana.org/assignments/relation', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/collections/links/anchor	(None, 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/collections/links/type	('http://purl.org/dc/terms/type', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/collections/links/hreflang	('http://purl.org/dc/terms/language', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/collections/links/title	('http://www.w3.org/2000/01/rdf-schema#label', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/collections/links/length	('http://purl.org/dc/terms/extent', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/collections/extent	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml')
+/collections/itemType	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml')
+/collections/crs	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml')
+/features	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/recordsGeoJSON/schema.yaml'))
+/features/type	('@type', 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml')
+/features/id	('@id', 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml')
+/features/properties	('@nest', 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml')
+/features/geometry	('https://purl.org/geojson/vocab#geometry', 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml')
+/features/geometry/type	('@type', 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml')
+/features/geometry/coordinates	('https://purl.org/geojson/vocab#coordinates', 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml')
+/features/geometry/bbox	('https://purl.org/geojson/vocab#bbox', 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml')
+/features/geometry/geometries	(None, 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml')
+/features/geometry/geometries/type	('@type', 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml')
+/features/geometry/geometries/coordinates	('https://purl.org/geojson/vocab#coordinates', 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml')
+/features/geometry/geometries/bbox	('https://purl.org/geojson/vocab#bbox', 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml')
+/features/bbox	('https://purl.org/geojson/vocab#bbox', 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml')
+/features/links	('http://www.w3.org/2000/01/rdf-schema#seeAlso', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/links/href	('http://www.w3.org/ns/oa#hasTarget', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/links/rel	('http://www.iana.org/assignments/relation', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/features/links/anchor	(None, 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/links/type	('http://purl.org/dc/terms/format', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/features/links/hreflang	('http://purl.org/dc/terms/language', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/features/links/title	('http://www.w3.org/2000/01/rdf-schema#label', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/features/links/length	('http://purl.org/dc/terms/extent', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/features/conformsTo	('http://purl.org/dc/terms/conformsTo', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/time	('http://purl.org/dc/terms/temporal', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/time/date	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/time/schema.yaml')
+/features/time/timestamp	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/time/schema.yaml')
+/features/time/interval	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/time/schema.yaml')
+/features/time/resolution	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/time/schema.yaml')
+/features/properties/created	('http://purl.org/dc/terms/created', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/updated	('http://purl.org/dc/terms/modified', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/type	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/title	('http://purl.org/dc/terms/title', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/description	('http://purl.org/dc/terms/description', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/keywords	('http://www.w3.org/ns/dcat#keyword', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/language	('https://www.opengis.net/def/ogc-api/records/language', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/language/code	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml')
+/features/properties/language/name	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml')
+/features/properties/language/alternate	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml')
+/features/properties/language/dir	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml')
+/features/properties/languages	('https://www.opengis.net/def/ogc-api/records/languages', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/languages/code	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml')
+/features/properties/languages/name	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml')
+/features/properties/languages/alternate	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml')
+/features/properties/languages/dir	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml')
+/features/properties/resourceLanguages	('https://www.opengis.net/def/ogc-api/records/resourceLanguages', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/resourceLanguages/code	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml')
+/features/properties/resourceLanguages/name	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml')
+/features/properties/resourceLanguages/alternate	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml')
+/features/properties/resourceLanguages/dir	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/language/schema.yaml')
+/features/properties/externalIds	('https://www.opengis.net/def/ogc-api/records/scopedIdentifier', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/externalIds/scheme	('https://www.opengis.net/def/ogc-api/records/scheme', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/externalIds/value	('https://www.opengis.net/def/ogc-api/records/id', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/themes	('https://www.opengis.net/def/ogc-api/records/themes', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/themes/concepts	('https://w3id.org/ogc/stac/themes/concepts', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/schema.yaml')
+/features/properties/themes/concepts/id	('https://w3id.org/ogc/stac/themes/id', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/schema.yaml')
+/features/properties/themes/concepts/title	('http://purl.org/dc/terms/title', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/schema.yaml')
+/features/properties/themes/concepts/description	('http://purl.org/dc/terms/description', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/schema.yaml')
+/features/properties/themes/concepts/url	('@id', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/schema.yaml')
+/features/properties/themes/scheme	('https://w3id.org/ogc/stac/themes/scheme', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/schema.yaml')
+/features/properties/formats	('https://www.opengis.net/def/ogc-api/records/format', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/formats/name	('https://www.opengis.net/def/ogc-api/records/name', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/formats/mediaType	('https://www.opengis.net/def/ogc-api/records/mediaType', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/contacts	('http://www.w3.org/ns/dcat#contactPoint', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/contacts/identifier	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/name	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/position	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/organization	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/logo	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/logo/href	('http://www.w3.org/ns/oa#hasTarget', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/properties/contacts/logo/rel	('http://www.iana.org/assignments/relation', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/properties/contacts/logo/anchor	(None, 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/properties/contacts/logo/type	('http://purl.org/dc/terms/type', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/properties/contacts/logo/hreflang	('http://purl.org/dc/terms/language', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/properties/contacts/logo/title	('http://www.w3.org/2000/01/rdf-schema#label', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/properties/contacts/logo/length	('http://purl.org/dc/terms/extent', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/properties/contacts/phones	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/phones/value	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/phones/roles	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/emails	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/emails/value	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/emails/roles	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/addresses	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/addresses/deliveryPoint	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/addresses/city	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/addresses/administrativeArea	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/addresses/postalCode	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/addresses/country	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/addresses/roles	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/links	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/links/href	('http://www.w3.org/ns/oa#hasTarget', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/properties/contacts/links/rel	('http://www.iana.org/assignments/relation', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/properties/contacts/links/anchor	(None, 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/properties/contacts/links/type	('http://purl.org/dc/terms/type', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/properties/contacts/links/hreflang	('http://purl.org/dc/terms/language', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/properties/contacts/links/title	('http://www.w3.org/2000/01/rdf-schema#label', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/properties/contacts/links/length	('http://purl.org/dc/terms/extent', 'https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml')
+/features/properties/contacts/hoursOfService	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/contactInstructions	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/contacts/roles	(None, 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/contact/schema.yaml')
+/features/properties/license	('http://www.w3.org/ns/dcat#license', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/properties/rights	('http://www.w3.org/ns/dcat#rights', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/links/created	('http://purl.org/dc/terms/created', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/features/links/updated	('http://purl.org/dc/terms/modified', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/features/linkTemplates	('https://www.opengis.net/def/ogc-api/records/hasLinkTemplate', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml')
+/features/linkTemplates/rel	('http://www.iana.org/assignments/relation', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/features/linkTemplates/type	('http://purl.org/dc/terms/format', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/features/linkTemplates/hreflang	('http://purl.org/dc/terms/language', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/features/linkTemplates/title	('http://www.w3.org/2000/01/rdf-schema#label', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/features/linkTemplates/length	('http://purl.org/dc/terms/extent', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/features/linkTemplates/created	('http://purl.org/dc/terms/created', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/features/linkTemplates/updated	('http://purl.org/dc/terms/modified', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/features/linkTemplates/uriTemplate	('https://www.opengis.net/def/ogc-api/records/uriTemplate', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkTemplate/schema.yaml')
+/features/linkTemplates/varBase	('https://www.opengis.net/def/ogc-api/records/varBase', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkTemplate/schema.yaml')
+/features/linkTemplates/variables	('https://www.opengis.net/def/ogc-api/records/hasVariable', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkTemplate/schema.yaml')
+/linkTemplates	(None, PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/recordsGeoJSON/schema.yaml'))
+/linkTemplates/rel	('http://www.iana.org/assignments/relation', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/linkTemplates/type	('http://purl.org/dc/terms/format', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/linkTemplates/hreflang	('http://purl.org/dc/terms/language', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/linkTemplates/title	('http://www.w3.org/2000/01/rdf-schema#label', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/linkTemplates/length	('http://purl.org/dc/terms/extent', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/linkTemplates/created	('http://purl.org/dc/terms/created', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/linkTemplates/updated	('http://purl.org/dc/terms/modified', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml')
+/linkTemplates/uriTemplate	('https://www.opengis.net/def/ogc-api/records/uriTemplate', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkTemplate/schema.yaml')
+/linkTemplates/varBase	('https://www.opengis.net/def/ogc-api/records/varBase', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkTemplate/schema.yaml')
+/linkTemplates/variables	('https://www.opengis.net/def/ogc-api/records/hasVariable', 'https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkTemplate/schema.yaml')

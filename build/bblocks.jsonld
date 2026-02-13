@@ -168,12 +168,12 @@
   "abstract": "[Building Blocks](https://ogcincubator.github.io/bblocks-docs/) for OGC API Records, components and extensions\n",
   "description": "A set of Building Blocks to allow reuse, testing and documentation of elements and extensions of OGC API Records. Declares and validates conformance with the OGC API Features (and inherits OGC API Common) baseline.\n\nThese elements are re-used by the [STAC](](https://ogcincubator.github.io/bblocks-stac/) and [GeoDCAT implementation](../geodcat-ogc-api-records), binding Records schemas to DCAT and GeoDCAT ontologies.\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/sparql",
-  "modified": "2026-02-10T03:57:32.525205",
+  "modified": "2026-02-13T03:50:06.383270",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"da938c570c326dad590b43582182bcf06cc63198",
       "shortCommitId": "\"da938c",
-      "date": "2026-01-19T11:49:34+00:00\""
+      "date": "2026-02-12T16:05:38+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-records",
@@ -223,7 +223,7 @@
       "itemClass": "model",
       "register": "ogc-incubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "link": "https://github.com/opengeospatial/geodcat-ogcapi-records",
       "sources": [
         {
@@ -285,7 +285,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -356,7 +356,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -500,7 +500,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -571,7 +571,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -642,7 +642,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -718,7 +718,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -789,7 +789,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -867,7 +867,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -944,7 +944,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -1033,7 +1033,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -1111,18 +1111,18 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "dependsOn": [
-        "bblocks://ogc.api.records.v1.schemas.contact",
-        "bblocks://ogc.api.records.v1.schemas.link",
-        "bblocks://ogc.api.records.v1.schemas.theme",
         "bblocks://ogc.api.records.v1.schemas.license",
-        "bblocks://ogc.api.records.v1.schemas.time",
+        "bblocks://ogc.api.records.v1.schemas.theme",
         "bblocks://ogc.geo.common.data_types.geojson",
-        "bblocks://ogc.api.records.records-ontology",
-        "bblocks://ogc.api.records.v1.schemas.language",
+        "bblocks://ogc.api.records.v1.schemas.contact",
+        "bblocks://ogc.api.records.v1.schemas.time",
         "bblocks://ogc.geo.features.feature",
-        "bblocks://ogc.api.records.v1.schemas.linkTemplate"
+        "bblocks://ogc.api.records.v1.schemas.linkTemplate",
+        "bblocks://ogc.api.records.v1.schemas.language",
+        "bblocks://ogc.api.records.records-ontology",
+        "bblocks://ogc.api.records.v1.schemas.link"
       ],
       "sources": [
         {
@@ -1209,7 +1209,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -1233,12 +1233,12 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.api.records.v1.schemas.contact",
         "bblocks://ogc.api.records.v1.schemas.license",
         "bblocks://ogc.api.records.v1.schemas.theme",
-        "bblocks://ogc.api.records.v1.schemas.language",
+        "bblocks://ogc.api.records.v1.schemas.contact",
+        "bblocks://ogc.api.records.v1.schemas.linkTemplate",
         "bblocks://ogc.api.features.v1.schemas.collection",
-        "bblocks://ogc.api.records.v1.schemas.linkTemplate"
+        "bblocks://ogc.api.records.v1.schemas.language"
       ],
       "schema": [
         {
@@ -1301,7 +1301,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -1390,7 +1390,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-02-07",
+      "dateOfLastChange": "2026-02-10",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -1414,8 +1414,8 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.api.records.v1.schemas.catalog",
         "bblocks://ogc.api.features.v1.schemas.collections",
+        "bblocks://ogc.api.records.v1.schemas.catalog",
         "bblocks://ogc.api.records.v1.schemas.linkTemplate"
       ],
       "schema": [

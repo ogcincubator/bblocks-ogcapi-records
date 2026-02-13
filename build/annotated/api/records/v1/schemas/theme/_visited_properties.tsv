@@ -1,7 +1,7 @@
 path	@id
-/concepts	https://w3id.org/ogc/stac/themes/concepts
-/concepts/id	https://w3id.org/ogc/stac/themes/id
-/concepts/title	http://purl.org/dc/terms/title
-/concepts/description	http://purl.org/dc/terms/description
-/concepts/url	@id
-/scheme	https://w3id.org/ogc/stac/themes/scheme
+/concepts	('https://w3id.org/ogc/stac/themes/concepts', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/theme/schema.yaml'))
+/concepts/id	('https://w3id.org/ogc/stac/themes/id', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/theme/schema.yaml'))
+/concepts/title	('http://purl.org/dc/terms/title', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/theme/schema.yaml'))
+/concepts/description	('http://purl.org/dc/terms/description', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/theme/schema.yaml'))
+/concepts/url	('@id', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/theme/schema.yaml'))
+/scheme	('https://w3id.org/ogc/stac/themes/scheme', PosixPath('/github/workspace/build/annotated/api/records/v1/schemas/theme/schema.yaml'))
