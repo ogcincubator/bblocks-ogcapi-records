@@ -1,5 +1,5 @@
 Validation report for ogc.api.records.v1.schemas.linkTemplate - Schema for linkTemplate
-Generated 2026-03-04T03:46:15.580912+00:00
+Generated 2026-03-07T03:39:45.288571+00:00
 === Files ===
 Using example.json from examples
 JSON-LD context is present - uplifting
@@ -17,7 +17,7 @@ Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:
   Conforms: True
   
 Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:
- - Shape rec:testAllVarsInTemplate: _:Ncbfe5f56be894bb693f191f9a10f3de8
+ - Shape rec:testAllVarsInTemplate: _:Nee33c5f5b7d64c6b9141d1c91bd02e80
 
 === End SHACL ===
 
