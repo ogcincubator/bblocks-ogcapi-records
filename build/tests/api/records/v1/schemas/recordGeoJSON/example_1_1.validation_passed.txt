@@ -1,5 +1,5 @@
 Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON
-Generated 2026-03-13T03:47:16.689326+00:00
+Generated 2026-03-16T04:00:10.465619+00:00
 === Files ===
 Using https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/examples/json/record.json from examples
 JSON-LD context is present - uplifting

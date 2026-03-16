@@ -1,0 +1,31 @@
+[
+  {
+    "path": "/date",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.records.v1.schemas.time"
+    ]
+  },
+  {
+    "path": "/timestamp",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.records.v1.schemas.time"
+    ]
+  },
+  {
+    "path": "/interval",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.api.records.v1.schemas.time"
+    ]
+  },
+  {
+    "path": "/resolution",
+    "description": "Minimum time period resolvable in the dataset, as an ISO 8601 duration",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.records.v1.schemas.time"
+    ]
+  }
+]

@@ -8,7 +8,7 @@
   "itemClass": "schema",
   "register": "ogcapi-records",
   "version": "0.1",
-  "dateOfLastChange": "2026-03-10",
+  "dateOfLastChange": "2026-03-13",
   "sources": [
     {
       "title": "OGC API Records - Draft",
@@ -26,8 +26,8 @@
     ]
   },
   "dependsOn": [
-    "ogc.api.records.v1.schemas.recordGeoJSON",
     "ogc.api.features.v1.schemas.collections",
+    "ogc.api.records.v1.schemas.recordGeoJSON",
     "ogc.api.records.v1.schemas.linkTemplate"
   ],
   "schema": {
@@ -36,6 +36,7 @@
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/recordsGeoJSON/schema.yaml",
   "ldContext": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordsGeoJSON/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordsGeoJSON/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/recordsGeoJSON/",
   "rdfData": [],
   "validationPassed": true,

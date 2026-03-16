@@ -112,47 +112,23 @@ Links to the schema:
   "@context": {
     "links": {
       "@context": {
-        "type": "dct:type"
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:type",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent"
       },
       "@id": "rdfs:seeAlso"
     },
-    "concepts": {
-      "@context": {
-        "id": "thns:id",
-        "title": "dct:title",
-        "description": "dct:description",
-        "url": "@id"
-      },
-      "@id": "thns:concepts",
-      "@container": "@set"
-    },
-    "scheme": "thns:scheme",
     "href": {
       "@type": "@id",
       "@id": "oa:hasTarget"
-    },
-    "rel": {
-      "@context": {
-        "@base": "http://www.iana.org/assignments/relation/"
-      },
-      "@id": "http://www.iana.org/assignments/relation",
-      "@type": "@id"
-    },
-    "type": "dct:format",
-    "hreflang": "dct:language",
-    "title": "rdfs:label",
-    "length": "dct:extent",
-    "created": "dct:created",
-    "updated": "dct:modified",
-    "uriTemplate": {
-      "@type": "xsd:string",
-      "@id": "rec:uriTemplate"
-    },
-    "varBase": "rec:varBase",
-    "variables": {
-      "@id": "rec:hasVariable",
-      "@container": "@index",
-      "@index": "dct:identifier"
     },
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",

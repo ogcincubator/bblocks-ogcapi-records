@@ -1,0 +1,107 @@
+[
+  {
+    "path": "/rel",
+    "id": "http://www.iana.org/assignments/relation",
+    "jsonld_type": "@id",
+    "description": "The type or semantics of the relation.",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml"
+    ],
+    "effectiveId": "http://www.iana.org/assignments/relation"
+  },
+  {
+    "path": "/type",
+    "id": "http://purl.org/dc/terms/format",
+    "description": "A hint indicating what the media type of the result of dereferencing the link should be.",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml"
+    ],
+    "effectiveId": "http://purl.org/dc/terms/format"
+  },
+  {
+    "path": "/hreflang",
+    "id": "http://purl.org/dc/terms/language",
+    "description": "A hint indicating what the language of the result of dereferencing the link should be.",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml"
+    ],
+    "effectiveId": "http://purl.org/dc/terms/language"
+  },
+  {
+    "path": "/title",
+    "id": "http://www.w3.org/2000/01/rdf-schema#label",
+    "description": "Used to label the destination of a link such that it can be used as a human-readable identifier.",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml"
+    ],
+    "effectiveId": "http://www.w3.org/2000/01/rdf-schema#label"
+  },
+  {
+    "path": "/length",
+    "id": "http://purl.org/dc/terms/extent",
+    "schema_type": "integer",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml"
+    ],
+    "effectiveId": "http://purl.org/dc/terms/extent"
+  },
+  {
+    "path": "/created",
+    "id": "http://purl.org/dc/terms/created",
+    "description": "Date of creation of the resource pointed to by the link.",
+    "schema_type": "string",
+    "format": "date-time",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml"
+    ],
+    "effectiveId": "http://purl.org/dc/terms/created"
+  },
+  {
+    "path": "/updated",
+    "id": "http://purl.org/dc/terms/modified",
+    "description": "Most recent date on which the resource pointed to by the link was changed.",
+    "schema_type": "string",
+    "format": "date-time",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml"
+    ],
+    "effectiveId": "http://purl.org/dc/terms/modified"
+  },
+  {
+    "path": "/uriTemplate",
+    "id": "https://www.opengis.net/def/ogc-api/records/uriTemplate",
+    "jsonld_type": "xsd:string",
+    "description": "Supplies a resolvable URI to a remote resource (or resource fragment).",
+    "required": true,
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.records.v1.schemas.linkTemplate"
+    ],
+    "effectiveId": "https://www.opengis.net/def/ogc-api/records/uriTemplate"
+  },
+  {
+    "path": "/varBase",
+    "id": "https://www.opengis.net/def/ogc-api/records/varBase",
+    "description": "The base URI to which the variable name can be appended to retrieve the definition of the variable as a JSON Schema fragment.",
+    "schema_type": "string",
+    "format": "url",
+    "sources": [
+      "bblocks://ogc.api.records.v1.schemas.linkTemplate"
+    ],
+    "effectiveId": "https://www.opengis.net/def/ogc-api/records/varBase"
+  },
+  {
+    "path": "/variables",
+    "id": "https://www.opengis.net/def/ogc-api/records/hasVariable",
+    "description": "This object contains one key per substitution variable in the templated URL.  Each key defines the schema of one substitution variable using a JSON Schema fragment and can thus include things like the data type of the variable, enumerations, minimum values, maximum values, etc.",
+    "schema_type": "object",
+    "sources": [
+      "bblocks://ogc.api.records.v1.schemas.linkTemplate"
+    ],
+    "effectiveId": "https://www.opengis.net/def/ogc-api/records/hasVariable"
+  }
+]
