@@ -11,4 +11,3 @@ path	@id	schema
 /links/length	http://purl.org/dc/terms/extent	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
 /linkTemplates		/github/workspace/build/annotated/api/records/v1/schemas/landingPage/schema.yaml
 /linkTemplates/linkTemplates		https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/landingPage/schema.yaml
-/linkTemplates/linkTemplates/linkTemplates		https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/landingPage/schema.yaml
