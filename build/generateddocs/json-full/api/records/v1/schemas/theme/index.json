@@ -8,7 +8,7 @@
   "itemClass": "schema",
   "register": "ogcapi-records",
   "version": "0.1",
-  "dateOfLastChange": "2026-03-22",
+  "dateOfLastChange": "2026-03-25",
   "sources": [
     {
       "title": "OGC API Records - Draft",
@@ -120,7 +120,10 @@
           "language": "ttl",
           "code": "@prefix thns: <https://w3id.org/ogc/stac/themes/> .\n\n<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson> thns:id \"dobson\" .\n\n<https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter> thns:id \"filter\" .\n\n[] thns:concepts <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson>,\n        <https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter> ;\n    thns:scheme \"https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode\" .\n\n",
           "transformResults": {
-            "dcat-themes": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/transforms/example_1_3.dcat-themes.ttl"
+            "dcat-themes": {
+              "success": true,
+              "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/transforms/example_1_3.dcat-themes.ttl"
+            }
           },
           "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/example_1_1.ttl"
         }
@@ -145,7 +148,10 @@
           "language": "ttl",
           "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix thns: <https://w3id.org/ogc/stac/themes/> .\n\n[] thns:concepts [ dcterms:description \"A wonderful place for cheese\" ;\n            dcterms:title \"Auvergne-Rh\u00f4ne-Alpes\" ;\n            thns:id \"geonames::11071625\" ],\n        [ dcterms:description \"A very nice forest\" ;\n            dcterms:title \"For\u00eat de Saou\" ;\n            thns:id \"geonames::2976077\" ] ;\n    thns:scheme \"https://www.geonames.org\" .\n\n",
           "transformResults": {
-            "dcat-themes": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/transforms/example_2_3.dcat-themes.ttl"
+            "dcat-themes": {
+              "success": true,
+              "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/transforms/example_2_3.dcat-themes.ttl"
+            }
           },
           "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/example_2_1.ttl"
         }
