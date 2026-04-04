@@ -156,10 +156,10 @@ This example is to test records examples.
     ns1:relation <http://www.iana.org/assignments/relation/describes> ;
     rec:hasVariable [ dct:format "string" ;
             dct:identifier "format" ],
-        [ dct:format "number" ;
-            dct:identifier "width" ],
         [ dct:format "array" ;
             dct:identifier "bbox" ],
+        [ dct:format "number" ;
+            dct:identifier "width" ],
         [ dct:format "number" ;
             dct:identifier "height" ],
         <https://org.org/some-standard-param-set/crs> ;
