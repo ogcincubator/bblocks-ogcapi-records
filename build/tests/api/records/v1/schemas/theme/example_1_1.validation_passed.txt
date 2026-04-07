@@ -1,5 +1,5 @@
 Validation report for ogc.api.records.v1.schemas.theme - Schema for theme
-Generated 2026-04-04T03:48:00.454075+00:00
+Generated 2026-04-07T03:57:19.017324+00:00
 === Files ===
 Using examples/urls.json from examples
 JSON-LD context is present - uplifting
