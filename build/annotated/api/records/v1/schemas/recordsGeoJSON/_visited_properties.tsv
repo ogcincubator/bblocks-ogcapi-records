@@ -22,7 +22,7 @@ path	@id	schema
 /collections/itemType		https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml
 /collections/crs		https://ogcincubator.github.io/bblocks-ogcapi-features/build/annotated/api/features/v1/schemas/collection/schema.yaml
 /features		/github/workspace/build/annotated/api/records/v1/schemas/recordsGeoJSON/schema.yaml
-/features/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/features/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
 /features/id	@id	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
 /features/properties	@nest	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
 /features/geometry	https://purl.org/geojson/vocab#geometry	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml

@@ -8,7 +8,7 @@
   "itemClass": "schema",
   "register": "ogcapi-records",
   "version": "0.1",
-  "dateOfLastChange": "2026-04-04",
+  "dateOfLastChange": "2026-04-07",
   "sources": [
     {
       "title": "OGC API Records - Draft",
@@ -23,12 +23,15 @@
   "shaclShapes": {
     "ogc.api.records.v1.schemas.linkTemplate": [
       "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/rules.shacl"
+    ],
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
     ]
   },
   "dependsOn": [
-    "ogc.api.features.v1.schemas.collections",
+    "ogc.api.records.v1.schemas.recordGeoJSON",
     "ogc.api.records.v1.schemas.linkTemplate",
-    "ogc.api.records.v1.schemas.recordGeoJSON"
+    "ogc.api.features.v1.schemas.collections"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordsGeoJSON/schema.yaml",
