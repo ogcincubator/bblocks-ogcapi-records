@@ -1,5 +1,5 @@
 Validation report for ogc.api.records.records-ontology - OGC API Records Ontology
-Generated 2026-04-10T04:01:27.546135+00:00
+Generated 2026-04-13T04:06:09.270685+00:00
 === Files ===
 Using example.ttl from examples
 Output Turtle example_1_1.ttl created
