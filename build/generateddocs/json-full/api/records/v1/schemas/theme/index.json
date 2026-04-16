@@ -8,7 +8,7 @@
   "itemClass": "schema",
   "register": "ogcapi-records",
   "version": "0.1",
-  "dateOfLastChange": "2026-04-10",
+  "dateOfLastChange": "2024-01-23",
   "sources": [
     {
       "title": "OGC API Records - Draft",
@@ -106,15 +106,15 @@
       "snippets": [
         {
           "language": "json",
-          "ref": "examples/urls.json",
+          "ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/theme/examples/urls.json",
           "base-uri": "https://example.com/stac/themes/example-1/",
           "code": "{\n  \"concepts\": [\n    {\n      \"id\": \"dobson\",\n      \"url\": \"https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson\"\n    },\n    {\n      \"id\": \"filter\",\n      \"url\": \"https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter\"\n    }\n  ],\n  \"scheme\": \"https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode\"\n}",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/example_1_1.json"
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/theme/build/tests/api/records/v1/schemas/theme/example_1_1.json"
         },
         {
           "language": "jsonld",
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/context.jsonld\",\n  \"concepts\": [\n    {\n      \"id\": \"dobson\",\n      \"url\": \"https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_dobson\"\n    },\n    {\n      \"id\": \"filter\",\n      \"url\": \"https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode_filter\"\n    }\n  ],\n  \"scheme\": \"https://geo.woudc.org/codelists.xml#WOUDC_InstrumentCode\"\n}",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/example_1_1.jsonld"
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/theme/build/tests/api/records/v1/schemas/theme/example_1_1.jsonld"
         },
         {
           "language": "ttl",
@@ -125,7 +125,7 @@
               "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/transforms/example_1_3.dcat-themes.ttl"
             }
           },
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/example_1_1.ttl"
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/theme/build/tests/api/records/v1/schemas/theme/example_1_1.ttl"
         }
       ]
     },
@@ -134,15 +134,15 @@
       "snippets": [
         {
           "language": "json",
-          "ref": "examples/schemes.json",
+          "ref": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/theme/examples/schemes.json",
           "base-uri": "https://example.com/stac/themes/example-2/",
           "code": "{\n  \"concepts\": [\n    {\n      \"id\": \"geonames::2976077\",\n      \"title\": \"For\u00eat de Saou\",\n      \"description\": \"A very nice forest\"\n    },\n    {\n      \"id\": \"geonames::11071625\",\n      \"title\": \"Auvergne-Rh\u00f4ne-Alpes\",\n      \"description\": \"A wonderful place for cheese\"\n    }\n  ],\n  \"scheme\": \"https://www.geonames.org\"\n}",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/example_2_1.json"
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/theme/build/tests/api/records/v1/schemas/theme/example_2_1.json"
         },
         {
           "language": "jsonld",
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/theme/context.jsonld\",\n  \"concepts\": [\n    {\n      \"id\": \"geonames::2976077\",\n      \"title\": \"For\\u00eat de Saou\",\n      \"description\": \"A very nice forest\"\n    },\n    {\n      \"id\": \"geonames::11071625\",\n      \"title\": \"Auvergne-Rh\\u00f4ne-Alpes\",\n      \"description\": \"A wonderful place for cheese\"\n    }\n  ],\n  \"scheme\": \"https://www.geonames.org\"\n}",
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/example_2_1.jsonld"
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/theme/build/tests/api/records/v1/schemas/theme/example_2_1.jsonld"
         },
         {
           "language": "ttl",
@@ -153,7 +153,7 @@
               "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/transforms/example_2_3.dcat-themes.ttl"
             }
           },
-          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/tests/api/records/v1/schemas/theme/example_2_1.ttl"
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/theme/build/tests/api/records/v1/schemas/theme/example_2_1.ttl"
         }
       ]
     }
