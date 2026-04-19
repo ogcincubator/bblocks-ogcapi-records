@@ -1,5 +1,5 @@
 Validation report for ogc.api.records.v1.schemas.recordGeoJSON - Schema for recordGeoJSON
-Generated 2026-04-16T04:03:28.239278+00:00
+Generated 2026-04-19T04:03:14.126628+00:00
 === Files ===
 Using https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/examples/json/record.json from examples
 JSON-LD context is present - uplifting
@@ -18,10 +18,10 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
  - Shape geojson:FeatureShape: <urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone>
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 
 Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:
   Validation Report
