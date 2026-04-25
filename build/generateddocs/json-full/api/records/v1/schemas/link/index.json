@@ -32,7 +32,6 @@
   "ldContext": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/link/context.jsonld",
   "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/link/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/link/",
-  "rdfData": [],
   "validationPassed": true,
   "annotatedSchema": "$comment: Adapted from https://github.com/opengeospatial/ogcapi-records/raw/master/core/openapi/schemas/link.yaml\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/linkBase/schema.yaml\n- type: object\n  required:\n  - href\n  properties:\n    href:\n      allOf:\n      - type: string\n        format: uri\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-records",
