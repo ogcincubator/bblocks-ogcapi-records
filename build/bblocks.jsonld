@@ -195,7 +195,7 @@
   "abstract": "[Building Blocks](https://ogcincubator.github.io/bblocks-docs/) for OGC API Records, components and extensions\n",
   "description": "A set of Building Blocks to allow reuse, testing and documentation of elements and extensions of OGC API Records. Declares and validates conformance with the OGC API Features (and inherits OGC API Common) baseline.\n\nThese elements are re-used by the [STAC](](https://ogcincubator.github.io/bblocks-stac/) and [GeoDCAT implementation](../geodcat-ogc-api-records), binding Records schemas to DCAT and GeoDCAT ontologies.\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/sparql",
-  "modified": "2026-06-01T04:31:58.498318",
+  "modified": "2026-06-04T04:31:05.543395",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"ad9a45b0f8be60a98bc10be85fef3d86f30f87c5",
@@ -834,8 +834,8 @@
       "abstract": "This building block corresponds to the schema for an OGC API Records contact",
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.records.v1.schemas.roles",
-        "bblocks://ogc.ogc-utils.json-link"
+        "bblocks://ogc.ogc-utils.json-link",
+        "bblocks://ogc.api.records.v1.schemas.roles"
       ],
       "schema": [
         {
@@ -1148,15 +1148,15 @@
       "version": "0.1",
       "dateOfLastChange": "2024-01-23",
       "dependsOn": [
-        "bblocks://ogc.api.records.v1.schemas.link",
         "bblocks://ogc.api.records.v1.schemas.license",
-        "bblocks://ogc.api.records.v1.schemas.time",
-        "bblocks://ogc.api.records.records-ontology",
-        "bblocks://ogc.api.records.v1.schemas.contact",
-        "bblocks://ogc.api.records.v1.schemas.linkTemplate",
-        "bblocks://ogc.api.records.v1.schemas.language",
-        "bblocks://ogc.geo.common.data_types.geojson",
         "bblocks://ogc.geo.features.feature",
+        "bblocks://ogc.api.records.v1.schemas.language",
+        "bblocks://ogc.api.records.records-ontology",
+        "bblocks://ogc.api.records.v1.schemas.link",
+        "bblocks://ogc.api.records.v1.schemas.time",
+        "bblocks://ogc.api.records.v1.schemas.linkTemplate",
+        "bblocks://ogc.api.records.v1.schemas.contact",
+        "bblocks://ogc.geo.common.data_types.geojson",
         "bblocks://ogc.api.records.v1.schemas.theme"
       ],
       "sources": [
@@ -1173,18 +1173,18 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/rules.shacl"
+            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
           ],
-          "rdfs:seeAlso": "bblocks://ogc.api.records.v1.schemas.linkTemplate",
+          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"
         },
         {
           "prof:hasArtifact": [
-            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+            "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/rules.shacl"
           ],
-          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
+          "rdfs:seeAlso": "bblocks://ogc.api.records.v1.schemas.linkTemplate",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"
@@ -1279,10 +1279,10 @@
       ],
       "dependsOn": [
         "bblocks://ogc.api.records.v1.schemas.license",
-        "bblocks://ogc.api.records.v1.schemas.contact",
+        "bblocks://ogc.api.records.v1.schemas.language",
         "bblocks://ogc.api.features.v1.schemas.collection",
         "bblocks://ogc.api.records.v1.schemas.linkTemplate",
-        "bblocks://ogc.api.records.v1.schemas.language",
+        "bblocks://ogc.api.records.v1.schemas.contact",
         "bblocks://ogc.api.records.v1.schemas.theme"
       ],
       "schema": [
@@ -1380,8 +1380,8 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.api.records.v1.schemas.recordGeoJSON",
         "bblocks://ogc.api.records.v1.schemas.linkTemplate",
+        "bblocks://ogc.api.records.v1.schemas.recordGeoJSON",
         "bblocks://ogc.api.features.v1.schemas.collections"
       ],
       "schema": [
