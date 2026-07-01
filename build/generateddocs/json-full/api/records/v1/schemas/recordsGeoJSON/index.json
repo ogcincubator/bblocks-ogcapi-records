@@ -29,8 +29,8 @@
     ]
   },
   "dependsOn": [
-    "ogc.api.features.v1.schemas.collections",
     "ogc.api.records.v1.schemas.linkTemplate",
+    "ogc.api.features.v1.schemas.collections",
     "ogc.api.records.v1.schemas.recordGeoJSON"
   ],
   "schema": {
