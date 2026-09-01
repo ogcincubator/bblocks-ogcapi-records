@@ -16,11 +16,11 @@ These elements are re-used by the [STAC](](https://ogcincubator.github.io/bblock
 
 Ontology for OGC API Records concepts and terms not found elsewhere
 
-### `ogc.api.records.v1.schemas.license` — Schema for license
+### `ogc.api.records.v1.schemas.language` — Schema for language
 
 **Type:** schema
 
-This building block corresponds to the schema for an OGC API Records license
+This building block corresponds to the schema for an OGC API Records language
 
 ### `ogc.api.records.v1.schemas.theme` — Schema for theme
 
@@ -28,11 +28,11 @@ This building block corresponds to the schema for an OGC API Records license
 
 This building block corresponds to the schema for an OGC API Records theme. This is generalised for reuse by STAC themes extension by allowing either name or title to be mapped to dct:title .
 
-### `ogc.api.records.v1.schemas.language` — Schema for language
+### `ogc.api.records.v1.schemas.license` — Schema for license
 
 **Type:** schema
 
-This building block corresponds to the schema for an OGC API Records language
+This building block corresponds to the schema for an OGC API Records license
 
 ### `ogc.api.records.v1.schemas.roles` — Schema for roles
 
