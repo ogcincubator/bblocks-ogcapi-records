@@ -106,12 +106,12 @@ This building block corresponds to the schema for an OGC API Records theme. This
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix thns: <https://w3id.org/ogc/stac/themes/> .
 
-[] thns:concepts [ dcterms:description "A very nice forest" ;
-            dcterms:title "Forêt de Saou" ;
-            thns:id "geonames::2976077" ],
-        [ dcterms:description "A wonderful place for cheese" ;
+[] thns:concepts [ dcterms:description "A wonderful place for cheese" ;
             dcterms:title "Auvergne-Rhône-Alpes" ;
-            thns:id "geonames::11071625" ] ;
+            thns:id "geonames::11071625" ],
+        [ dcterms:description "A very nice forest" ;
+            dcterms:title "Forêt de Saou" ;
+            thns:id "geonames::2976077" ] ;
     thns:scheme "https://www.geonames.org" .
 
 
