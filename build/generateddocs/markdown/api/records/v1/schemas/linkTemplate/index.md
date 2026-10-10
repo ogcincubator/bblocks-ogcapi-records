@@ -159,9 +159,9 @@ This example is to test records examples.
         [ dct:format "string" ;
             dct:identifier "format" ],
         [ dct:format "number" ;
-            dct:identifier "width" ],
-        [ dct:format "number" ;
             dct:identifier "height" ],
+        [ dct:format "number" ;
+            dct:identifier "width" ],
         <https://org.org/some-standard-param-set/crs> ;
     rec:uriTemplate "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}"^^xsd:string .
 
