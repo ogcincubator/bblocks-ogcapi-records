@@ -23,3 +23,8 @@ properties:
   resolution:
     type: string
     description: Minimum time period resolvable in the dataset, as an ISO 8601 duration
+x-bblocks-metadata:
+  itemIdentifier: ogc.api.records.v1.schemas.time
+  register: https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-10-19'

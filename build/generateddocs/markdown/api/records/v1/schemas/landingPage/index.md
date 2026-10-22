@@ -19,6 +19,11 @@ allOf:
       type: array
       items:
         $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/landingPage/schema.yaml
+x-bblocks-metadata:
+  itemIdentifier: ogc.api.records.v1.schemas.landingPage
+  register: https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-10-19'
 
 ```
 

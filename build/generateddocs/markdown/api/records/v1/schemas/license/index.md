@@ -40,6 +40,11 @@ description: 'A legal document under which the resource is made available.
   in the catalog in the first place since there is no point in making
 
   such a resource discoverable.'
+x-bblocks-metadata:
+  itemIdentifier: ogc.api.records.v1.schemas.license
+  register: https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-10-19'
 
 ```
 

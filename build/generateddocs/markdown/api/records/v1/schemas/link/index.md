@@ -22,6 +22,11 @@ allOf:
       allOf:
       - type: string
         format: uri
+x-bblocks-metadata:
+  itemIdentifier: ogc.api.records.v1.schemas.link
+  register: https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-10-19'
 
 ```
 

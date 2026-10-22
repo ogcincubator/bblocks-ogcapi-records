@@ -36,5 +36,11 @@
   "x-jsonld-prefixes": {
     "rec": "https://www.opengis.net/def/ogc-api/records/",
     "dct": "http://purl.org/dc/terms/"
+  },
+  "x-bblocks-metadata": {
+    "itemIdentifier": "ogc.api.records.v1.schemas.linkTemplate",
+    "register": "https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json",
+    "version": "0.1",
+    "dateOfLastChange": "2026-10-19"
   }
 }

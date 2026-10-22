@@ -178,3 +178,8 @@ x-jsonld-prefixes:
   vcard: http://www.w3.org/2006/vcard/ns#
   prov: http://www.w3.org/ns/prov#
   foaf: http://xmlns.com/foaf/0.1/
+x-bblocks-metadata:
+  itemIdentifier: ogc.api.records.v1.schemas.recordGeoJSON
+  register: https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-10-19'
