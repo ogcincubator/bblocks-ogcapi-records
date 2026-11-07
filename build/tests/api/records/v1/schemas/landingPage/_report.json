@@ -2,10 +2,11 @@
   "title": "Validation report for ogc.api.records.v1.schemas.landingPage - Schema for landingPage",
   "bblockName": "Schema for landingPage",
   "bblockId": "ogc.api.records.v1.schemas.landingPage",
-  "generated": "2026-11-04T03:05:26.551346+00:00",
+  "generated": "2026-11-07T03:05:07.709241+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},
+  "hasWarnings": false,
   "counts": {
     "total": 0,
     "passed": 0,

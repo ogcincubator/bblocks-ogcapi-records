@@ -9,6 +9,14 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <style>
+            .entry-message.text-warning-emphasis,
+            .entry-message.text-danger {
+                border-left: 3px solid var(--bs-warning);
+                padding-left: .4rem;
+            }
+            .entry-message.text-danger {
+                border-left-color: var(--bs-danger);
+            }
             .entry-message {
                 white-space: pre-wrap;
                 font-size: 80%;
@@ -64,7 +72,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-11-04T03:05:27.380503+00:00</small>
+            <small class="datetime">Generated at 2026-11-07T03:05:09.355359+00:00</small>
                 <p class="summary fw-semibold text-success">
                     Number of passing building blocks: 15 / 15 (100%)
                 </p>
@@ -117,7 +125,9 @@
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using example.ttl from examples</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                     </div>
@@ -217,15 +227,20 @@
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using examples/urls.json from examples</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                 
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                     </div>
@@ -254,15 +269,20 @@
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using examples/schemes.json from examples</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_2_1.jsonld created</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                 
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                     </div>
@@ -432,56 +452,44 @@
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                 
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using var-exists-fail.json from test resources</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD var-exists-fail.jsonld created</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle var-exists-fail.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                 
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:
-  Validation Report
-  Conforms: False
-  Results (1):
-  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: rec:testAllVarsInTemplate
-  	Focus Node: [ ns1:relation &lt;http://www.iana.org/assignments/relation/describes&gt; ; rdfs:label Literal(&quot;World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations&quot;) ; rec:hasVariable [ dct:format Literal(&quot;array&quot;) ; dct:identifier Literal(&quot;not-bbox&quot;) ] ; rec:uriTemplate Literal(&quot;https://geo.woudc.org/ows?crs={crs}&amp;bbox={bbox}&quot;, datatype=xsd:string) ]
-  	Value Node: [ ns1:relation &lt;http://www.iana.org/assignments/relation/describes&gt; ; rdfs:label Literal(&quot;World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations&quot;) ; rec:hasVariable [ dct:format Literal(&quot;array&quot;) ; dct:identifier Literal(&quot;not-bbox&quot;) ] ; rec:uriTemplate Literal(&quot;https://geo.woudc.org/ows?crs={crs}&amp;bbox={bbox}&quot;, datatype=xsd:string) ]
-  	Result Path: rec:hasVariable
-  	Source Constraint: [ sh:select Literal(&quot;
-        PREFIX rec:    &lt;https://www.opengis.net/def/ogc-api/records/&gt;
-        prefix oa: &lt;http://www.w3.org/ns/oa#&gt;
-        PREFIX dct: &lt;http://purl.org/dc/terms/&gt;
-        SELECT $this ?path ?value ?template
-        WHERE {
-          BIND (rec:hasVariable as ?path)
-          $this rec:hasVariable/dct:identifier ?var .
-          $this rec:uriTemplate ?template .
-        }
-        GROUP BY $this ?path ?value ?template
-        HAVING ( COUNT(?var) != SUM(
-           IF(
-              CONTAINS(?template, CONCAT(&quot;{&quot;,?var,&quot;}&quot;  )),1,0 )
-    ) )
-  
-      &quot;) ]
-  	Message: variables must exist in uri template
-  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/v1/schemas/linkTemplate/rules.shacl: 1 violation</div>
+                                                                    
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Violation (sh:SPARQLConstraintComponent):
+  Source shape: rec:testAllVarsInTemplate
+  Focus node: _:N8b747304744b497a8dda06b692acd8d2
+  Result path: rec:hasVariable
+  Value: _:N8b747304744b497a8dda06b692acd8d2
+  Message: variables must exist in uri template</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:
- - Shape rec:testAllVarsInTemplate: _:Nbe56862e7e4045bda13d9749262717fd
+ - Shape rec:testAllVarsInTemplate: _:N8b747304744b497a8dda06b692acd8d2
 </div>
                                                     </div>
                                                 </div>
@@ -509,27 +517,31 @@
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using example.json from examples</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                 
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:
-  Validation Report
-  Conforms: True
-  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/v1/schemas/linkTemplate/rules.shacl: no results</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:
- - Shape rec:testAllVarsInTemplate: _:N2ecd4d2f56ae453281cc823bb004a6f5
+ - Shape rec:testAllVarsInTemplate: _:Na9d6f6e5551847f4ac987c52c2ec87ef
 </div>
                                                     </div>
                                                 </div>
@@ -606,30 +618,35 @@
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                 
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using record-fail.json from test resources</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                 
                                                                     
-                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;CSV&#x27; is not of type &#x27;object&#x27;
+                                                                    
+                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;GeoJSON&#x27; is not of type &#x27;object&#x27;
 
 Failed validating &#x27;type&#x27; in schema[&#x27;properties&#x27;][&#x27;properties&#x27;][&#x27;properties&#x27;][&#x27;formats&#x27;][&#x27;items&#x27;]:
-    {&#x27;anyOf&#x27;: [{&#x27;required&#x27;: [&#x27;name&#x27;]}, {&#x27;required&#x27;: [&#x27;mediaType&#x27;]}],
-     &#x27;properties&#x27;: {&#x27;mediaType&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;,
-                                  &#x27;x-jsonld-id&#x27;: &#x27;https://www.opengis.net/def/ogc-api/records/mediaType&#x27;},
-                    &#x27;name&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;,
-                             &#x27;x-jsonld-id&#x27;: &#x27;https://www.opengis.net/def/ogc-api/records/name&#x27;}},
-     &#x27;type&#x27;: &#x27;object&#x27;}
+    {&#x27;type&#x27;: &#x27;object&#x27;,
+     &#x27;anyOf&#x27;: [{&#x27;required&#x27;: [&#x27;name&#x27;]}, {&#x27;required&#x27;: [&#x27;mediaType&#x27;]}],
+     &#x27;properties&#x27;: {&#x27;name&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;,
+                             &#x27;x-jsonld-id&#x27;: &#x27;https://www.opengis.net/def/ogc-api/records/name&#x27;},
+                    &#x27;mediaType&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;,
+                                  &#x27;x-jsonld-id&#x27;: &#x27;https://www.opengis.net/def/ogc-api/records/mediaType&#x27;}}}
 
-On instance[&#x27;properties&#x27;][&#x27;formats&#x27;][0]:
-    &#x27;CSV&#x27;</div>
+On instance[&#x27;properties&#x27;][&#x27;formats&#x27;][1]:
+    &#x27;GeoJSON&#x27;</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON-LD</div>
                                                                 
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-json_ld text-danger">Error found when uplifting JSON-LD: https://geo.woudc.org/ows?service=WMS&amp;version=1.3.0&amp;request=GetMap&amp;crs={crs}&amp;bbox={bbox}&amp;layers=stations&amp;width={width}&amp;height={height}&amp;format=image/png does not look like a valid URI, trying to serialize this will break.
 </div>
@@ -659,43 +676,47 @@ On instance[&#x27;properties&#x27;][&#x27;formats&#x27;][0]:
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using https://raw.githubusercontent.com/opengeospatial/ogcapi-records/master/core/examples/json/record.json from examples</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                 
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
  - /github/workspace/_sources/records-ontology/ontology.ttl</div>
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/v1/schemas/linkTemplate/rules.shacl:
-  Validation Report
-  Conforms: True
-  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/v1/schemas/linkTemplate/rules.shacl: no results</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:
  - Shape rec:testAllVarsInTemplate: &lt;urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone&gt;/rec:hasLinkTemplate,&lt;urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone&gt;/rec:hasLinkTemplate
 </div>
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl: no results</div>
+                                                                    
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: &lt;urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone&gt;
  - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: &lt;urn:x-wmo:md:int.wmo.wis::https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone&gt;
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
 </div>
                                                     </div>
                                                 </div>
