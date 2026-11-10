@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.records-ontology - OGC API Records Ontology",
   "bblockName": "OGC API Records Ontology",
   "bblockId": "ogc.api.records.records-ontology",
-  "generated": "2026-11-07T03:05:07.550722+00:00",
+  "generated": "2026-11-10T03:05:15.447518+00:00",
   "result": true,
   "items": [
     {
@@ -32,7 +32,7 @@
               "filename": "example_1_1.ttl",
               "size": 127,
               "isError": false,
-              "message": "Output Turtle example_1_1.ttl created"
+              "message": "Output Turtle example_1_1.ttl kept as provided"
             }
           ]
         }
