@@ -1,5 +1,5 @@
 Validation report for ogc.api.records.v1.schemas.linkTemplate - Schema for linkTemplate
-Generated 2026-11-10T03:05:15.558936+00:00
+Generated 2026-11-13T03:05:23.252306+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -21,12 +21,12 @@ Validation result for _sources/v1/schemas/linkTemplate/rules.shacl: 1 violation
 ** Validation error **
 Violation (sh:SPARQLConstraintComponent):
   Source shape: rec:testAllVarsInTemplate
-  Focus node: _:N3bf28bee062e4948b27678ce012a62da
+  Focus node: _:N887835e4e18e44b99a3d8bc04bbea0c9
   Result path: rec:hasVariable
-  Value: _:N3bf28bee062e4948b27678ce012a62da
+  Value: _:N887835e4e18e44b99a3d8bc04bbea0c9
   Message: variables must exist in uri template
 Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:
- - Shape rec:testAllVarsInTemplate: _:N3bf28bee062e4948b27678ce012a62da
+ - Shape rec:testAllVarsInTemplate: _:N887835e4e18e44b99a3d8bc04bbea0c9
 
 === End SHACL ===
 
