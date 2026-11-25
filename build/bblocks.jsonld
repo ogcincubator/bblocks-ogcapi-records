@@ -168,10 +168,6 @@
         "@id": "prof:hasResource",
         "@type": "@id"
       },
-      "rdfData": {
-        "@id": "prof:hasResource",
-        "@type": "@id"
-      },
       "links": {
         "@id": "prof:hasResource",
         "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/context.jsonld"
@@ -200,6 +196,9 @@
           "validation": "role:validation",
           "vocabulary": "role:vocabulary",
           "data": "role:data",
+          "requirements": "role:requirements",
+          "terms": "role:terms",
+          "references": "role:references",
           "ref": {
             "@id": "prof:hasArtifact",
             "@type": "@id"
@@ -218,12 +217,12 @@
   "abstract": "[Building Blocks](https://ogcincubator.github.io/bblocks-docs/) for OGC API Records, components and extensions\n",
   "description": "A set of Building Blocks to allow reuse, testing and documentation of elements and extensions of OGC API Records. Declares and validates conformance with the OGC API Features (and inherits OGC API Common) baseline.\n\nThese elements are re-used by the [STAC](](https://ogcincubator.github.io/bblocks-stac/) and [GeoDCAT implementation](../geodcat-ogc-api-records), binding Records schemas to DCAT and GeoDCAT ontologies.\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/sparql",
-  "modified": "2026-11-22T03:05:16.726174",
+  "modified": "2026-11-25T03:05:19.850456",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"990affbe72a10408bfed51a6254103fad13752c2",
-      "shortCommitId": "\"990aff",
-      "date": "2026-11-19T17:39:46+00:00\""
+      "commitId": "\"009466f93d27bf23cb4832f43883f4f524ab5d30",
+      "shortCommitId": "\"009466",
+      "date": "2026-11-24T22:38:04+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-records",
@@ -273,7 +272,7 @@
       "itemClass": "model",
       "register": "ogc-incubator",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "link": "https://github.com/opengeospatial/geodcat-ogcapi-records",
       "sources": [
         {
@@ -320,7 +319,6 @@
       "ldContext": null,
       "schema": null,
       "openAPIDocument": null,
-      "rdfData": [],
       "dependsOn": null,
       "isProfileOf": null,
       "isDescribedBy": null,
@@ -336,7 +334,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -393,7 +391,6 @@
       "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "dependsOn": null,
       "isProfileOf": null,
       "isDescribedBy": null,
@@ -409,7 +406,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -465,7 +462,6 @@
       "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "dependsOn": null,
       "isProfileOf": null,
       "isDescribedBy": null,
@@ -481,7 +477,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -611,7 +607,6 @@
       "skos:prefLabel": "Schema for theme",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "dependsOn": null,
       "isProfileOf": null,
       "isDescribedBy": null,
@@ -627,7 +622,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -683,7 +678,6 @@
       "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "dependsOn": null,
       "isProfileOf": null,
       "isDescribedBy": null,
@@ -699,7 +693,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -761,7 +755,6 @@
       "skos:prefLabel": "Schema for linkBase",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "dependsOn": null,
       "isProfileOf": null,
       "isDescribedBy": null,
@@ -777,7 +770,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -834,7 +827,6 @@
       "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "dependsOn": null,
       "isProfileOf": null,
       "isDescribedBy": null,
@@ -850,7 +842,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -915,7 +907,6 @@
       "skos:prefLabel": "Schema for contact",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
       "isDescribedBy": null,
       "skos:topConceptOf": {
@@ -930,7 +921,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -994,7 +985,6 @@
       "skos:prefLabel": "Schema for link",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
       "isDescribedBy": null,
       "skos:topConceptOf": {
@@ -1009,7 +999,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -1085,7 +1075,6 @@
       "skos:prefLabel": "Schema for linkTemplate",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
       "isDescribedBy": null,
       "skos:topConceptOf": {
@@ -1100,7 +1089,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -1164,7 +1153,6 @@
       "skos:prefLabel": "Schema for landingPage",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
       "isDescribedBy": null,
       "skos:topConceptOf": {
@@ -1180,7 +1168,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "dependsOn": [
         "bblocks://ogc.api.records.records-ontology",
         "bblocks://ogc.api.records.v1.schemas.contact",
@@ -1274,7 +1262,6 @@
       "skos:prefLabel": "Schema for recordGeoJSON",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
       "isDescribedBy": null,
       "skos:topConceptOf": {
@@ -1289,7 +1276,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -1368,7 +1355,6 @@
       "skos:prefLabel": "Schema for catalog",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
       "isDescribedBy": null,
       "skos:topConceptOf": {
@@ -1383,7 +1369,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -1468,7 +1454,6 @@
       "skos:prefLabel": "Schema for recordsGeoJSON",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
       "isDescribedBy": null,
       "skos:topConceptOf": {
@@ -1483,7 +1468,7 @@
       "itemClass": "schema",
       "register": "ogcapi-records",
       "version": "0.1",
-      "dateOfLastChange": "2026-11-19",
+      "dateOfLastChange": "2026-11-22",
       "sources": [
         {
           "title": "OGC API Records - Draft",
@@ -1559,7 +1544,6 @@
       "skos:prefLabel": "Schema for catalogs",
       "openAPIDocument": null,
       "ontology": null,
-      "rdfData": [],
       "isProfileOf": null,
       "isDescribedBy": null,
       "skos:topConceptOf": {

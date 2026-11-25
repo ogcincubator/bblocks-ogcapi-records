@@ -155,13 +155,13 @@ This example is to test records examples.
 [] rdfs:label "World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations" ;
     ns1:relation <http://www.iana.org/assignments/relation/describes> ;
     rec:hasVariable [ dct:format "number" ;
-            dct:identifier "height" ],
-        [ dct:format "string" ;
-            dct:identifier "format" ],
+            dct:identifier "width" ],
         [ dct:format "array" ;
             dct:identifier "bbox" ],
         [ dct:format "number" ;
-            dct:identifier "width" ],
+            dct:identifier "height" ],
+        [ dct:format "string" ;
+            dct:identifier "format" ],
         <https://org.org/some-standard-param-set/crs> ;
     rec:uriTemplate "https://geo.woudc.org/ows?service=WMS&version=1.3.0&request=GetMap&crs={crs}&bbox={bbox}&layers=stations&width={width}&height={height}&format={format}"^^xsd:string .
 
@@ -206,7 +206,7 @@ x-bblocks-metadata:
   itemIdentifier: ogc.api.records.v1.schemas.linkTemplate
   register: https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json
   version: '0.1'
-  dateOfLastChange: '2026-11-19'
+  dateOfLastChange: '2026-11-22'
 
 ```
 
