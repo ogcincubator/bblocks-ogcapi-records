@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.records.v1.schemas.linkTemplate - Schema for linkTemplate",
   "bblockName": "Schema for linkTemplate",
   "bblockId": "ogc.api.records.v1.schemas.linkTemplate",
-  "generated": "2026-11-25T03:05:30.989535+00:00",
+  "generated": "2026-11-28T03:05:04.376414+00:00",
   "result": true,
   "items": [
     {
@@ -75,36 +75,36 @@
             {
               "op": "shacl-report",
               "shaclFile": "_sources/v1/schemas/linkTemplate/rules.shacl",
-              "graph": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix rec: <https://www.opengis.net/def/ogc-api/records/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode _:Nbab5b9361dcc484db24d8c272669ea1a ;\n            sh:resultMessage \"variables must exist in uri template\" ;\n            sh:resultPath rec:hasVariable ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraint [ sh:select \"\"\"\n      PREFIX rec:    <https://www.opengis.net/def/ogc-api/records/>\n      prefix oa: <http://www.w3.org/ns/oa#>\n      PREFIX dct: <http://purl.org/dc/terms/>\n      SELECT $this ?path ?value ?template\n      WHERE {\n        BIND (rec:hasVariable as ?path)\n        $this rec:hasVariable/dct:identifier ?var .\n        $this rec:uriTemplate ?template .\n      }\n      GROUP BY $this ?path ?value ?template\n      HAVING ( COUNT(?var) != SUM(\n         IF(\n            CONTAINS(?template, CONCAT(\"{\",?var,\"}\"  )),1,0 )\n  ) )\n\n    \"\"\" ] ;\n            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;\n            sh:sourceShape rec:testAllVarsInTemplate ;\n            sh:value _:Nbab5b9361dcc484db24d8c272669ea1a ] .\n\n_:N4650c7852ca04d45bc3da38a4a434b12 dcterms:format \"array\" ;\n    dcterms:identifier \"not-bbox\" .\n\n_:Nbab5b9361dcc484db24d8c272669ea1a rdfs:label \"World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations\" ;\n    ns1:relation <http://www.iana.org/assignments/relation/describes> ;\n    rec:hasVariable _:N4650c7852ca04d45bc3da38a4a434b12 ;\n    rec:uriTemplate \"https://geo.woudc.org/ows?crs={crs}&bbox={bbox}\"^^xsd:string .\n\n",
+              "graph": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix rec: <https://www.opengis.net/def/ogc-api/records/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode _:Nc200eab55fd64fcc9036bd5f3ce340e2 ;\n            sh:resultMessage \"variables must exist in uri template\" ;\n            sh:resultPath rec:hasVariable ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraint [ sh:select \"\"\"\n      PREFIX rec:    <https://www.opengis.net/def/ogc-api/records/>\n      prefix oa: <http://www.w3.org/ns/oa#>\n      PREFIX dct: <http://purl.org/dc/terms/>\n      SELECT $this ?path ?value ?template\n      WHERE {\n        BIND (rec:hasVariable as ?path)\n        $this rec:hasVariable/dct:identifier ?var .\n        $this rec:uriTemplate ?template .\n      }\n      GROUP BY $this ?path ?value ?template\n      HAVING ( COUNT(?var) != SUM(\n         IF(\n            CONTAINS(?template, CONCAT(\"{\",?var,\"}\"  )),1,0 )\n  ) )\n\n    \"\"\" ] ;\n            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;\n            sh:sourceShape rec:testAllVarsInTemplate ;\n            sh:value _:Nc200eab55fd64fcc9036bd5f3ce340e2 ] .\n\n_:N4380d02b7a484e1199e0a9b7a4f95cd0 dcterms:format \"array\" ;\n    dcterms:identifier \"not-bbox\" .\n\n_:Nc200eab55fd64fcc9036bd5f3ce340e2 rdfs:label \"World Ozone and Ultraviolet Radiation Data Centre (WOUDC) stations\" ;\n    ns1:relation <http://www.iana.org/assignments/relation/describes> ;\n    rec:hasVariable _:N4380d02b7a484e1199e0a9b7a4f95cd0 ;\n    rec:uriTemplate \"https://geo.woudc.org/ows?crs={crs}&bbox={bbox}\"^^xsd:string .\n\n",
               "isError": false,
               "message": "Validation result for _sources/v1/schemas/linkTemplate/rules.shacl: 1 violation"
             },
             {
               "op": "shacl-result",
               "resultSeverity": "http://www.w3.org/ns/shacl#Violation",
-              "focusNode": "Nbab5b9361dcc484db24d8c272669ea1a",
+              "focusNode": "Nc200eab55fd64fcc9036bd5f3ce340e2",
               "resultPath": "rec:hasVariable",
               "sourceConstraintComponent": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
               "sourceShape": "https://www.opengis.net/def/ogc-api/records/testAllVarsInTemplate",
               "sourceShapeDescription": "rec:testAllVarsInTemplate",
-              "value": "_:Nbab5b9361dcc484db24d8c272669ea1a",
+              "value": "_:Nc200eab55fd64fcc9036bd5f3ce340e2",
               "resultMessage": "variables must exist in uri template",
               "shaclFile": "_sources/v1/schemas/linkTemplate/rules.shacl",
               "isError": true,
               "severity": "error",
-              "message": "Violation (sh:SPARQLConstraintComponent):\n  Source shape: rec:testAllVarsInTemplate\n  Focus node: _:Nbab5b9361dcc484db24d8c272669ea1a\n  Result path: rec:hasVariable\n  Value: _:Nbab5b9361dcc484db24d8c272669ea1a\n  Message: variables must exist in uri template"
+              "message": "Violation (sh:SPARQLConstraintComponent):\n  Source shape: rec:testAllVarsInTemplate\n  Focus node: _:Nc200eab55fd64fcc9036bd5f3ce340e2\n  Result path: rec:hasVariable\n  Value: _:Nc200eab55fd64fcc9036bd5f3ce340e2\n  Message: variables must exist in uri template"
             },
             {
               "shaclFile": "_sources/v1/schemas/linkTemplate/rules.shacl",
               "focusNodes": {
                 "rec:testAllVarsInTemplate": {
                   "nodes": [
-                    "_:Nbab5b9361dcc484db24d8c272669ea1a"
+                    "_:Nc200eab55fd64fcc9036bd5f3ce340e2"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testAllVarsInTemplate: _:Nbab5b9361dcc484db24d8c272669ea1a\n"
+              "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testAllVarsInTemplate: _:Nc200eab55fd64fcc9036bd5f3ce340e2\n"
             }
           ]
         }
@@ -180,12 +180,12 @@
               "focusNodes": {
                 "rec:testAllVarsInTemplate": {
                   "nodes": [
-                    "_:N84c0f51dc5cd41d2b82dc64bd9945a25"
+                    "_:N2bc8dcbb77d4485d840b283310cff949"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testAllVarsInTemplate: _:N84c0f51dc5cd41d2b82dc64bd9945a25\n"
+              "message": "Focus nodes for _sources/v1/schemas/linkTemplate/rules.shacl:\n - Shape rec:testAllVarsInTemplate: _:N2bc8dcbb77d4485d840b283310cff949\n"
             }
           ]
         }
